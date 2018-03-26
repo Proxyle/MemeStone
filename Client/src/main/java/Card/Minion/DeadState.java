@@ -1,4 +1,7 @@
 package Card.Minion;
 
-public class DeadState implements IMinionState {
+public class DeadState extends IMinionState {
+    protected void updateState(Minion context) {
+
+    }
 }

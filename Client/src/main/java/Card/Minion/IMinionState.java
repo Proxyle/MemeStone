@@ -1,4 +1,7 @@
 package Card.Minion;
 
-public interface IMinionState {
+public abstract class IMinionState {
+    private Minion minion;
+
+    protected abstract void updateState(final Minion context);
 }
