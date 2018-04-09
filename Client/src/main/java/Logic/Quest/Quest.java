@@ -1,4 +1,4 @@
-package Quest;
+package Logic.Quest;
 
 public class Quest {
     private String title;

@@ -1,4 +1,4 @@
-package Card.Spell;
+package Logic.Card.Spell;
 
 public class DrawSpell extends Spell {
     private int drawPoints;

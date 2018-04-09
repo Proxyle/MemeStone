@@ -1,7 +1,7 @@
-package Card.Minion;
+package Logic.Card.Minion;
 
-import Card.Card;
-import Card.Rarity;
+import Logic.Card.Card;
+import Logic.Card.Rarity;
 
 public class Minion extends Card {
     private int attackPoints;

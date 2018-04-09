@@ -1,4 +1,4 @@
-package Card.Minion;
+package Logic.Card.Minion;
 
 public abstract class IMinionState {
     private Minion minion;

@@ -1,9 +1,9 @@
-package User;
+package Logic.User;
 
-import Board.Board;
-import Card.Collection;
-import Card.Deck;
-import Quest.Quest;
+import Logic.Board.Board;
+import Logic.Card.Collection;
+import Logic.Card.Deck;
+import Logic.Quest.Quest;
 
 import java.util.List;
 

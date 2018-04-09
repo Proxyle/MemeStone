@@ -1,4 +1,4 @@
-package Card;
+package Logic.Card;
 
 public class Deck {
 }

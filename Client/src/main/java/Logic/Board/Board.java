@@ -1,4 +1,4 @@
-package Board;
+package Logic.Board;
 
 public class Board {
 }
