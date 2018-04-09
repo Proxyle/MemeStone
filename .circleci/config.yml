@@ -12,7 +12,7 @@ defaults: &defaults
 version: 2
 jobs:
   build:
-    working_directory: ~/Client
+    working_directory: ~/MemeStone/Client
     <<: *defaults
     steps:
       - checkout
@@ -26,8 +26,8 @@ jobs:
             - ~/.m2
           key: memeStoneClient-dependencies-{{ checksum "pom.xml" }}
   
-  build-server:
-    working_directory: ~/Server
+  buildServer:
+    working_directory: ~/MemeStone/Server
     <<: *defaults
     steps:
       - checkout
@@ -40,16 +40,10 @@ jobs:
           paths:
             - ~/.m2
           key: memeStoneServer-dependencies-{{ checksum "pom.xml" }}
-        
-  #test:
-  #  docker:
-  #    - image: circleci/openjdk:8-jdk
-  #  steps:
-  #    - checkout
     
 workflows:
   version: 2
-  build_applications:
+  build_test_deploy: #TODO
     jobs:
       - build
-      - build-server
+      - buildServer
