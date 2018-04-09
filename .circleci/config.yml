@@ -21,3 +21,27 @@ jobs:
           paths:
             - ~/.m2
           key: memeStoneClient-dependencies-{{ checksum "pom.xml" }}
+          
+  build2:
+    woking_directory: ~/MemeStone/Server
+    branches:
+      only: developer
+    docker:
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - memeStoneServer-dependencies-{{ checksum "pom.xml" }}
+          - memeStoneServer-dependencies-
+      - run: mvn dependency:go-offline
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: memeStoneServer-dependencies-{{ checksum "pom.xml" }}
+
+workflows:
+  build_applications:
+    jobs:
+      - build
+      - build2
