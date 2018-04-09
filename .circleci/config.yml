@@ -11,7 +11,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  "buildClient":
+  build:
     working_directory: ~/Client
     <<: *defaults
     steps:
@@ -26,7 +26,7 @@ jobs:
             - ~/.m2
           key: memeStoneClient-dependencies-{{ checksum "pom.xml" }}
   
-  "buildServer":
+  build-server:
     working_directory: ~/Server
     <<: *defaults
     steps:
@@ -49,7 +49,7 @@ jobs:
     
 workflows:
   version: 2
-  build:
+  build_applications:
     jobs:
-      - "buildClient"
-      - "buildServer"
+      - build
+      - build-server
