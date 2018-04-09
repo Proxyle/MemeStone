@@ -2,44 +2,54 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
-jobs:
-  build:
-    working_directory: ~/Client
-    
-    branches:
+defaults: &defaults
+  branches:
       only:
         - developer
-    
     docker:
-      # specify the version you desire here
       - image: circleci/openjdk:8-jdk
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4    
 
-    environment:
-      # Customize the JVM maximum heap limit
-      MAVEN_OPTS: -Xmx3200m
-    
+version: 2
+jobs:
+  "buildClient":
+    working_directory: ~/Client
+    <<: *defaults
     steps:
       - checkout
-
-      # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "pom.xml" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
+          - memeStoneClient-dependencies-{{ checksum "pom.xml" }}
+          - memeStoneClient-dependencies-
       - run: mvn dependency:go-offline
-
       - save_cache:
           paths:
             - ~/.m2
-          key: v1-dependencies-{{ checksum "pom.xml" }}
+          key: memeStoneClient-dependencies-{{ checksum "pom.xml" }}
+  
+  "buildServer":
+    working_directory: ~/Server
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - memeStoneServer-dependencies-{{ checksum "pom.xml" }}
+          - memeStoneServer-dependencies-
+      - run: mvn dependency:go-offline
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: memeStoneServer-dependencies-{{ checksum "pom.xml" }}
         
-      # run tests!
-      # - run: mvn integration-test
+  #test:
+  #  docker:
+  #    - image: circleci/openjdk:8-jdk
+  #  steps:
+  #    - checkout
+    
+workflows:
+  version: 2
+  buld:
+    jobs:
+      - "buildClient"
+      - "buildServer"
