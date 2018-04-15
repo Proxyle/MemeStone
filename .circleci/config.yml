@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/MemeStone/Client
+    working_directory: ~/Client
     branches:
       only: developer
     docker:
@@ -14,34 +14,11 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - memeStoneClient-dependencies-{{ checksum "pom.xml" }}
-          - memeStoneClient-dependencies-
+            - memeStoneClient-dependencies-{{ checksum "pom.xml" }}
+            - memeStoneClient-dependencies-
       - run: mvn dependency:go-offline
       - save_cache:
           paths:
             - ~/.m2
           key: memeStoneClient-dependencies-{{ checksum "pom.xml" }}
-          
-  build2:
-    woking_directory: ~/MemeStone/Server
-    branches:
-      only: developer
-    docker:
-      - image: circleci/openjdk:8-jdk
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - memeStoneServer-dependencies-{{ checksum "pom.xml" }}
-          - memeStoneServer-dependencies-
-      - run: mvn dependency:go-offline
-      - save_cache:
-          paths:
-            - ~/.m2
-          key: memeStoneServer-dependencies-{{ checksum "pom.xml" }}
-
-workflows:
-  build_applications:
-    jobs:
-      - build
-      - build2
+      - run: mvn package
