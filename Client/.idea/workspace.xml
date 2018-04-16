@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a537fc6a-b6a1-4314-ad84-97c026e5b96e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/MemeStoneSocketMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/MemeStoneSocketMessageOperation.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/FXML/MemeStone Client GUI.fxml" afterPath="$PROJECT_DIR$/src/main/java/GUI/FXML/MemeStone Client GUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/ICommunicator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ICommunicator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/MemeStoneClientWebSocket.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/MemeStoneClientWebSocket.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/ICommunicator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ICommunicator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +40,8 @@
       <file leaf-file-name="ICommunicator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ICommunicator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -178,6 +173,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
@@ -339,12 +342,12 @@
       <workItem from="1522053615692" duration="6894000" />
       <workItem from="1523261966514" duration="8317000" />
       <workItem from="1523343041298" duration="204000" />
-      <workItem from="1523797358196" duration="5237000" />
+      <workItem from="1523797358196" duration="5553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20652000" />
+    <option name="totallyTimeSpent" value="20968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
@@ -631,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ICommunicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
           <folding />
         </state>
       </provider>
