@@ -1,13 +1,13 @@
 package Logic.Card.Spell;
 
 public class ResurrectSpell extends Spell {
-    private int RessurectPoints;
+    private int ResurrectPoints;
 
-    public ResurrectSpell(int ressurectPoints) {
-        RessurectPoints = ressurectPoints;
+    public ResurrectSpell(int resurrectPoints) {
+        ResurrectPoints = resurrectPoints;
     }
 
-    public int getRessurectPoints() {
-        return RessurectPoints;
+    public int getResurrectPoints() {
+        return ResurrectPoints;
     }
 }
