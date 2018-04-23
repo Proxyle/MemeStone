@@ -1,4 +1,4 @@
-package Model.User;
+package model;
 
 public class Setting {
     private String displaySetting;
