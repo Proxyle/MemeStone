@@ -1,5 +1,5 @@
 package model.interfaces;
 
 public interface IDeck {
-    String getDecks(String userId);
+    String getDecks(String playerId);
 }

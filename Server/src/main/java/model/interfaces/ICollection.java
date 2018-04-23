@@ -1,5 +1,5 @@
 package model.interfaces;
 
 public interface ICollection {
-    String getCollection(String userId);
+    String getCollection(String playerId);
 }

@@ -1,6 +1,6 @@
 package model;
 
-public class Setting {
+public class Settings {
     private String displaySetting;
     private int audioLevel;
 

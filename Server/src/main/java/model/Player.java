@@ -5,6 +5,5 @@ public class Player {
     private String userName;
     private String password;
     private String email;
-    private Setting setting;
-    private int points;
+    private Settings settings;
 }

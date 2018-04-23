@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 @RestController
-@RequestMapping(value="/{userId}/collection")
+@RequestMapping(value="/{playerId}/collection")
 public class CollectionController {
     @RequestMapping(method= RequestMethod.GET)
-    public String getCollection(@PathVariable String userId) {
+    public String getCollection(@PathVariable String playerId) {
         throw new NotImplementedException();
     }
 }
