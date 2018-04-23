@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dbi341449@mssql.fhict.local" uuid="1c218d46-79eb-4234-8737-a729213e37c8">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://mssql.fhict.local:1433;database=dbi341449</jdbc-url>
+      <driver-properties>
+        <property name="applicationName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
