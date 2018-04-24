@@ -1,26 +1,35 @@
 package mscontroller;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import model.Card;
+import msservices.ICardService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping(value="/cards")
+@RequestMapping("/card")
 public class CardController {
-    @RequestMapping(method= RequestMethod.GET)
-    public String getAllCards(){
-        throw new NotImplementedException();
+    @Autowired
+    private ICardService cardService;
+
+    @GetMapping
+    public ResponseEntity<List<Card>> getAllCards(){
+        List<Card> cards = cardService.getAllCards();
+        return new ResponseEntity<>(cards, HttpStatus.OK);
     }
 
-    @RequestMapping(method= RequestMethod.GET, value="/{cardId}")
-    public String getCardById(@PathVariable String cardId){
-        throw new NotImplementedException();
+    @GetMapping("/{cardId}")
+    public ResponseEntity<Card> getCardById(@PathVariable("cardId") long cardId){
+        Card card = cardService.getCardById(cardId);
+        return new ResponseEntity<>(card, HttpStatus.OK);
     }
 
-    @RequestMapping(method= RequestMethod.GET, value="/{cardName}")
-    public String getCardByName(@PathVariable String cardName){
-        throw new NotImplementedException();
+    @GetMapping("/{cardName}")
+    public ResponseEntity<Card> getCardByName(@PathVariable("cardName") String cardName){
+        Card card = cardService.getCardByName(cardName);
+        return new ResponseEntity<>(card, HttpStatus.OK);
     }
 }
