@@ -1,4 +1,8 @@
 package msrepositories;
 
-public class PlayerRepository {
+import model.Player;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PlayerRepository extends CrudRepository<Player,Long> {
+
 }

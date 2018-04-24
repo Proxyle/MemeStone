@@ -1,7 +1,8 @@
 package msrepositories;
 
 import model.Card;
+import org.springframework.data.repository.CrudRepository;
 
-public class CardRepository {
+public interface CardRepository extends CrudRepository<Card, Long> {
 
 }
