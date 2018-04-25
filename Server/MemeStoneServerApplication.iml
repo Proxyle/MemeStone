@@ -14,9 +14,10 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="JPAConfig" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/configuration/JPAConfig.xml</file>
+        <fileset id="fileset" name="JPA Configuration" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/JPAConfig.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/msserverapp/Application.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/configuration/JPAConfig.java</file>
         </fileset>
       </configuration>
     </facet>

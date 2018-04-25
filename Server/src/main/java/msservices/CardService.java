@@ -16,19 +16,33 @@ public class CardService implements ICardService {
     @Override
     public List<Card> getAllCards() {
         List<Card> cards = new ArrayList<>();
-        cardRepository.findAll().forEach(c -> cards.add(c));
+        try {
+            cardRepository.findAll().forEach(c -> cards.add(c));
+        } catch (Exception e) {
+            return null;
+        }
         return cards;
     }
 
     @Override
     public Card getCardById(long cardId) {
-        Card card = cardRepository.findById(cardId).get();
+        Card card;
+        try {
+            card = cardRepository.findById(cardId).get();
+        } catch (Exception e) {
+            return null;
+        }
         return card;
     }
 
     @Override
     public Card getCardByName(String cardName) {
-        Card card = cardRepository.findByName(cardName);
+        Card card;
+        try {
+            card = cardRepository.findByName(cardName);
+        } catch (Exception e) {
+            return null;
+        }
         return card;
     }
 }

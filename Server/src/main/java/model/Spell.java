@@ -1,5 +1,5 @@
 package model;
 
-public class Spell {
+public class Spell extends Card {
 
 }
