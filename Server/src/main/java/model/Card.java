@@ -4,28 +4,34 @@ import model.enums.Rarity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 @Entity
 @Inheritance
 @DiscriminatorColumn(name = "card_type")
-@Table(name="cards") // Not for sure
+@Table(name="Card")
 public abstract class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="cardId")
+    @Column(name="card_id")
     private Long id;
+
     @NotNull
     @Column(name="name")
     private String name;
-    //@NotNull
-    //@Column(name="context")
-    private String context;
+
     @NotNull
-    @Column(name="")
+    @Column(name="manacost")
     private int manaCost;
-    @NotNull
-    @Column(name="")
-    private Rarity rarity;
+
+    private Set<Ability> abilities;
+
+    public Card(Long id, String name, int manaCost, Set<Ability> abilities){
+        this.id = id;
+        this.name = name;
+        this.manaCost = manaCost;
+        this.abilities = abilities;
+    }
 
     public String getName() {
         return name;
@@ -34,4 +40,5 @@ public abstract class Card {
     public void setName(String name) {
         this.name = name;
     }
+
 }
