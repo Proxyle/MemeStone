@@ -1,4 +1,4 @@
-package api.msservices;
+package api.msservices.interfaces;
 
 import api.model.Card;
 
