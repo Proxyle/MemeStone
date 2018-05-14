@@ -30,10 +30,10 @@ public class PlayerController {
 
     @GetMapping(value = "/{playerName}/rank")
     public ResponseEntity<Object> getPlayerRankByName(@PathVariable("playerName") String playerName) {
-        Map<String, Object> map = playerService.getPlayerRankByName(playerName);
-        if (map == null) {
+        String playerRank = playerService.getPlayerRankByName(playerName);
+        if (playerRank == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(map, HttpStatus.OK);
+        return new ResponseEntity<>(playerRank, HttpStatus.OK);
     }
 }
