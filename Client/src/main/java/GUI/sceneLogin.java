@@ -13,7 +13,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class sceneLogin  extends Application {
+public class sceneLogin{
     //Properties
     double buttonWidth = 150;
 
@@ -24,12 +24,19 @@ public class sceneLogin  extends Application {
     TextField txtPassword = new TextField();
     Label lblUsername = new Label("Username:");
     Label lblPassword = new Label("Password:");
+    Scene scene;
+    sceneController controller;
 
-    public void start(Stage primaryStage) throws Exception{
+    public sceneLogin(sceneController controller){
+        scene = makeScene();
+        this.controller = controller;
+    }
+
+    private Scene makeScene(){
         //Define grid pane
         GridPane grid = new GridPane();
         grid.setVgap(10);
-        grid.setPadding(new Insets(390, 10, 10, 815));
+        grid.setPadding(new Insets(320,10,10,810));
 
         // Create the scene
         Group root = new Group();
@@ -38,7 +45,7 @@ public class sceneLogin  extends Application {
         root.getChildren().add(grid);
 
 
-        // Button to start game
+        // Button to Sign In
         Tooltip tooltipStartGame =
                 new Tooltip("Sign In to MemeStone");
         btnSignIn.setTooltip(tooltipStartGame);
@@ -50,7 +57,7 @@ public class sceneLogin  extends Application {
         });
         grid.add(btnSignIn, 1,5,1,1);
 
-        // Button to open collection
+        // Button to Sign Up
         Tooltip tooltipCollection =
                 new Tooltip("Press to view your collection");
         btnSignUp.setTooltip(tooltipCollection);
@@ -71,13 +78,17 @@ public class sceneLogin  extends Application {
         grid.add(txtPassword, 1,4,2,1);
 
         // Define title and assign the scene for main window
-        primaryStage.setTitle("MemeStone");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        return scene;
+    }
+
+    public Scene getScene(){
+        return scene;
     }
 
     public void signIn(){
-
+        if(true){
+            controller.home();
+        }
     }
 
     public void signUp() {
