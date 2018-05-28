@@ -11,7 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class sceneHomeScreen extends Application {
+public class sceneHomeScreen{
     //Properties
     double buttonWidth = 150;
 
@@ -21,8 +21,15 @@ public class sceneHomeScreen extends Application {
     Button btnLeaderboard = new Button("Leaderboard");
     Button btnSettings = new Button("Settings");
     Button btnExitGame = new Button("Exit Game");
+    Scene scene;
+    sceneController controller;
 
-    public void start(Stage primaryStage) throws Exception{
+    public sceneHomeScreen(sceneController controller){
+        scene = makeScene();
+        this.controller = controller;
+    }
+
+    public Scene makeScene(){
         //Define grid pane
         GridPane grid = new GridPane();
         grid.setVgap(10);
@@ -96,30 +103,30 @@ public class sceneHomeScreen extends Application {
         grid.add(btnExitGame, 1,5,1,1);
 
         // Define title and assign the scene for main window
-        primaryStage.setTitle("MemeStone");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        return scene;
+    }
+
+    public Scene getScene() {
+        return scene;
     }
 
     public void startGame() {
-
+        controller.game();
     }
 
     public void collection() {
-
+        controller.collections();
     }
 
     public void leaderboard() {
-
+        controller.leaderboard();
     }
 
     public void settings() {
-
+        controller.settings();
     }
 
     public void exitGame() {
-
+        System.exit(0);
     }
-
-
 }
