@@ -1,6 +1,5 @@
 package Websockets.Client;
 
-import Models.Pieces.Piece;
 import Websockets.Shared.messages.RegisterPlayerMessage;
 
 public class ClientMessageGenerator implements Websockets.Client.IClientMessageGenerator {
