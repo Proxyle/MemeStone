@@ -1,6 +1,6 @@
 package Messages.ClientToServer;
 
-import Models.Deck;
+import Models.Card.Deck;
 
 public class RegisterPlayerMessage {
     String userName;
