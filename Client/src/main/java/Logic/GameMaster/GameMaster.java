@@ -24,8 +24,6 @@ public class GameMaster implements IGameMaster, Observer {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
     }
 
-
-
     /*Login*/
     public void logIn(String name) {
         generator.logInToServer(name);
@@ -37,32 +35,32 @@ public class GameMaster implements IGameMaster, Observer {
 
     @Override
     public void registerGameGui(IClientGUI gui) {
-
+        this.gui = gui;
     }
 
     @Override
     public void startGame() {
-
+        generator.startGame();
     }
 
     @Override
     public void collection() {
-
+        generator.getCollection();
     }
 
     @Override
     public void leaderboard() {
-
+        generator.getLeaderboard();
     }
 
     @Override
     public void exitGame() {
-
+        generator.exitGame();
     }
 
     @Override
     public void getSettings() {
-
+        generator.getSettings();
     }
 
     @Override
@@ -77,32 +75,32 @@ public class GameMaster implements IGameMaster, Observer {
 
     @Override
     public void drawCard(int amount) {
-
+        generator.drawCard();
     }
 
     @Override
-    public void healCard(Card target) {
-
+    public void healCard(Card card, int[] target) {
+        generator.healCard(card, target);
     }
 
     @Override
-    public void attackCard(Card target) {
-
+    public void attackCard(int attack, int defend) {
+        generator.attackCard(attack, defend);
     }
 
     @Override
     public void resurrectMinion() {
-
+        generator.resurrectMinion();
     }
 
     @Override
     public void nextTurn() {
-
+        generator.nextTurn();
     }
 
     @Override
     public void escapeConcede() {
-
+        generator.escapeConcede();
     }
 
     /*Menu*/

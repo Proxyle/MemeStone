@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public interface IGameMaster {
     /*Login*/
     void logIn(String name);
-    void signUp();
+    void signUp(String name);
     void registerGameGui(IClientGUI gui);
 
     /*MainMenu*/
@@ -24,8 +24,8 @@ public interface IGameMaster {
 
     /*Game*/
     void drawCard(int amount);
-    void healCard(Card target);
-    void attackCard(Card target);
+    void healCard(Card card, int[] target);
+    void attackCard(int attack, int defend);
     void resurrectMinion();
     void nextTurn();
     void escapeConcede();

@@ -3,6 +3,7 @@ package Websockets.Client;
 import Models.Card.Card;
 import Websockets.Shared.interfaces.IClientGUI;
 import Websockets.Shared.messages.*;
+import org.eclipse.persistence.jaxb.javamodel.Helper;
 
 public class ClientMessageGenerator implements IClientMessageGenerator {
     private Websockets.Client.IClientWebSocket clientWebSocket;
@@ -13,49 +14,50 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
         this.clientWebSocket = clientWebSocket;
     }
     public void registerPlayerOnServer(String name) {
-
+        clientWebSocket.start();
+        clientWebSocket.send(new RegisterPlayerMessage(name));
 
     }
 
     @Override
     public void logInToServer(String name) {
         clientWebSocket.start();
-        clientWebSocket.send(new LoginMessage());
+        clientWebSocket.send(new LoginMessage(name));
     }
 
     @Override
     public void startGame() {
-
+        clientWebSocket.send(new StartGameMessage());
     }
 
     @Override
     public void getCollection() {
-
+        clientWebSocket.send(new GetCollectionMessage());
     }
 
     @Override
     public void getLeaderboard() {
-
+        clientWebSocket.send(new GetLeaderBoardMessage());
     }
 
     @Override
     public void exitGame() {
-
+        clientWebSocket.send(new ForfeitMessage());
     }
 
     @Override
     public void getSettings() {
-
+        clientWebSocket.send(new GetSettingsMessage());
     }
 
     @Override
     public void drawCard() {
-
+        clientWebSocket.send(new DrawCardMessage());
     }
 
     @Override
-    public void healCard(int[] target) {
-
+    public void healCard(Card card,int[] target) {
+        clientWebSocket.send(new HealCardMessage(card, target));
     }
 
     @Override
@@ -65,7 +67,7 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
 
     @Override
     public void resurrectMinion() {
-
+        clientWebSocket.send(new ResurrectMinionMessage());
     }
 
     @Override

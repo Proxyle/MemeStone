@@ -11,7 +11,7 @@ public interface IClientMessageGenerator {
     void exitGame();
     void getSettings();
     void drawCard();
-    void healCard(int[] target);
+    void healCard(Card card, int[] target);
     void attackCard(int attack, int defend);
     void resurrectMinion();
     void nextTurn();
