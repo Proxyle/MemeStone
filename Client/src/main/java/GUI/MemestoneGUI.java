@@ -1,6 +1,9 @@
 package GUI;
 
 
+import Websockets.Client.ClientMessageGenerator;
+import Websockets.Client.GameClient;
+import Websockets.Shared.interfaces.IClientGUI;
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.stage.*;

@@ -1,8 +1,18 @@
 package GUI;
 
+import Logic.GameMaster.GameMaster;
+import Logic.GameMaster.IGameMaster;
+import Websockets.Client.ClientMessageGenerator;
+import Websockets.Client.ClientWebSocket;
+import Websockets.Client.GameClient;
+import Websockets.Client.IGameClient;
+import Websockets.Shared.interfaces.IClientGUI;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 
-public class sceneController {
+import java.util.TimerTask;
+
+public class sceneController extends BaseController implements IClientGUI, IMemestoneGUI {
     sceneLogin login;
     sceneHomeScreen home;
     sceneSettings settings;
@@ -11,21 +21,28 @@ public class sceneController {
     sceneLeaderboard leaderboard;
     sceneGame game;
     IMemestoneGUI application;
+    IGameClient gameClient;
+
 
     public sceneController(IMemestoneGUI application){
+        super(application);
     login = new sceneLogin(this);
     home = new sceneHomeScreen(this);
     settings = new sceneSettings(this);
     leaderboard =  new sceneLeaderboard(this);
     game = new sceneGame(this);
+    getGameClient().registerGUI(this);
     this.application =  application;
+    this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
     }
 
     public void login(){
         application.Draw(login.getScene());
+
     }
 
-    public void home(){
+    public void home(String name){
+        getGameClient().registerPlayer(name);
         application.Draw(home.getScene());
     }
 
@@ -47,5 +64,46 @@ public class sceneController {
 
     public void game(){
         application.Draw(game.getScene());
+    }
+
+    @Override
+    public void processRegistrationResponse(boolean resp) {
+
+    }
+
+    @Override
+    public void processRoundStart() {
+        Platform.runLater(()->{
+            new java.util.Timer().schedule(new TimerTask(){
+                @Override
+                public void run() {
+                    //TODO startRound();
+                }
+            },5000);
+        });
+    }
+
+    @Override
+    public void processPlayerRegisterd() {
+        //TODO
+    }
+
+    public void processPlayerRegisterd(boolean resp) {
+        Platform.runLater(() -> {
+            if(resp)
+            {
+
+            }
+            else
+            {
+
+            }
+        });
+
+    }
+
+    @Override
+    public void Draw(Scene guiScene) {
+
     }
 }

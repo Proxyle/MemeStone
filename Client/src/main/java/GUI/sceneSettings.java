@@ -87,7 +87,7 @@ public class sceneSettings{
     }
 
     public void backButton() {
-        controller.home();
+        controller.home("erik");
     }
 
     public void applyChanges() {

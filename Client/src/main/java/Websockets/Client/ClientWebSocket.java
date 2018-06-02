@@ -9,7 +9,7 @@ import java.net.URI;
 
 @ClientEndpoint
 public class ClientWebSocket extends WebSocketBase implements IClientWebSocket {
-    private static final String serverUri = "ws://localhost:8095/MemeStone/";
+    private static final String serverUri = "ws://145.93.113.41:8095/memestone/";
 
     private Session session;
 
@@ -86,6 +86,8 @@ public class ClientWebSocket extends WebSocketBase implements IClientWebSocket {
     public void send(Object object)
     {
         String msg = getEncapsulatingMessageGenerator().generateMessageString(object);
+        System.out.println(msg);
         sendMessageToServer(msg);
+
     }
 }
