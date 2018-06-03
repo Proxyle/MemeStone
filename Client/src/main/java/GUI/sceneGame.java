@@ -1,10 +1,14 @@
 package GUI;
 
+import Logic.GameMaster.IGameMaster;
+import Models.Card.Card;
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -14,10 +18,15 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class sceneGame{
     //Properties
+    ArrayList<Integer> clickOne;
+    ArrayList<Integer> clickTwo;
     double buttonWidth = 150;
     Image iHerosHero = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
     Image iOpponentsHero = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
@@ -53,39 +62,46 @@ public class sceneGame{
 
     GridPane gridOpponentHand;
     GridPane gridOpponentStats;
-    GridPane gridOpponentLeftLane;
-    GridPane gridOpponentRightLane;
     GridPane gridHeroHand;
     GridPane gridHeroStats;
-    GridPane gridHeroLeftLane;
-    GridPane gridHeroRightLane;
+    GridPane gridGameCardField;
     GridPane gridGameField;
+    GridPane gridSettings;
+    VBox vbOpponentTop;
+    VBox vbHeroBottom;
+
+    ArrayList<Card> opponentHand;
+    ArrayList<Card> heroHand;
+    Card[][] gameField;
 
 
     Scene scene;
     sceneController controller;
+    IGameMaster gameMaster;
 
-    public sceneGame(sceneController controller){
+    public sceneGame(sceneController controller, IGameMaster gameMaster){
         scene = makeScene();
         this.controller = controller;
+        this.gameMaster = gameMaster;
     }
 
     public Scene makeScene(){
         //Define Panes
 
-        //Main Game GridPane
-        GridPane grid = new GridPane();
-        grid.setVgap(10);
-        grid.setHgap(10);
-        grid.setPadding(new Insets(-110, 10, 10, 10));
-
         //Settings GridPane
-        GridPane gridSettings = new GridPane();
+        gridSettings = new GridPane();
         gridSettings.setHgap(10);
+
+        gridOpponentHand = fillGridWithEmptyCards(6, 0, 0);
+        gridHeroHand = fillGridWithEmptyCards(6, 1, 2);
+        gridGameCardField = fillGameCardFieldWithEmptyCard();
+        gridGameField = new GridPane();
 
         //Overall Pane
         BorderPane layoutPane = new BorderPane();
-        layoutPane.setCenter(grid);
+        layoutPane.setTop(vbOpponentTop);
+        layoutPane.setCenter(gridGameField);
+        layoutPane.setBottom(vbHeroBottom);
         layoutPane.setRight(gridSettings);
 
         // Create the scene
@@ -94,82 +110,54 @@ public class sceneGame{
 
         root.getChildren().add(layoutPane);
 
-        //Set empty image slots
-
-        //Opponents hand
-        for(int i=2; i<8; i++){
-            grid.add(emptySlotImage(), i,1,1,1);
-        }
-
-        //Opponents field
-        for(int i=2; i<5; i++){
-            grid.add(emptySlotImage(), i,4,1,1);
-        }
-        for(int i=6; i<9; i++){
-            grid.add(emptySlotImage(), i,4,1,1);
-        }
-
-        //Heros field
-        for(int i=2; i<5; i++){
-            grid.add(emptySlotImage(), i,6,1,1);
-        }
-        for(int i=6; i<9; i++){
-            grid.add(emptySlotImage(), i,6,1,1);
-        }
-
-        //Heros Hand
-        for(int i=2; i<8; i++){
-            grid.add(emptySlotImage(), i,9,1,1);
-        }
-
         //BuffLeft
         ivBuffLeft = new ImageView();
         ivBuffLeft.setImage(iBuffLeft);
         ivBuffLeft.setFitWidth(50);
         ivBuffLeft.setFitHeight(50);
-        grid.add(ivBuffLeft,1,5);
+        gridGameField.add(ivBuffLeft,1,1);
 
         //BuffRight
         ivBuffRight = new ImageView();
         ivBuffRight.setImage(iBuffRight);
         ivBuffRight.setFitWidth(50);
         ivBuffRight.setFitHeight(50);
-        grid.add(ivBuffRight,9,5);
+        gridGameField.add(ivBuffLeft,3,1);
 
         //Opponents Health
         pbHealthBarOpponent = new ProgressBar();
         pbHealthBarOpponent.setMinWidth(380);
-        grid.add(pbHealthBarOpponent, 2,3,3,1);
+        gridOpponentStats.add(pbHealthBarOpponent, 1,1);
         lblHealthOpponent = new Label("Health: 50/50");
-        grid.add(lblHealthOpponent, 2,3,1,1);
+        gridOpponentStats.add(lblHealthOpponent, 1,1);
 
         //Opponents Energy
         pbEnergyBarOpponent = new ProgressBar();
         pbEnergyBarOpponent.setMinWidth(380);
-        grid.add(pbEnergyBarOpponent,6, 3, 3,1);
+        gridOpponentStats.add(pbEnergyBarOpponent, 1,3);
         lblHealthOpponent = new Label("Energy: 3/10");
-        grid.add(lblHealthOpponent, 6,3,1,1);
+        gridOpponentStats.add(lblHealthOpponent, 1,3);
 
         //Heros Health
         pbHealthBarHero = new ProgressBar();
         pbHealthBarHero.setMinWidth(380);
-        grid.add(pbHealthBarHero, 2,7,3,1);
+        gridHeroStats.add(pbHealthBarHero, 1,1);
         lblHealthHero = new Label("Health: 50/50");
-        grid.add(lblHealthHero, 2,7,1,1);
+        gridHeroStats.add(lblHealthHero, 1,1);
 
         //Heros Energy
         pbEnergyBarHero = new ProgressBar();
         pbEnergyBarHero.setMinWidth(380);
-        grid.add(pbEnergyBarHero,6, 7, 3,1);
+        gridHeroStats.add(pbEnergyBarHero, 1,3);
         lblHealthHero = new Label("Energy: 3/10");
-        grid.add(lblHealthHero, 6,7,1,1);
+        gridHeroStats.add(lblHealthHero, 1,3);
 
         //Opponents Hero
         ivHeroOpponent = new ImageView();
         ivHeroOpponent.setImage(iOpponentsHero);
         ivHeroOpponent.setFitWidth(120);
         ivHeroOpponent.setFitHeight(120);
-        grid.add(ivHeroOpponent,5,3);
+        gridOpponentStats.add(ivHeroOpponent, 1,2);
 
 
         //Heros Hero
@@ -177,7 +165,7 @@ public class sceneGame{
         ivHero.setImage(iHerosHero);
         ivHero.setFitWidth(120);
         ivHero.setFitHeight(120);
-        grid.add(ivHero,5,7);
+        gridHeroStats.add(ivHero, 1,2);
 
         //Buttons---------------------------------------------------------------------
 
@@ -191,7 +179,7 @@ public class sceneGame{
                 endTurn();
             }
         });
-        grid.add(btnEndTurn, 10,6,1,1);
+        gridGameField.add(btnEndTurn, 4,1);
 
         // Button to open options
         Tooltip tooltipCollection =
@@ -203,7 +191,7 @@ public class sceneGame{
                 options();
             }
         });
-        gridSettings.add(btnOptions, 1,1);
+        gridGameField.add(btnOptions, 1,4);
 
         // Button to forfeit
         Tooltip tooltipLeaderboard =
@@ -215,19 +203,8 @@ public class sceneGame{
                 forfeit();
             }
         });
-        gridSettings.add(btnForfeit, 1,2);
+        gridSettings.add(btnForfeit, 1,1);
 
-        // Button to open settings
-        Tooltip tooltipSettings =
-                new Tooltip("Press to view your collection");
-        btnSettings.setTooltip(tooltipSettings);
-        btnSettings.setMinWidth(buttonWidth);
-        btnSettings.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                settings();
-            }
-        });
-        gridSettings.add(btnSettings, 1,3);
 
         // Button to exit game
         Tooltip tooltipExitGame =
@@ -239,7 +216,7 @@ public class sceneGame{
                 exitGame();
             }
         });
-        gridSettings.add(btnExitGame, 1,4);
+        gridSettings.add(btnExitGame, 1,1);
 
         // Define title and assign the scene for main window
         return scene;
@@ -249,31 +226,99 @@ public class sceneGame{
         return scene;
     }
 
-    private ImageView emptySlotImage(){
+    private ImageView emptySlotImage(int player, int field){
+        //field 0 = opponent hand
+        //field 1 = game field
+        //field 2 = hero hand
         ivEmptySlot = new ImageView();
         ivEmptySlot.setImage(iEmptySlot);
         ivEmptySlot.setFitWidth(120);
         ivEmptySlot.setFitHeight(200);
+        ivEmptySlot.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> cardClick(GridPane.getRowIndex( ivEmptySlot),GridPane.getColumnIndex( ivEmptySlot), player, field));
         return ivEmptySlot;
     }
 
-    public void endTurn() {
+    private GridPane fillGridWithEmptyCards(int amount, int player, int field){
+        GridPane grid = new GridPane();
+        for (int i = 0; i < amount; i++){
+            grid.add(emptySlotImage(player, field),i,0);
+        }
+        return grid;
+    }
 
+    private GridPane fillGameCardFieldWithEmptyCard(){
+        GridPane grid = new GridPane();
+        for (int i = 0; i < 6; i++){
+            grid.add(emptySlotImage(0, 1),i,0);
+            grid.add(emptySlotImage(1, 1),i,1);
+        }
+        return grid;
+    }
+
+    public void removeNodeByRowColumnIndex(final int row, final int column, GridPane gridPane) {
+
+        ObservableList<Node> children = gridPane.getChildren();
+        for (Node node : children) {
+            if (node instanceof GridPane && gridPane.getRowIndex(node) == row && gridPane.getColumnIndex(node) == column) {
+                GridPane grid = (GridPane) node;
+                gridPane.getChildren().remove(grid);
+                break;
+            }
+        }
+    }
+
+    public boolean checkNodeByRowColumnIndex(final int row, final int column, GridPane gridPane) {
+        ObservableList<Node> children = gridPane.getChildren();
+        for (Node node : children) {
+            if (node instanceof GridPane && gridPane.getRowIndex(node) == row && gridPane.getColumnIndex(node) == column) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void cardClick(int x, int y, int player, int field){
+        if (field == 0){
+        } else if (clickOne == null){
+            clickOne = new ArrayList<>();
+            clickOne.add(0, x);
+            clickOne.add(1, y);
+            clickOne.add(2, player);
+            clickOne.add(3, field);
+        } else if (clickTwo == null){
+            clickTwo = new ArrayList<>();
+            clickTwo.add(0, x);
+            clickTwo.add(1, y);
+            clickTwo.add(3, player);
+            clickTwo.add(3, field);
+
+            checkAction();
+        }
+    }
+
+    private void checkAction(){
+        if (clickOne.get(3) == 1){
+
+        }
+    }
+
+    public void endTurn() {
+        gameMaster.nextTurn();
     }
 
     public void options() {
-
+        if (gridSettings.isVisible()){
+            gridSettings.setVisible(false);
+        } else if (!gridSettings.isVisible()){
+            gridSettings.setVisible(true);
+        }
     }
 
     public void forfeit() {
-
-    }
-
-    public void settings() {
-
+        gameMaster.escapeConcede();
     }
 
     public void exitGame() {
-        System.exit(0);
+        gameMaster.exitGame();
     }
 }
