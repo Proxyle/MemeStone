@@ -26,14 +26,12 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     public sceneController(IMemestoneGUI application){
         super(application);
-    login = new sceneLogin(this);
-    home = new sceneHomeScreen(this);
-    settings = new sceneSettings(this);
-    leaderboard =  new sceneLeaderboard(this);
-    game = new sceneGame(this);
-    getGameClient().registerGUI(this);
-    this.application =  application;
-    this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
+        login = new sceneLogin(this);
+        home = new sceneHomeScreen(this);
+        game = new sceneGame(this);
+        this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
+        getGameClient().registerGUI(this);
+        this.application =  application;
     }
 
     public void login(){

@@ -1,24 +1,23 @@
 package GUI;
 
+import Models.User.IUser;
+import Models.User.User;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
+import javafx.scene.layout.VBox;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 
 public class sceneLeaderboard{
     //Properties
-    ArrayList<?> users;
+    ArrayList<IUser> leaderboard;
     double buttonWidth = 150;
 
     //Buttons
@@ -27,35 +26,47 @@ public class sceneLeaderboard{
     Scene scene;
     sceneController controller;
 
-    public sceneLeaderboard(sceneController controller){
+    public sceneLeaderboard(sceneController controller, ArrayList<IUser> leaderboard){
         scene = makeScene();
         this.controller = controller;
+        this.leaderboard = leaderboard;
     }
 
     public Scene makeScene(){
         //Define grid pane
-        GridPane grid = new GridPane();
-        grid.setVgap(10);
-        //grid.setPadding(new Insets(390, 10, 10, 880));
+        GridPane gridLeaderboard = new GridPane();
+        gridLeaderboard.setVgap(10);
+
+        //Define scroll pane
+        ScrollPane scrollPane = new ScrollPane(gridLeaderboard);
+        scrollPane.setMaxWidth(100);
+
+        //Define vbox pane
+        VBox vbox = new VBox();
+        vbox.setPadding(new Insets(10));
+        vbox.setSpacing(10);
+
+        //Overall Pane
+        BorderPane layoutPane = new BorderPane();
+        layoutPane.setCenter(scrollPane);
+        layoutPane.setRight(vbox);
 
         // Create the scene
         Group root = new Group();
         Scene scene = new Scene(root, 1920, 1080);
 
-        root.getChildren().add(grid);
+        root.getChildren().add(layoutPane);
 
-
-        // Leaderboard
-        TableColumn colRank = new TableColumn("Rank");
-        TableColumn colName = new TableColumn("Name");
-        TableColumn colElo = new TableColumn("Elo");
-
-        //TODO Add data to table
-        //Use this link to fill the table https://docs.oracle.com/javafx/2/ui_controls/table-view.htm
-        tableLeaderboard.getColumns().addAll(colRank, colName, colElo);
-
-
-        grid.add(tableLeaderboard, 1,1,1,1);
+        int i = 1;
+        if (leaderboard != null) {
+            for (IUser u : leaderboard) {
+                Label rank = new Label(String.valueOf(u.getRanking()));
+                Label name = new Label(u.getUsername());
+                gridLeaderboard.add(rank, 1, i);
+                gridLeaderboard.add(name, 2, i);
+                i++;
+            }
+        }
 
         // Button to go back to sceneHomeScreen
         Tooltip tooltipCollection =
@@ -67,7 +78,8 @@ public class sceneLeaderboard{
                 backButton();
             }
         });
-        grid.add(btnBack, 2,5,1,1);
+        vbox.getChildren().addAll(btnBack);
+
 
         // Define title and assign the scene for main window
         return scene;

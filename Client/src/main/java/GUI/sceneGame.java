@@ -51,6 +51,17 @@ public class sceneGame{
     Label lblEnergyOpponent;
     Label lblEnergyHero;
 
+    GridPane gridOpponentHand;
+    GridPane gridOpponentStats;
+    GridPane gridOpponentLeftLane;
+    GridPane gridOpponentRightLane;
+    GridPane gridHeroHand;
+    GridPane gridHeroStats;
+    GridPane gridHeroLeftLane;
+    GridPane gridHeroRightLane;
+    GridPane gridGameField;
+
+
     Scene scene;
     sceneController controller;
 
@@ -168,7 +179,7 @@ public class sceneGame{
         ivHero.setFitHeight(120);
         grid.add(ivHero,5,7);
 
-        //Buttons------------------------------------------------------------------------
+        //Buttons---------------------------------------------------------------------
 
         // Button to end turn
         Tooltip tooltipStartGame =
