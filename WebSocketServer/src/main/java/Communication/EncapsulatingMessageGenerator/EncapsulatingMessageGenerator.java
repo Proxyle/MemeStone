@@ -9,6 +9,7 @@ public class EncapsulatingMessageGenerator implements IEncapsulatingMessageGener
 
     public EncapsulatingMessage generateMessage(Object content)
     {
+
         String messageForServerJson = gson.toJson(content);
         String type = content.getClass().toGenericString();
         return new EncapsulatingMessage(type, messageForServerJson);

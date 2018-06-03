@@ -6,6 +6,10 @@ public class DrawSpell extends Spell {
 
     private int drawPoints;
 
+    public DrawSpell(){
+        super();
+    }
+
     public DrawSpell(String name, String context, int cost, int drawPoints) {
         super(name, context, cost);
         this.drawPoints = drawPoints;

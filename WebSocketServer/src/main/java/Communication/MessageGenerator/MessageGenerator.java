@@ -17,6 +17,7 @@ public class MessageGenerator implements IMessageGenerator {
     public void notifyRegisterResult(String sessionId, boolean success) {
         RegistrationResultMessage msg = new RegistrationResultMessage(success);
         serverSocket.sendTo(sessionId, msg);
+
     }
 
     @Override

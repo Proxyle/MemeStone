@@ -4,6 +4,10 @@ import Logic.GameLobby.IGameLogic;
 
 public class ResurrectSpell extends Spell {
 
+    public ResurrectSpell(){
+        super();
+    }
+
     private int ressurectPoints;
 
     public ResurrectSpell(String name, String context, int cost, int ressurectPoints) {
