@@ -26,6 +26,7 @@ public interface IGameMaster {
     void drawCard(int amount);
     void healCard(Card card, int[] target);
     void attackCard(int attack, int defend);
+    void playCard(Card card, int location);
     void resurrectMinion();
     void nextTurn();
     void escapeConcede();

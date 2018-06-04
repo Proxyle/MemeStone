@@ -80,7 +80,7 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
         clientWebSocket.send(new ForfeitMessage());
     }
 
-    public void playCard(Card card, int[] location){
+    public void playCard(Card card, int location){
         clientWebSocket.send(new PlayCardMessage(card, location));
     }
     //TODO Message Methods
