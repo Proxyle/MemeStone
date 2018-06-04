@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 public interface IGameMaster {
     /*Login*/
-    void logIn(String name);
-    void signUp(String name);
+    void logIn(String name, String password);
+    void signUp(String name, String password);
     void registerGameGui(IClientGUI gui);
 
     /*MainMenu*/
@@ -19,15 +19,10 @@ public interface IGameMaster {
     void leaderboard();
     void exitGame();
     void getSettings();
-    void changeVolume();
-    void changeDisplay();
 
     /*Game*/
-    void drawCard(int amount);
-    void healCard(Card card, int[] target);
     void attackCard(int attack, int defend);
-    void playCard(Card card, int location);
-    void resurrectMinion();
+    void playCard(Card card, int[] location);
     void nextTurn();
     void escapeConcede();
 }
