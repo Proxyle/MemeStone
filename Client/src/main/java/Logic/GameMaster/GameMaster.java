@@ -5,73 +5,115 @@ import Models.Card.Card;
 import Models.User.IUser;
 import Models.Setting.Setting;
 import Models.User.User;
+import Websockets.Client.ClientMessageGenerator;
+import Websockets.Client.ClientWebSocket;
+import Websockets.Client.IClientMessageGenerator;
+import Websockets.Shared.interfaces.IClientGUI;
 
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 
-public class GameMaster implements IGameMaster {
+public class GameMaster implements IGameMaster, Observer {
     private IBoard board;
     private IUser user;
+    private IClientMessageGenerator generator;
+    private IClientGUI gui;
 
-    /*Login*/
-    public boolean logIn() {
-        return false;
+    public GameMaster() {
+        this.generator = new ClientMessageGenerator(new ClientWebSocket());
     }
 
-    public boolean signUp() {
-        return false;
+    /*Login*/
+    public void logIn(String name) {
+        generator.logInToServer(name);
+    }
+
+    public void signUp(String name) {
+        generator.registerPlayerOnServer(name);
+    }
+
+    @Override
+    public void registerGameGui(IClientGUI gui) {
+        this.gui = gui;
+    }
+
+    @Override
+    public void startGame() {
+        generator.startGame();
+    }
+
+    @Override
+    public void collection() {
+        generator.getCollection();
+    }
+
+    @Override
+    public void leaderboard() {
+        generator.getLeaderboard();
+    }
+
+    @Override
+    public void exitGame() {
+        generator.exitGame();
+    }
+
+    @Override
+    public void getSettings() {
+        generator.getSettings();
+    }
+
+    @Override
+    public void changeVolume() {
+        //this is will not be implemented
+    }
+
+    @Override
+    public void changeDisplay() {
+        //this is will not be implemented
+    }
+
+    @Override
+    public void drawCard(int amount) {
+        generator.drawCard();
+    }
+
+    @Override
+    public void healCard(Card card, int[] target) {
+        generator.healCard(card, target);
+    }
+
+    @Override
+    public void attackCard(int attack, int defend) {
+        generator.attackCard(attack, defend);
+    }
+
+    @Override
+    public void playCard(Card card, int location) {
+        generator.playCard(card, location);
+    }
+
+
+    @Override
+    public void resurrectMinion() {
+        generator.resurrectMinion();
+    }
+
+    @Override
+    public void nextTurn() {
+        generator.nextTurn();
+    }
+
+    @Override
+    public void escapeConcede() {
+        generator.escapeConcede();
     }
 
     /*Menu*/
-    public boolean startGame() {
-        return false;
-    }
 
-    public ArrayList<Card> collection() {
-        return null;
-    }
 
-    public ArrayList<User> leaderboard() {
-        return null;
-    }
+    @Override
+    public void update(Observable o, Object arg) {
 
-    public boolean exitGame() {
-        return false;
-    }
-
-    public Setting getSettings() {
-        return null;
-    }
-
-    public boolean changeVolume() {
-        return false;
-    }
-
-    public boolean changeDisplay() {
-        return false;
-    }
-
-    /*Game*/
-    public Card drawCard(int amount) {
-        return null;
-    }
-
-    public boolean healCard(Card target) {
-        return false;
-    }
-
-    public boolean attackCard(Card target) {
-        return false;
-    }
-
-    public Card resurrectMinion() {
-        return null;
-    }
-
-    public boolean nextTurn() {
-        return false;
-    }
-
-    public boolean escapeConcede() {
-        return false;
     }
 }

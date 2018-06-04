@@ -86,8 +86,10 @@ public class sceneLogin{
     }
 
     public void signIn(){
+
         if(true){
-            controller.home();
+            System.out.println(txtUsername.getText());
+            controller.home(txtUsername.getText());
         }
     }
 

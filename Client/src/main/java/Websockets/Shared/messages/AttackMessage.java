@@ -1,18 +1,18 @@
 package Websockets.Shared.messages;
 
 public class AttackMessage {
-    int[] attacker;
-    int[] defender;
+    int attacker;
+    int defender;
 
-    public int[] getAttacker() {
+    public int getAttacker() {
         return attacker;
     }
 
-    public int[] getDefender() {
+    public int getDefender() {
         return defender;
     }
 
-    public AttackMessage(int[] attacker, int[] defender){
+    public AttackMessage(int attacker, int defender){
         this.attacker = attacker;
         this.defender = defender;
     }
