@@ -2,21 +2,18 @@ package Logic.GameMaster;
 
 import Models.Board.IBoard;
 import Models.Card.Card;
-import Models.User.IUser;
-import Models.Setting.Setting;
-import Models.User.User;
+import Models.User.IPlayer;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.IClientMessageGenerator;
 import Websockets.Shared.interfaces.IClientGUI;
 
-import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
 public class GameMaster implements IGameMaster, Observer {
     private IBoard board;
-    private IUser user;
+    private IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
 

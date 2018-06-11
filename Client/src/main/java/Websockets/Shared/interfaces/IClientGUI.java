@@ -1,7 +1,7 @@
 package Websockets.Shared.interfaces;
 
 import Models.Card.Card;
-import Models.User.User;
+import Models.User.Player;
 import javafx.scene.Scene;
 
 public interface IClientGUI {
@@ -17,5 +17,5 @@ public interface IClientGUI {
 
     void processUpdateBoard(Card[][] board);
 
-    void processUpdatePlayer(User player);
+    void processUpdatePlayer(Player player);
 }

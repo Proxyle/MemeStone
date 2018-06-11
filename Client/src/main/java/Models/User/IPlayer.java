@@ -6,7 +6,7 @@ import Models.Card.Deck;
 import Models.Quest.Quest;
 import java.util.List;
 
-public interface IUser {
+public interface IPlayer {
     List<Deck> getDecks();
     List<Quest> getQuests();
     String getDisplaySetting();

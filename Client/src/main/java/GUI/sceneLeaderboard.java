@@ -1,6 +1,6 @@
 package GUI;
 
-import Models.User.User;
+import Models.User.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class sceneLeaderboard{
     //Properties
-    ArrayList<User> leaderboard;
+    ArrayList<Player> leaderboard;
     double buttonWidth = 150;
     Label rank;
     Label name;
@@ -25,7 +25,7 @@ public class sceneLeaderboard{
     Scene scene;
     sceneController controller;
 
-    public sceneLeaderboard(sceneController controller, ArrayList<User> leadboard){
+    public sceneLeaderboard(sceneController controller, ArrayList<Player> leadboard){
         this.leaderboard = leadboard;
         scene = makeScene();
         this.controller = controller;
@@ -66,7 +66,7 @@ public class sceneLeaderboard{
 
         int i = 2;
         if (leaderboard != null) {
-            for (User u : leaderboard) {
+            for (Player u : leaderboard) {
                 rank = new Label(String.valueOf(u.getRanking()));
                 name = new Label(u.getUsername());
                 gridLeaderboard.add(rank, 1, i);

@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003cf37a-72ba-413f-b7c0-b34dab95ca8e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User/IUser.java" afterPath="$PROJECT_DIR$/src/main/java/Models/User/IPlayer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User/User.java" afterPath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IDataContext.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IDataContext.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,22 +52,22 @@
               <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1425#1426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +110,8 @@
       <file leaf-file-name="sceneController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="232">
+              <caret line="128" column="31" lean-forward="true" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -197,6 +205,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
@@ -351,12 +376,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528704356938</updated>
-      <workItem from="1528704358189" duration="2595000" />
+      <workItem from="1528704358189" duration="3743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2595000" />
+    <option name="totallyTimeSpent" value="3743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -417,7 +442,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -530,30 +555,30 @@
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="232">
+          <caret line="128" column="31" lean-forward="true" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
           <folding />
         </state>
       </provider>

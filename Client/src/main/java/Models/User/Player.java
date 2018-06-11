@@ -7,7 +7,7 @@ import Models.Quest.Quest;
 
 import java.util.List;
 
-public class User {
+public class Player {
     private List<Deck> decks;
     private List<Quest> quests;
     private String displaySetting;
@@ -20,7 +20,7 @@ public class User {
 
 
 
-    public User(List<Deck> decks, List<Quest> quests, String displaySetting, int ranking, String username, String password, String email, Collection collection) {
+    public Player(List<Deck> decks, List<Quest> quests, String displaySetting, int ranking, String username, String password, String email, Collection collection) {
         this.decks = decks;
         this.quests = quests;
         this.displaySetting = displaySetting;
@@ -31,7 +31,7 @@ public class User {
         this.collection = collection;
     }
 
-    public User() {
+    public Player() {
     }
 
     public List<Deck> getDecks() {

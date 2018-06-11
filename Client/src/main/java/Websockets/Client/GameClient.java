@@ -1,7 +1,7 @@
 package Websockets.Client;
 
 import Models.Card.Card;
-import Models.User.User;
+import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;
 
 public class GameClient implements IGameClient {
@@ -44,7 +44,7 @@ public class GameClient implements IGameClient {
     }
 
     @Override
-    public void handleUpdatePlayer(User player) {
+    public void handleUpdatePlayer(Player player) {
         clientGUI.processUpdatePlayer(player);
     }
 

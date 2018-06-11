@@ -1,11 +1,7 @@
 package Logic.GameMaster;
 
 import Models.Card.Card;
-import Models.Setting.Setting;
-import Models.User.User;
 import Websockets.Shared.interfaces.IClientGUI;
-
-import java.util.ArrayList;
 
 public interface IGameMaster {
     /*Login*/

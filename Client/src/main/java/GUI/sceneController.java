@@ -4,7 +4,7 @@ import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Setting.Setting;
-import Models.User.User;
+import Models.User.Player;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.GameClient;
@@ -29,7 +29,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     IMemestoneGUI application;
     IGameClient gameClient;
     IGameMaster gameMaster;
-    ArrayList<User> leaderboardUsers;
+    ArrayList<Player> leaderboardUsers;
 
     public sceneController(IMemestoneGUI application){
         super(application);
@@ -153,7 +153,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     @Override
-    public void processUpdatePlayer(User player) {
+    public void processUpdatePlayer(Player player) {
         Platform.runLater(()->{
 
         });

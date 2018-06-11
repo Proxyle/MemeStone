@@ -3,13 +3,13 @@ package Websockets.Shared.messages;
 import Models.User.*;
 
 public class UpdatePlayerMessage {
-    private User player;
+    private Player player;
 
-    public User getPlayer(){
+    public Player getPlayer(){
         return player;
     }
 
-    public UpdatePlayerMessage(User player){
+    public UpdatePlayerMessage(Player player){
         this.player = player;
     }
 }
