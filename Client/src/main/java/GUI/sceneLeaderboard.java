@@ -64,15 +64,10 @@ public class sceneLeaderboard{
 
         int i = 1;
         if (leaderboard != null) {
-<<<<<<< HEAD
             for (Player u : leaderboard) {
                 rank = new Label(String.valueOf(u.getRanking()));
                 name = new Label(u.getUsername());
-=======
-            for (IUser u : leaderboard) {
-                Label rank = new Label(String.valueOf(u.getRanking()));
-                Label name = new Label(u.getUsername());
->>>>>>> 03d58f2b1e7b1318f58440993b46d7c48ad8d939
+
                 gridLeaderboard.add(rank, 1, i);
                 gridLeaderboard.add(name, 2, i);
                 i++;
