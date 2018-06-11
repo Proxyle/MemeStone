@@ -25,46 +25,36 @@ public class GameClient implements IGameClient {
 
     @Override
     public void handlePlayerTurn() {
-
+        clientGUI.processRoundStart();
     }
 
     @Override
     public void handleGameEnd(String winner) {
-        
+        clientGUI.processGameEnd(winner);
     }
 
     @Override
     public void handlePlayerActionFail() {
-
-    }
-
-    @Override
-    public void handleRoundStart() {
-
+        clientGUI.processPlayerActionFail();
     }
 
     @Override
     public void handleUpdateBoard(Card[][] board) {
-
+        clientGUI.processUpdateBoard(board);
     }
 
     @Override
     public void handleUpdatePlayer(User player) {
-
+        clientGUI.processUpdatePlayer(player);
     }
 
     @Override
     public void handlePlayerRegistrationResponse(boolean success) {
-
-    }
-
-    @Override
-    public void processRoundStarted() {
-
+        clientGUI.processRegistrationResponse(success);
     }
 
     @Override
     public void handlePlayerRegistered(String playerName) {
-
+        clientGUI.processPlayerRegisterd(playerName);
     }
 }

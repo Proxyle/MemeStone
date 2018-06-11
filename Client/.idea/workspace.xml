@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003cf37a-72ba-413f-b7c0-b34dab95ca8e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GameEndMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerActionFailMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RegistrationResultMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RoundStartMessageHandler.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/skg.memestone.client.iml" afterPath="$PROJECT_DIR$/skg.memestone.client.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,16 +37,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="102">
+              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#524#525#0" expanded="true" />
                 <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1286#1287#0" expanded="true" />
+                <element signature="e#1361#1362#0" expanded="true" />
+                <element signature="e#1421#1422#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGameClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IClientGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerTurnMessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sceneController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,16 +131,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerActionFailMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GameEndMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RegistrationResultMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RoundStartMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdateBoardMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdatePlayerMessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
       </list>
     </option>
   </component>
@@ -297,12 +351,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528704356938</updated>
-      <workItem from="1528704358189" duration="983000" />
+      <workItem from="1528704358189" duration="2595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="983000" />
+    <option name="totallyTimeSpent" value="2595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -356,14 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -431,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdatePlayerMessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -448,6 +484,24 @@
           <folding>
             <element signature="e#372#373#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,15 +514,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#524#525#0" expanded="true" />
             <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
