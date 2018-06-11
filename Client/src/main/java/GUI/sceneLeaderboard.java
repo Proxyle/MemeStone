@@ -1,6 +1,10 @@
 package GUI;
 
+<<<<<<< HEAD
 import Models.User.Player;
+=======
+import Models.User.IUser;
+>>>>>>> 03d58f2b1e7b1318f58440993b46d7c48ad8d939
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -10,25 +14,27 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+
 import java.util.ArrayList;
 
 public class sceneLeaderboard{
     //Properties
+
     ArrayList<Player> leaderboard;
+
     double buttonWidth = 150;
-    Label rank;
-    Label name;
 
     //Buttons
     Button btnBack = new Button("Back");
-    TableView tableLeaderboard = new TableView();
     Scene scene;
     sceneController controller;
 
     public sceneLeaderboard(sceneController controller, ArrayList<Player> leadboard){
         this.leaderboard = leadboard;
+
         scene = makeScene();
         this.controller = controller;
+        this.leaderboard = leaderboard;
     }
 
     public Scene makeScene(){
@@ -56,25 +62,22 @@ public class sceneLeaderboard{
 
         root.getChildren().add(layoutPane);
 
-
-        // Leaderboard
-        rank = new Label("Rank");
-        gridLeaderboard.add(rank, 1,1);
-
-        name = new Label("Name");
-        gridLeaderboard.add(name, 2,1);
-
-        int i = 2;
+        int i = 1;
         if (leaderboard != null) {
+<<<<<<< HEAD
             for (Player u : leaderboard) {
                 rank = new Label(String.valueOf(u.getRanking()));
                 name = new Label(u.getUsername());
+=======
+            for (IUser u : leaderboard) {
+                Label rank = new Label(String.valueOf(u.getRanking()));
+                Label name = new Label(u.getUsername());
+>>>>>>> 03d58f2b1e7b1318f58440993b46d7c48ad8d939
                 gridLeaderboard.add(rank, 1, i);
                 gridLeaderboard.add(name, 2, i);
                 i++;
             }
         }
-
 
         // Button to go back to sceneHomeScreen
         Tooltip tooltipCollection =
@@ -86,8 +89,8 @@ public class sceneLeaderboard{
                 backButton();
             }
         });
-
         vbox.getChildren().addAll(btnBack);
+
 
         // Define title and assign the scene for main window
         return scene;
