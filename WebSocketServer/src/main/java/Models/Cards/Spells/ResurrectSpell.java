@@ -4,10 +4,6 @@ import Logic.GameLobby.IGameLogic;
 
 public class ResurrectSpell extends Spell {
 
-    public ResurrectSpell(){
-        super();
-    }
-
     private int ressurectPoints;
 
     public ResurrectSpell(String name, String context, int cost, int ressurectPoints) {
@@ -21,6 +17,7 @@ public class ResurrectSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Resurrection card");
         return false;
     }
 

@@ -26,8 +26,6 @@ public abstract class Card {
         this.cost = cost;
     }
 
-    public Card() {
-    }
 
     public abstract boolean play(IGameLogic gameLogic, int[] location);
 

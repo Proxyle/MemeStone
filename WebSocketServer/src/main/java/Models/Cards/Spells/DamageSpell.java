@@ -6,10 +6,6 @@ public class DamageSpell extends Spell {
 
     private int damagePoints;
 
-    public DamageSpell(){
-        super();
-    }
-
     public DamageSpell(String name, String context, int cost, int damagePoints) {
         super(name, context, cost);
         this.damagePoints = damagePoints;
@@ -21,6 +17,7 @@ public class DamageSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Damage Spell");
         return gameLogic.damageTarget(damagePoints, location);
     }
 

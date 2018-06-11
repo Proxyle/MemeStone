@@ -4,6 +4,8 @@ import Models.Cards.Card;
 import Models.Cards.Minion;
 import Models.Cards.Spells.*;
 
+import java.lang.reflect.Type;
+
 public class PlayCardMessage {
     Minion minion;
     DamageSpell damageSpell;
@@ -54,5 +56,23 @@ public class PlayCardMessage {
     public PlayCardMessage(ResurrectSpell resurrectSpell, int[] location){
         this.resurrectSpell = resurrectSpell;
         this.location = location;
+    }
+
+    public PlayCardMessage(Card card, int[] location){
+        String type = card.getClass().getName();
+        switch(type){
+            case "Minion":
+                minion = (Minion) card;
+            case "DamageSpell":
+                damageSpell = (DamageSpell) card;
+            case "DrawSpell":
+                drawSpell = (DrawSpell) card;
+            case "HealSpell":
+                healSpell = (HealSpell) card;
+            case "ResurrectSpell":
+                resurrectSpell = (ResurrectSpell) card;
+            default:
+                return;
+        }
     }
 }

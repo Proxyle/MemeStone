@@ -3,6 +3,7 @@ package Communication.MessageGenerator;
 import Communication.WebSockets.IServerWebSocket;
 import Messages.ServerToClient.*;
 import Models.Cards.Card;
+import Models.Cards.Minion;
 import Models.Player;
 
 public class MessageGenerator implements IMessageGenerator {
@@ -45,7 +46,7 @@ public class MessageGenerator implements IMessageGenerator {
     }
 
     @Override
-    public void notifyUpdateBoard(Card[][] board) {
+    public void notifyUpdateBoard(Minion[][] board) {
         UpdateBoardMessage msg = new UpdateBoardMessage(board);
         serverSocket.broadcast(msg);
     }
@@ -53,12 +54,6 @@ public class MessageGenerator implements IMessageGenerator {
     @Override
     public void notifyActionFail(String sessionId) {
         PlayerActionFailMessage msg = new PlayerActionFailMessage();
-        serverSocket.sendTo(sessionId, msg);
-    }
-
-    @Override
-    public void notifyPlayerId(String sessionId, int id) {
-        PlayerIdMessage msg = new PlayerIdMessage(id);
         serverSocket.sendTo(sessionId, msg);
     }
 

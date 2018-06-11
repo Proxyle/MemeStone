@@ -24,8 +24,29 @@ public class Deck {
         this.drawSpells = drawSpells;
         this.healSpells = healSpells;
         this.resurrectSpells = resurrectSpells;
+        fixNull();
     }
+
+    private void fixNull(){
+        if (minions == null){
+            minions = new ArrayList<>();
+        }
+        if (damageSpells == null){
+            damageSpells = new ArrayList<>();
+        }
+        if (drawSpells == null){
+            drawSpells = new ArrayList<>();
+        }
+        if (healSpells == null){
+            healSpells = new ArrayList<>();
+        }
+        if (resurrectSpells == null){
+            resurrectSpells = new ArrayList<>();
+        }
+    }
+
     public Card getCard(int id){
+        fixNull();
         if (id < minions.size())
             return minions.get(id);
         id -= minions.size();
@@ -44,10 +65,13 @@ public class Deck {
     }
 
     public int getDeckSize(){
+        fixNull();
+
         return minions.size()+damageSpells.size()+drawSpells.size()+healSpells.size()+resurrectSpells.size();
     }
 
     public void removeCard(Card c){
+        fixNull();
         for (Card card : minions){
             if (c.getName().equals(card.getName())){
                 minions.remove(card);

@@ -59,6 +59,7 @@ public class ServerWebSocket implements IServerWebSocket {
     public void onText(String message, Session session) {
         String sessionId = session.getId();
         System.out.println(session.getId() + " send message " + message);
+        System.out.println(message.getBytes().length);
         EncapsulatingMessage msg = getGson().fromJson(message, EncapsulatingMessage.class);
         getHandler().processMessage(sessionId, msg.getMessageType(), msg.getMessageData());
     }
@@ -71,8 +72,12 @@ public class ServerWebSocket implements IServerWebSocket {
 
     @OnError
     public void onError(Throwable cause, Session session) {
-        System.out.print("Error: ");
+        System.out.println("Error: ");
         System.out.println(cause.getMessage());
+        System.out.println();
+        System.out.println(cause.getCause());
+        System.out.println();
+        System.out.println("End of Error");
     }
 
     public void sendTo(String sessionId, Object object)

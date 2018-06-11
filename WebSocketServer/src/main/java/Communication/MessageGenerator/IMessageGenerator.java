@@ -1,6 +1,7 @@
 package Communication.MessageGenerator;
 
 import Models.Cards.Card;
+import Models.Cards.Minion;
 import Models.Player;
 
 public interface IMessageGenerator {
@@ -10,8 +11,7 @@ public interface IMessageGenerator {
     void notifyStartRound();
     void notifyPlayerTurn(String sessionId);
     void notifyUpdatePlayer(String sessionId, Player player);
-    void notifyUpdateBoard(Card[][] board);
+    void notifyUpdateBoard(Minion[][] board);
     void notifyActionFail(String sessionId);
-    void notifyPlayerId (String sessionId, int id);
     void notifyGameEnd (String winningName);
 }

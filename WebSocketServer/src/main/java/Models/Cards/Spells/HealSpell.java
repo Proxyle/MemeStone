@@ -4,10 +4,6 @@ import Logic.GameLobby.IGameLogic;
 
 public class HealSpell extends Spell {
 
-    public HealSpell(){
-        super();
-    }
-
     private int healPoints;
 
     public HealSpell(String name, String context, int cost, int healPoints) {
@@ -21,6 +17,7 @@ public class HealSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Heal spell");
         return gameLogic.damageTarget(-healPoints, location);
     }
 

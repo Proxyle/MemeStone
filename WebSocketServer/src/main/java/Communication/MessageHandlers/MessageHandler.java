@@ -24,30 +24,36 @@ public class MessageHandler implements IMessageHandler {
             case "RegisterPlayerMessage":
                 System.out.println("RegisterPlayedMessage parsing started");
                 RegisterPlayerMessage registerPlayerMessage = gson.fromJson(data, RegisterPlayerMessage.class);
-                System.out.print("RegisterPlayerMessage parsing finished");
+                System.out.println("RegisterPlayerMessage parsing finished");
                 registerPlayer(sessionId, registerPlayerMessage.getUserName(), registerPlayerMessage.getDeck());
+                return;
             case "AttackMessage":
                 System.out.println("AttackMessage parsing started");
                 AttackMessage attackMessage = gson.fromJson(data, AttackMessage.class);
                 System.out.println("AttackMessage parsing finished");
                 attack(sessionId, attackMessage.getAttacker(), attackMessage.getDefender());
+                return;
             case "EndTurnMessage":
                 endTurn(sessionId);
+                return;
             case "PlayCardMessage":
                 System.out.println("PlayCardMessage parsing started");
                 PlayCardMessage playCardMessage = gson.fromJson(data, PlayCardMessage.class);
                 System.out.println("PlayCardMessage parsing finished");
                 playCard(sessionId, playCardMessage.getCard(), playCardMessage.getLocation());
+                return;
             default:
                 return;
         }
     }
 
     private void registerPlayer(String sessionId, String userName, Deck deck){
+        System.out.println("RegisterPlayer");
         gameLogic.registerNewPlayer(sessionId, userName, deck);
+        System.out.println("End of RegisterPlayer");
     }
 
-    private void attack(String sessionId, int[] attacker, int[] defender){
+    private void attack(String sessionId, int attacker, int defender){
         gameLogic.attack(sessionId, attacker, defender);
     }
 

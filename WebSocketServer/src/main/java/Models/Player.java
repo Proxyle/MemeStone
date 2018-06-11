@@ -9,6 +9,7 @@ import Models.Cards.Spells.HealSpell;
 import Models.Cards.Spells.ResurrectSpell;
 
 import java.awt.dnd.DragGestureEvent;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -30,6 +31,15 @@ public class Player {
         return sessionId;
     }
 
+    public ArrayList<Card> getCards(){
+        ArrayList<Card> hand = (ArrayList<Card>)minionInHand.clone();
+        hand.addAll(damageSpellsInHand);
+        hand.addAll(drawSpellsInHand);
+        hand.addAll(healSpellsInHand);
+        hand.addAll(resurrectSpellsInHand);
+        return hand;
+    }
+
     public Player(String sessionId, String userName, Deck deck){
         this.sessionId = sessionId;
         this.userName = userName;
@@ -38,21 +48,50 @@ public class Player {
     }
 
     public void drawCard(){
-
-        if (deck.getDeckSize() != 0) {
+        if (deck.getDeckSize() != 0 && getHandSize() < 6) {
             Random r = new Random();
             Card c = deck.getCard(r.nextInt(deck.getDeckSize()));
-            //add card to hand
+
+            addCard(c);
+
             deck.removeCard(c);
         }
     }
 
+    private void addCard(Card c){
+        Type t = c.getClass();
+        if (t == Minion.class){
+            minionInHand.add((Minion)c);
+            return;
+        }
+        else if(t == DamageSpell.class){
+            damageSpellsInHand.add((DamageSpell)c);
+            return;
+        }
+        else if(t == DrawSpell.class){
+            drawSpellsInHand.add((DrawSpell) c);
+            return;
+        }
+        else if(t == HealSpell.class){
+            healSpellsInHand.add((HealSpell) c);
+            return;
+        }
+        else if(t == ResurrectSpell.class){
+            resurrectSpellsInHand.add((ResurrectSpell) c);
+            return;
+        }
+    }
+
+
     public boolean playCard(Card card, IGameLogic gameLogic, int[] location){
+        System.out.println("Trying to play card");
         ArrayList<Card> hand = (ArrayList<Card>)minionInHand.clone();
         hand.addAll(damageSpellsInHand); hand.addAll(drawSpellsInHand); hand.addAll(healSpellsInHand); hand.addAll(resurrectSpellsInHand);
+        System.out.println("Trying to find the card in hand");
         if (hand.size() != 0) {
             for (Card c : hand) {
                 if (c.getName().equals(card.getName())) {
+                    System.out.println("Card found, playing card");
                     if (card.play(gameLogic, location)) {
                         removeCard(c);
                         //hand.remove(c);
@@ -96,6 +135,10 @@ public class Player {
                 return;
             }
         }
+    }
+
+    public int getHandSize(){
+        return minionInHand.size()+damageSpellsInHand.size()+drawSpellsInHand.size()+healSpellsInHand.size()+resurrectSpellsInHand.size();
     }
 
 }

@@ -6,10 +6,6 @@ public class DrawSpell extends Spell {
 
     private int drawPoints;
 
-    public DrawSpell(){
-        super();
-    }
-
     public DrawSpell(String name, String context, int cost, int drawPoints) {
         super(name, context, cost);
         this.drawPoints = drawPoints;
@@ -21,6 +17,7 @@ public class DrawSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Draw spell");
         gameLogic.drawCard(drawPoints);
         return true;
     }

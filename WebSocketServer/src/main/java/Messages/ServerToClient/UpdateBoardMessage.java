@@ -1,15 +1,16 @@
 package Messages.ServerToClient;
 
 import Models.Cards.Card;
+import Models.Cards.Minion;
 
 public class UpdateBoardMessage {
-    Card[][] board;
+    Minion[][] board;
 
-    public Card[][] getBoard() {
+    public Minion[][] getBoard() {
         return board;
     }
 
-    public UpdateBoardMessage(Card[][] board){
+    public UpdateBoardMessage(Minion[][] board){
         this.board = board;
     }
 }
