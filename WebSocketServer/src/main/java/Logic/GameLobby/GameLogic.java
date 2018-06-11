@@ -22,11 +22,13 @@ public class GameLogic implements IGameLogic {
         this.messageGenerator = messageGenerator;
     }
 
-    public void registerNewPlayer(String userName, String sessionId, Deck deck){
+    public void registerNewPlayer(String sessionId, String userName, Deck deck){
+        System.out.print("registerNewPlayer has been called");
         if(players.size() < 2)
         {
             if(checkPlayerNameAlreadyExists(userName)){
                 messageGenerator.notifyRegisterResult(sessionId, false);
+                System.out.println(" but name already exists!");
                 return;
             }
 
@@ -34,11 +36,13 @@ public class GameLogic implements IGameLogic {
             players.add(p);
             messageGenerator.notifyRegisterResult(sessionId, true);
             messageGenerator.notifyPlayerAdded(sessionId, userName);
+            System.out.println(" and succeeded!");
             checkStartingCondition();
         }
         else
         {
             messageGenerator.notifyRegisterResult(sessionId, false);
+            System.out.println(" but failed!");
         }
     }
 
@@ -56,6 +60,7 @@ public class GameLogic implements IGameLogic {
     private void checkStartingCondition() {
         if (players.size() == 2) {
             //Start the game
+            System.out.println("Round starts");
             startNewRound();
         }
     }
@@ -78,16 +83,22 @@ public class GameLogic implements IGameLogic {
     }
 
     public void endTurn(String sessionId){
-        if (checkPlayerTurn(sessionId))
-        currentPlayer = 1-currentPlayer;
-        startOfTurn();
+        if (checkPlayerTurn(sessionId)) {
+            System.out.println("End turn has been called");
+            currentPlayer = 1 - currentPlayer;
+            startOfTurn();
+        }
     }
 
     private void startOfTurn(){
+        System.out.println("Start turn");
         Player p = players.get(currentPlayer);
+        System.out.println("Draw card");
         p.drawCard();
+        System.out.println("NotifyPlayer");
         messageGenerator.notifyUpdatePlayer(p.getSessionId(), p);
         messageGenerator.notifyPlayerTurn(p.getSessionId());
+        System.out.println("Done!");
     }
 
     public void playCard(String sessionId, Card card, int[] location){
