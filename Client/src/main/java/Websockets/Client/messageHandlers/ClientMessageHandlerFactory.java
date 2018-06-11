@@ -1,9 +1,10 @@
 package Websockets.Client.messageHandlers;
 
 import Websockets.Client.IGameClient;
-import Websockets.Shared.MessageHandler;
 import Websockets.Shared.interfaces.IMessageHandler;
 import Websockets.Shared.interfaces.IMessageHandlerFactory;
+import Websockets.Shared.messages.PlayerHasRegisteredMessage;
+import Websockets.Shared.messages.PlayerTurnMessage;
 
 public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
 
@@ -18,14 +19,9 @@ public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
                 //TODO implement message;
                 break;
             case "PlayerHasRegisterdMessage":
-                gc.handlePlayerRegistrationResponse(true);
-                break;
-            case "PlayerIdMessage":
-                //TODO implement message;
-                break;
+                return new PlayerHasRegisteredMessageHandler(gc);
             case "PlayerTurnMessage":
-                //TODO implement message;
-                break;
+                return new PlayerTurnMessageHandler(gc);
             case "RegistrationResultMessage":
                 //TODO implement message;
                 break;

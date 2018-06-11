@@ -93,7 +93,6 @@ public class GameMaster implements IGameMaster, Observer {
         generator.playCard(card, location);
     }
 
-
     @Override
     public void resurrectMinion() {
         generator.resurrectMinion();
