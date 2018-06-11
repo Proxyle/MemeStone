@@ -25,11 +25,11 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     /*Login*/
-    public void logIn(String name) {
+    public void logIn(String name, String password) {
         generator.logInToServer(name);
     }
 
-    public void signUp(String name) {
+    public void signUp(String name, String password) {
         generator.registerPlayerOnServer(name);
     }
 
@@ -64,38 +64,13 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public void changeVolume() {
-        //this is will not be implemented
-    }
-
-    @Override
-    public void changeDisplay() {
-        //this is will not be implemented
-    }
-
-    @Override
-    public void drawCard(int amount) {
-        generator.drawCard();
-    }
-
-    @Override
-    public void healCard(Card card, int[] target) {
-        generator.healCard(card, target);
-    }
-
-    @Override
     public void attackCard(int attack, int defend) {
         generator.attackCard(attack, defend);
     }
 
     @Override
-    public void playCard(Card card, int location) {
+    public void playCard(Card card, int[] location) {
         generator.playCard(card, location);
-    }
-
-    @Override
-    public void resurrectMinion() {
-        generator.resurrectMinion();
     }
 
     @Override

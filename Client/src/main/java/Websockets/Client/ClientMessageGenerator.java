@@ -1,9 +1,9 @@
 package Websockets.Client;
 
+
 import Models.Card.Card;
-import Websockets.Shared.interfaces.IClientGUI;
 import Websockets.Shared.messages.*;
-import org.eclipse.persistence.jaxb.javamodel.Helper;
+
 
 public class ClientMessageGenerator implements IClientMessageGenerator {
     private Websockets.Client.IClientWebSocket clientWebSocket;

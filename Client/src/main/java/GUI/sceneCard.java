@@ -17,9 +17,9 @@ public class sceneCard{
     String name;
     String imgUrl;
     String summary;
-    int healthPoints;
-    int energyPoints;
-    int attackPoints;
+    Integer healthPoints;
+    Integer energyPoints;
+    Integer attackPoints;
 
     //Buttons
     Label lblName;
@@ -29,48 +29,55 @@ public class sceneCard{
     Label lblSummary;
     ImageView iIcon = new ImageView();
 
-    /*public sceneCard(String name, String imgUrl, String summary, int healthPoints, int energyPoints, int attackPoints) {
+    public sceneCard(String name, String imgUrl, String summary, int healthPoints, int energyPoints, int attackPoints) {
         this.name = name;
         this.imgUrl = imgUrl;
         this.summary = summary;
         this.healthPoints = healthPoints;
         this.energyPoints = energyPoints;
         this.attackPoints = attackPoints;
-    }*/
+    }
+
+    public sceneCard(String name, String imgUrl, String summary, int energyPoints) {
+        this.name = name;
+        this.imgUrl = imgUrl;
+        this.summary = summary;
+        this.energyPoints = energyPoints;
+    }
 
     public GridPane getGrid(){
         //Define grid pane
         GridPane grid = new GridPane();
         grid.setVgap(10);
         grid.setPadding(new Insets(10));
-
-        // Create the scene
-        Group root = new Group();
-        Scene scene = new Scene(root, 120, 200);
-
-        root.getChildren().add(grid);
+        grid.prefWidth(120);
+        grid.prefHeight(200);
 
         // Add labels to grid
-        lblName = new Label("Good Guy Greg");
+        lblName = new Label(name);
         grid.add(lblName, 2,1,1,1);
 
-        lblEnergyPoints = new Label(String.valueOf(1));
+        lblEnergyPoints = new Label(String.valueOf(energyPoints));
         grid.add(lblEnergyPoints, 1,1,1,1);
 
-        lblHealthPoints = new Label(String.valueOf(10));
-        grid.add(lblHealthPoints, 1,4,1,1);
+        if (healthPoints == null) {
+            lblHealthPoints = new Label(String.valueOf(healthPoints));
+            grid.add(lblHealthPoints, 1, 4, 1, 1);
+        }
 
-        lblAttackPoints = new Label(String.valueOf(5));
-        grid.add(lblAttackPoints, 3,4,1,1);
+        if (attackPoints == null) {
+            lblAttackPoints = new Label(String.valueOf(attackPoints));
+            grid.add(lblAttackPoints, 3, 4, 1, 1);
+        }
 
-        lblSummary = new Label("Good Guy Greg (GGG) is an advice animal image macro series featuring a photo of a square-jawed man smiling at the camera with a marijuana cigarette in his mouth.");
+        lblSummary = new Label(summary);
         lblSummary.setMaxSize(100, 50);
         lblSummary.setWrapText(true);
         //TODO change font size of label so it's readable
         grid.add(lblSummary, 2,3,1,1);
 
         // Add Icon
-        Image imgLoad = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg");
+        Image imgLoad = new Image(imgUrl);
         iIcon.setImage(imgLoad);
         iIcon.setFitHeight(60);
         iIcon.setFitWidth(80);
@@ -78,12 +85,5 @@ public class sceneCard{
 
         // Define title and assign the scene for main window
         return grid;
-    }
-
-    public void newDeck() {
-
-    }
-    public void editDeck() {
-
     }
 }

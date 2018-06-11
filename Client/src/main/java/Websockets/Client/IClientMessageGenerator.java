@@ -16,7 +16,7 @@ public interface IClientMessageGenerator {
     void resurrectMinion();
     void nextTurn();
     void escapeConcede();
-    void playCard(Card card, int location);
+    void playCard(Card card, int[] location);
 
     //TODO Messages
 }

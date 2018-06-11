@@ -15,7 +15,7 @@ public class MemestoneGUI extends Application implements IMemestoneGUI{
     public void start(Stage primaryStage) throws Exception {
         window = primaryStage;
         controller = new sceneController(this);
-        primaryStage.setTitle("Color Clicker");
+        primaryStage.setTitle("Memestone");
         controller.login();
         primaryStage.show();
     }

@@ -1,5 +1,7 @@
 package GUI;
 
+import Logic.GameMaster.IGameMaster;
+import Models.Setting.Setting;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -26,10 +28,14 @@ public class sceneSettings{
     Button btnBack = new Button("Back");
     Scene scene;
     sceneController controller;
+    Setting settings;
+    IGameMaster gameMaster;
 
-    public sceneSettings(sceneController controller){
+    public sceneSettings(sceneController controller, Setting settings, IGameMaster gameMaster){
         scene = makeScene();
         this.controller = controller;
+        this.settings = settings;
+        this.gameMaster =  gameMaster;
     }
 
     public Scene makeScene(){
@@ -91,7 +97,8 @@ public class sceneSettings{
     }
 
     public void applyChanges() {
-
+        gameMaster.changeDisplay();
+        gameMaster.changeVolume();
     }
 
 }
