@@ -1,11 +1,14 @@
 package Models.Cards.Spells;
 
 import Logic.GameLobby.IGameLogic;
-import Models.Cards.Card;
 
 public class DamageSpell extends Spell {
 
     private int damagePoints;
+
+    public DamageSpell(){
+        super();
+    }
 
     public DamageSpell(String name, String context, int cost, int damagePoints) {
         super(name, context, cost);

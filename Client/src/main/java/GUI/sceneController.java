@@ -88,7 +88,9 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     @Override
     public void processRegistrationResponse(boolean resp) {
+        Platform.runLater(()->{
 
+        });
     }
 
     @Override
@@ -99,13 +101,13 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
                 public void run() {
                     //TODO startRound();
                 }
-            },5000);
+            },5);
         });
     }
 
     @Override
-    public void processPlayerRegisterd() {
-        //TODO
+    public void processPlayerRegisterd(String name) {
+
     }
 
     public void processPlayerRegisterd(boolean resp) {
@@ -124,6 +126,36 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     @Override
     public void Draw(Scene guiScene) {
+        Platform.runLater(()->{
 
+        });
+    }
+
+    @Override
+    public void processGameEnd(String winner) {
+        Platform.runLater(()->{
+
+        });
+    }
+
+    @Override
+    public void processPlayerActionFail() {
+        Platform.runLater(()->{
+
+        });
+    }
+
+    @Override
+    public void processUpdateBoard(Card[][] board) {
+        Platform.runLater(()->{
+
+        });
+    }
+
+    @Override
+    public void processUpdatePlayer(User player) {
+        Platform.runLater(()->{
+
+        });
     }
 }

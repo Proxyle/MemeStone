@@ -1,5 +1,7 @@
 package Websockets.Client;
 
+import Models.Card.Card;
+import Models.User.User;
 import Websockets.Shared.interfaces.IClientGUI;
 
 public class GameClient implements IGameClient {
@@ -22,17 +24,37 @@ public class GameClient implements IGameClient {
     }
 
     @Override
-    public void handlePlayerRegistrationResponse(boolean success) {
-
+    public void handlePlayerTurn() {
+        clientGUI.processRoundStart();
     }
 
     @Override
-    public void processRoundStarted() {
+    public void handleGameEnd(String winner) {
+        clientGUI.processGameEnd(winner);
+    }
 
+    @Override
+    public void handlePlayerActionFail() {
+        clientGUI.processPlayerActionFail();
+    }
+
+    @Override
+    public void handleUpdateBoard(Card[][] board) {
+        clientGUI.processUpdateBoard(board);
+    }
+
+    @Override
+    public void handleUpdatePlayer(User player) {
+        clientGUI.processUpdatePlayer(player);
+    }
+
+    @Override
+    public void handlePlayerRegistrationResponse(boolean success) {
+        clientGUI.processRegistrationResponse(success);
     }
 
     @Override
     public void handlePlayerRegistered(String playerName) {
-
+        clientGUI.processPlayerRegisterd(playerName);
     }
 }

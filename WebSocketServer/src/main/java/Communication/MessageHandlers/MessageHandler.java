@@ -22,15 +22,21 @@ public class MessageHandler implements IMessageHandler {
     public void handleMessage(String sessionId, String data, String simpleType, Gson gson) {
         switch(simpleType) {
             case "RegisterPlayerMessage":
+                System.out.println("RegisterPlayedMessage parsing started");
                 RegisterPlayerMessage registerPlayerMessage = gson.fromJson(data, RegisterPlayerMessage.class);
+                System.out.print("RegisterPlayerMessage parsing finished");
                 registerPlayer(sessionId, registerPlayerMessage.getUserName(), registerPlayerMessage.getDeck());
             case "AttackMessage":
+                System.out.println("AttackMessage parsing started");
                 AttackMessage attackMessage = gson.fromJson(data, AttackMessage.class);
+                System.out.println("AttackMessage parsing finished");
                 attack(sessionId, attackMessage.getAttacker(), attackMessage.getDefender());
             case "EndTurnMessage":
                 endTurn(sessionId);
             case "PlayCardMessage":
+                System.out.println("PlayCardMessage parsing started");
                 PlayCardMessage playCardMessage = gson.fromJson(data, PlayCardMessage.class);
+                System.out.println("PlayCardMessage parsing finished");
                 playCard(sessionId, playCardMessage.getCard(), playCardMessage.getLocation());
             default:
                 return;

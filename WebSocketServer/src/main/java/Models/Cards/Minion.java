@@ -4,6 +4,10 @@ import Logic.GameLobby.IGameLogic;
 
 public class Minion extends Card {
 
+    public Minion(){
+        super();
+    }
+
     public Minion(String name, String context, int cost, int attackPoints, int healthPoints) {
         super(name, context, cost);
         this.attackPoints = attackPoints;

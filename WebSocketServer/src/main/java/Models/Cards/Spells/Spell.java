@@ -4,6 +4,10 @@ import Models.Cards.Card;
 
 public abstract class Spell extends Card {
 
+    public Spell(){
+        super();
+    }
+
     public Spell(String name, String context, int cost) {
         super(name, context, cost);
     }

@@ -3,8 +3,11 @@ package Communication.WebSockets;
 import Communication.EncapsulatingMessageGenerator.EncapsulatingMessageGenerator;
 import Communication.EncapsulatingMessageGenerator.IEncapsulatingMessageGenerator;
 import Communication.MessageProcessor.IMessageProcessor;
+import Messages.CardAdapter;
 import Messages.EncapsulatingMessage;
+import Models.Cards.Card;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -26,7 +29,9 @@ public class ServerWebSocket implements IServerWebSocket {
 
     public ServerWebSocket()
     {
-        gson = new Gson();
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(Card.class, new CardAdapter());
+        gson = gsonBuilder.create();
     }
 
     public void setMessageHandler(IMessageProcessor handler)
@@ -62,6 +67,12 @@ public class ServerWebSocket implements IServerWebSocket {
     public void onClose(CloseReason reason, Session session) {
         sessions.remove(session);
         System.out.println("[Disconnected] SessionID:" + session.getId());
+    }
+
+    @OnError
+    public void onError(Throwable cause, Session session) {
+        System.out.print("Error: ");
+        System.out.println(cause.getMessage());
     }
 
     public void sendTo(String sessionId, Object object)
