@@ -12,6 +12,6 @@ public class PlayerTurnMessageHandler extends MessageHandler<PlayerTurnMessage> 
 
     @Override
     public void handleMessageInternal(PlayerTurnMessage message, String sessionId) {
-        getGameClient().handlePlayerTurn(message.)
+        getGameClient().handlePlayerTurn();
     }
 }

@@ -3,8 +3,7 @@ package Websockets.Client.messageHandlers;
 import Websockets.Client.IGameClient;
 import Websockets.Shared.interfaces.IMessageHandler;
 import Websockets.Shared.interfaces.IMessageHandlerFactory;
-import Websockets.Shared.messages.PlayerHasRegisteredMessage;
-import Websockets.Shared.messages.PlayerTurnMessage;
+import Websockets.Shared.messages.*;
 
 public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
 
@@ -13,30 +12,23 @@ public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
         }
         switch(simpleType){
             case "GameEndMessage":
-                //TODO implement message;
-                break;
+                return new GameEndMessageHandler(gc);
             case "PlayerActionFailMessage":
-                //TODO implement message;
-                break;
+                return new PlayerActionFailMessageHandler(gc);
             case "PlayerHasRegisterdMessage":
                 return new PlayerHasRegisteredMessageHandler(gc);
             case "PlayerTurnMessage":
                 return new PlayerTurnMessageHandler(gc);
             case "RegistrationResultMessage":
-                //TODO implement message;
-                break;
+                return new RegistrationResultMessageHandler(gc);
             case "RoundStartMessage":
-                //TODO implement message;
-                break;
+                return new RoundStartMessageHandler(gc);
             case "UpdateBoardMessage":
-                //TODO implement message;
-                break;
+                return new UpdateBoardMessageHandler(gc);
             case "UpdatePlayerMessage":
-                //TODO implement message;
-                break;
+                return new UpdatePlayerMessageHandler(gc);
             default:
                 return null;
         }
-        return null;
     }
 }

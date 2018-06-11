@@ -1,5 +1,7 @@
 package Websockets.Client;
 
+import Models.Card.Card;
+import Models.User.User;
 import Websockets.Shared.interfaces.IClientGUI;
 
 public class GameClient implements IGameClient {
@@ -19,6 +21,36 @@ public class GameClient implements IGameClient {
     @Override
     public void registerPlayer(String userName) {
         messageGenerator.registerPlayerOnServer(userName);
+    }
+
+    @Override
+    public void handlePlayerTurn() {
+
+    }
+
+    @Override
+    public void handleGameEnd(String winner) {
+        
+    }
+
+    @Override
+    public void handlePlayerActionFail() {
+
+    }
+
+    @Override
+    public void handleRoundStart() {
+
+    }
+
+    @Override
+    public void handleUpdateBoard(Card[][] board) {
+
+    }
+
+    @Override
+    public void handleUpdatePlayer(User player) {
+
     }
 
     @Override
