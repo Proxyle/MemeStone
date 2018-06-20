@@ -4,6 +4,7 @@ import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
+import Models.Player;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,6 +25,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class sceneGame{
     //Properties
@@ -316,7 +318,7 @@ public class sceneGame{
             int[] target = new int[2];
             target[0] = clickTwo.get(1);
             target[1] = clickTwo.get(0);
-            gameMaster.playCard(cardsHeroHand[clickOne.get(0)], target);
+            gameMaster.playCard(cardsHeroHand[clickOne.get(0)], 3);
         } else if (clickOne.get(1) == 0 && clickTwo.get(1) == 1){
             gameMaster.attackCard(clickOne.get(0), clickTwo.get(0));
         }
@@ -377,8 +379,8 @@ public class sceneGame{
     public void updatePlayer(Player player){
         gridHeroHand = new GridPane();
         sceneCard card;
-        ArrayList<Card> c = player.getCards();
-        for (int i = 0; i >= 5; i++){
+        List<Card> c = player.getCards();
+        for (int i = 0; i <= 5; i++){
             if (c.get(i) instanceof Minion){
                 Minion m = (Minion)c.get(i);
                 card = new sceneCard(m.getName(),null,m.getContext(),m.getHealthPoints(),m.getCost(),m.getAttackPoints());

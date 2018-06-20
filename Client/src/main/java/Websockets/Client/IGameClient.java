@@ -18,4 +18,6 @@ public interface IGameClient {
     void handleUpdatePlayer(Player player);
 
     void handleReceivedCollection(List<Card> collection);
+
+    void handleRoundStart();
 }

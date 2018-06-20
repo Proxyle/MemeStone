@@ -97,8 +97,6 @@ public class sceneSettings{
     }
 
     public void applyChanges() {
-        gameMaster.changeDisplay();
-        gameMaster.changeVolume();
     }
 
 }

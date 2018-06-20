@@ -33,11 +33,11 @@ public class GameMaster implements IGameMaster, Observer {
 
     /*Login*/
     public void logIn(String name, String password) {
-        generator.logInToServer(name);
+        generator.logIn(name, password);
     }
 
-    public void signUp(String name, String password) {
-        generator.registerPlayerOnServer(name);
+    public void signUp(String name, String password, String email) {
+        generator.registerPlayerOnServer(name, password, email);
     }
 
     @Override
@@ -86,13 +86,20 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public void addCardToDeck(int location) {
+    public List<Card> addCardToDeck(int location) {
         deck.add(collection.get(location));
+        collection.remove(location);
+        if (deck.size() < 30){
+            return null;
+        }
+        return deck;
     }
 
     @Override
-    public void removeCardFromDeck(int location) {
+    public List<Card> removeCardFromDeck(int location) {
         deck.remove(location);
+        collection.add(deck.get(location));
+        return deck;
     }
 
     /*Menu*/

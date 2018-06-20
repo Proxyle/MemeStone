@@ -3,8 +3,8 @@ package Websockets.Client;
 import Models.Card.Card;
 
 public interface IClientMessageGenerator {
-    void registerPlayerOnServer(String name);
-    void logInToServer(String name);
+    void registerPlayerOnServer(String s, String password, String name);
+    void logIn(String name, String password);
     void getCollection();
     void getLeaderboard();
     void exitGame();

@@ -44,7 +44,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
         settings = new sceneSettings(this, new Setting(), gameMaster);
         leaderboard =  new sceneLeaderboard(this, leaderboardUsers);
         game = new sceneGame(this);
-        getGameClient().registerGUI(this);
+        //getGameClient().registerGUI(this);
         this.application =  application;
         this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
     }
@@ -55,7 +55,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     public void home(String name){
-        getGameClient().registerPlayer(name);
+        //getGameClient().registerPlayer(name);
         application.Draw(home.getScene());
     }
 

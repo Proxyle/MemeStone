@@ -22,7 +22,7 @@ public class GameClient implements IGameClient {
 
     @Override
     public void registerPlayer(String userName) {
-        messageGenerator.registerPlayerOnServer(userName);
+        messageGenerator.registerPlayerOnServer(name, password, userName);
     }
 
     @Override
@@ -53,6 +53,11 @@ public class GameClient implements IGameClient {
     @Override
     public void handleReceivedCollection(List<Card> collection) {
         clientGUI.processGetCollection(collection);
+    }
+
+    @Override
+    public void handleRoundStart() {
+
     }
 
     @Override

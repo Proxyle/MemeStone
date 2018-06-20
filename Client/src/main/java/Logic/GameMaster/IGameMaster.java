@@ -8,7 +8,7 @@ import java.util.List;
 public interface IGameMaster {
     /*Login*/
     void logIn(String name, String password);
-    void signUp(String name, String password);
+    void signUp(String name, String password, String email);
     void registerGameGui(IClientGUI gui);
 
     /*MainMenu*/
@@ -25,7 +25,7 @@ public interface IGameMaster {
 
     /*Collection*/
     void setCollection(List<Card> collecton);
-    void addCardToDeck(int location);
-    void removeCardFromDeck(int location);
+    List<Card> addCardToDeck(int location);
+    List<Card> removeCardFromDeck(int location);
 
 }
