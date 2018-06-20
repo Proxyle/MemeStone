@@ -1,14 +1,12 @@
 package api.mscontroller;
 
 import api.model.Player;
+import api.model.resources.PlayerRank;
 import api.msservices.interfaces.IPlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,21 +17,27 @@ public class PlayerController {
     @Autowired
     private IPlayerService playerService;
 
-    @GetMapping(value = "/{playerId}")
-    public ResponseEntity<Player> getPlayerById(@PathVariable("playerId") long playerId) {
-        Player player = playerService.getById(playerId);
+    @PostMapping(value = "/login")
+    public ResponseEntity<Player> login(@RequestBody Player p) {
+        if (p == null) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        Player player = playerService.login(p);
         if (player == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(player, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/{playerName}/rank")
-    public ResponseEntity<Object> getPlayerRankByName(@PathVariable("playerName") String playerName) {
-        String playerRank = playerService.getPlayerRankByName(playerName);
-        if (playerRank == null) {
+    @PostMapping(value = "/register")
+    public ResponseEntity<Player> register(@RequestBody Player p) {
+        if (p == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(playerRank, HttpStatus.OK);
+        Player player = playerService.register(p);
+        if (player == null) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(player, HttpStatus.OK);
     }
 }

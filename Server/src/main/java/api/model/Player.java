@@ -1,8 +1,10 @@
 package api.model;
 
-import com.fasterxml.jackson.annotation.JsonFilter;
+import api.model.resources.Collection;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "[User]")
@@ -24,7 +26,7 @@ public class Player {
     @Column(name = "rank")
     private int rankPoints;
 
-    //private Setting setting;
+    private List<Collection> collection;
 
     public Player() {}
 
@@ -34,6 +36,12 @@ public class Player {
         this.password = password;
         this.email = email;
         this.rankPoints = rankPoints;
+        collection = new ArrayList<>();
+    }
+
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<Collection> getCollection() {
+        return collection;
     }
 
     public Long getId() {

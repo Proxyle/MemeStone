@@ -8,4 +8,6 @@ public interface ICardService {
     List<Card> getAllCards();
     Card getCardById(long cardId);
     Card getCardByName(String cardName);
+    List<Card> getAllMinionCards();
+    List<Card> getAllSpellCards();
 }

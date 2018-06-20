@@ -1,16 +1,34 @@
 package api.mscontroller;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import api.model.resources.Collection;
+import api.msservices.interfaces.ICollectionService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 @RestController
-@RequestMapping(value="/{playerId}/collection")
+@RequestMapping(value="/collection")
 public class CollectionController {
-    @RequestMapping(method= RequestMethod.GET)
-    public String getCollection(@PathVariable String playerId) {
-        throw new NotImplementedException();
+    @Autowired
+    private ICollectionService collectionService;
+
+    @GetMapping(value = "/id/{playerId}")
+    public ResponseEntity<Collection> getCollectionById(@PathVariable long playerId) {
+        Collection collection = collectionService.getCollectionByPlayerId(playerId);
+        if (collection == null) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(collection, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/name/{playerName}")
+    public ResponseEntity<Collection> getCollectionByName(@PathVariable String playerName) {
+        Collection collection = collectionService.getCollectionByPlayerName(playerName);
+        if (collection == null) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(collection, HttpStatus.OK);
     }
 }
