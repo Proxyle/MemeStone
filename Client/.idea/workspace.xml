@@ -2,21 +2,168 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f826f1cd-449c-4801-b789-dd3039e6c810" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GetCollectionMessageHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/artifacts/MemeStoneServerApplication_war.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/artifacts/MemeStoneServerApplication_war_exploded.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_microsoft_azure_adal4j_1_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_microsoft_azure_azure_core_0_9_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_microsoft_azure_azure_keyvault_0_9_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_6_1_0_jre8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_nimbusds_lang_tag_1_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_3_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_4_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_mail_mail_1_4_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_51.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_16_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_orm_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/Application.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/congfiguration/JPAConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Ability.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Card.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/DamageSpell.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Deck.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/DrawSpell.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/HealSpell.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Minion.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Player.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Quest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/ResurrectSpell.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/Spell.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/ICard.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/ICollection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/IDeck.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/IPlayer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/IQuest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/interfaces/IRanking.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/resources/Collection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/model/resources/PlayerRank.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/CardController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/CollectionController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/DeckController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/PlayerController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/QuestController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/mscontroller/RankingController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/CardBaseRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/CardRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/MinionRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/PlayerRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/QuestRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msrepositories/SpellRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/CardService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/CollectionService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/PlayerService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/QuestService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/RankingService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/interfaces/ICardService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/interfaces/ICollectionService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/interfaces/IPlayerService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/interfaces/IQuestService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/api/msservices/interfaces/IRankingService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/resources/application.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/resources/database.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/target/classes/application.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/target/classes/database.properties" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Card/Deck.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Deck.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" afterPath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../Server/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../Server/MemeStoneServerApplication.iml" afterPath="$PROJECT_DIR$/../Server/MemeStoneServerApplication.iml" />
+      <change beforePath="$PROJECT_DIR$/../Server/pom.xml" afterPath="$PROJECT_DIR$/../Server/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,24 +250,6 @@
               <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,12 +382,12 @@
       <workItem from="1528710050710" duration="1045000" />
       <workItem from="1528788537812" duration="27000" />
       <workItem from="1529305040028" duration="5028000" />
-      <workItem from="1529486734605" duration="30000" />
+      <workItem from="1529486734605" duration="654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6700000" />
+    <option name="totallyTimeSpent" value="7324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -312,9 +441,9 @@
         <state relative-caret-position="110">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -332,7 +461,7 @@
         <state relative-caret-position="286">
           <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,7 +479,7 @@
         <state relative-caret-position="726">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#1111#1112#0" expanded="false" />
             <element signature="e#1164#1165#0" expanded="false" />
             <element signature="e#1245#1246#0" expanded="false" />
@@ -364,9 +493,9 @@
         <state relative-caret-position="1144">
           <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3969#3970#0" expanded="true" />
-            <element signature="e#4021#4022#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3969#3970#0" expanded="false" />
+            <element signature="e#4021#4022#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -376,10 +505,10 @@
         <state relative-caret-position="1276">
           <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
           <folding>
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#1268#1269#0" expanded="false" />
+            <element signature="e#1309#1310#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -389,7 +518,7 @@
         <state relative-caret-position="418">
           <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -399,10 +528,10 @@
         <state relative-caret-position="198">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#206#207#0" expanded="false" />
+            <element signature="e#250#251#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,9 +549,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -432,9 +561,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -444,9 +573,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,10 +689,10 @@
         <state relative-caret-position="198">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#206#207#0" expanded="false" />
+            <element signature="e#250#251#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -573,7 +702,7 @@
         <state relative-caret-position="726">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#1111#1112#0" expanded="false" />
             <element signature="e#1164#1165#0" expanded="false" />
             <element signature="e#1245#1246#0" expanded="false" />
@@ -587,9 +716,9 @@
         <state relative-caret-position="1144">
           <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3969#3970#0" expanded="true" />
-            <element signature="e#4021#4022#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3969#3970#0" expanded="false" />
+            <element signature="e#4021#4022#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,10 +728,10 @@
         <state relative-caret-position="1276">
           <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
           <folding>
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#1268#1269#0" expanded="false" />
+            <element signature="e#1309#1310#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,7 +741,7 @@
         <state relative-caret-position="506">
           <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +767,7 @@
         <state relative-caret-position="374">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,9 +785,9 @@
         <state relative-caret-position="201">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
