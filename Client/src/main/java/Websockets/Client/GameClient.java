@@ -1,8 +1,10 @@
 package Websockets.Client;
 
 import Models.Card.Card;
-import Models.User.Player;
+import Models.Player;
 import Websockets.Shared.interfaces.IClientGUI;
+
+import java.util.List;
 
 public class GameClient implements IGameClient {
 
@@ -46,6 +48,11 @@ public class GameClient implements IGameClient {
     @Override
     public void handleUpdatePlayer(Player player) {
         clientGUI.processUpdatePlayer(player);
+    }
+
+    @Override
+    public void handleReceivedCollection(List<Card> collection) {
+        clientGUI.processGetCollection(collection);
     }
 
     @Override

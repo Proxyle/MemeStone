@@ -8,6 +8,8 @@ import Websockets.Client.ClientWebSocket;
 import Websockets.Client.IClientMessageGenerator;
 import Websockets.Shared.interfaces.IClientGUI;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -17,8 +19,16 @@ public class GameMaster implements IGameMaster, Observer {
     private IClientMessageGenerator generator;
     private IClientGUI gui;
 
+    private List<Card> collection;
+    private List<Card> deck;
+
+    public void setCollection(List<Card> collection) {
+        this.collection = collection;
+    }
+
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
+        this.deck = new ArrayList<>();
     }
 
     /*Login*/
@@ -33,11 +43,6 @@ public class GameMaster implements IGameMaster, Observer {
     @Override
     public void registerGameGui(IClientGUI gui) {
         this.gui = gui;
-    }
-
-    @Override
-    public void startGame() {
-        generator.startGame();
     }
 
     @Override
@@ -66,7 +71,7 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public void playCard(Card card, int[] location) {
+    public void playCard(Card card, int location) {
         generator.playCard(card, location);
     }
 
@@ -80,9 +85,17 @@ public class GameMaster implements IGameMaster, Observer {
         generator.escapeConcede();
     }
 
+    @Override
+    public void addCardToDeck(int location) {
+        deck.add(collection.get(location));
+    }
+
+    @Override
+    public void removeCardFromDeck(int location) {
+        deck.remove(location);
+    }
+
     /*Menu*/
-
-
     @Override
     public void update(Observable o, Object arg) {
 

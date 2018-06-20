@@ -1,72 +1,43 @@
-package Models.User;
+package Models;
 
-import Models.Board.Board;
-import Models.Card.Collection;
+
+import Models.Card.Card;
 import Models.Card.Deck;
-import Models.Quest.Quest;
-
-import java.util.List;
+import Models.Card.Minion.Minion;
+import Models.Card.Spell.DamageSpell;
+import Models.Card.Spell.DrawSpell;
+import Models.Card.Spell.HealSpell;
+import Models.Card.Spell.ResurrectSpell;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Player {
-    private List<Deck> decks;
-    private List<Quest> quests;
-    private String displaySetting;
-    private int ranking;
-    private String username;
-    private String password;
-    private String email;
-    private Collection collection;
-    private Board board;
+    String sessionId;
+    String userName;
+    Deck deck;
 
+    ArrayList<Minion> minionInHand = new ArrayList();
+    ArrayList<DamageSpell> damageSpellsInHand = new ArrayList();
+    ArrayList<DrawSpell> drawSpellsInHand = new ArrayList();
+    ArrayList<HealSpell> healSpellsInHand = new ArrayList();
+    ArrayList<ResurrectSpell> resurrectSpellsInHand = new ArrayList();
 
-
-    public Player(List<Deck> decks, List<Quest> quests, String displaySetting, int ranking, String username, String password, String email, Collection collection) {
-        this.decks = decks;
-        this.quests = quests;
-        this.displaySetting = displaySetting;
-        this.ranking = ranking;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.collection = collection;
+    public String getName(){
+        return userName;
     }
 
-    public Player() {
+    public String getSessionId(){
+        return sessionId;
     }
 
-    public List<Deck> getDecks() {
-        return decks;
-    }
+    public Player(String sessionId, String userName, Deck deck){
+        this.sessionId = sessionId;
+        this.userName = userName;
+        this.deck = deck;
 
-    public List<Quest> getQuests() {
-        return quests;
-    }
-
-    public String getDisplaySetting() {
-        return displaySetting;
-    }
-
-    public int getRanking() {
-        return ranking;
     }
 
     public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Collection getCollection() {
-        return collection;
-    }
-
-    public Board getBoard() {
-        return board;
+        return userName;
     }
 }

@@ -26,11 +26,6 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void startGame() {
-        clientWebSocket.send(new StartGameMessage());
-    }
-
-    @Override
     public void getCollection() {
         clientWebSocket.send(new GetCollectionMessage());
     }
@@ -51,23 +46,8 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void drawCard() {
-        clientWebSocket.send(new DrawCardMessage());
-    }
-
-    @Override
-    public void healCard(Card card,int[] target) {
-        clientWebSocket.send(new HealCardMessage(card, target));
-    }
-
-    @Override
     public void attackCard(int attack, int defend) {
         clientWebSocket.send(new AttackMessage(attack, defend));
-    }
-
-    @Override
-    public void resurrectMinion() {
-        clientWebSocket.send(new ResurrectMinionMessage());
     }
 
     @Override

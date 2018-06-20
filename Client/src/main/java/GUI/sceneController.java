@@ -4,7 +4,7 @@ import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Setting.Setting;
-import Models.User.Player;
+import Models.Player;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.GameClient;
@@ -14,6 +14,7 @@ import javafx.application.Platform;
 import javafx.scene.Scene;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.TimerTask;
 
 public class sceneController extends BaseController implements IClientGUI, IMemestoneGUI {
@@ -157,5 +158,10 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
         Platform.runLater(()->{
 
         });
+    }
+
+    @Override
+    public void processGetCollection(List<Card> collection) {
+        gameMaster.setCollection(collection);
     }
 }

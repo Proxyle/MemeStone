@@ -3,6 +3,8 @@ package Logic.GameMaster;
 import Models.Card.Card;
 import Websockets.Shared.interfaces.IClientGUI;
 
+import java.util.List;
+
 public interface IGameMaster {
     /*Login*/
     void logIn(String name, String password);
@@ -10,7 +12,6 @@ public interface IGameMaster {
     void registerGameGui(IClientGUI gui);
 
     /*MainMenu*/
-    void startGame();
     void collection() ;
     void leaderboard();
     void exitGame();
@@ -18,7 +19,13 @@ public interface IGameMaster {
 
     /*Game*/
     void attackCard(int attack, int defend);
-    void playCard(Card card, int[] location);
+    void playCard(Card card, int location);
     void nextTurn();
     void escapeConcede();
+
+    /*Collection*/
+    void setCollection(List<Card> collecton);
+    void addCardToDeck(int location);
+    void removeCardFromDeck(int location);
+
 }

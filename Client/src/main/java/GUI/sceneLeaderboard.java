@@ -1,10 +1,7 @@
 package GUI;
 
-<<<<<<< HEAD
-import Models.User.Player;
-=======
-import Models.User.IUser;
->>>>>>> 03d58f2b1e7b1318f58440993b46d7c48ad8d939
+
+import Models.Player;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -31,7 +28,6 @@ public class sceneLeaderboard{
 
     public sceneLeaderboard(sceneController controller, ArrayList<Player> leadboard){
         this.leaderboard = leadboard;
-
         scene = makeScene();
         this.controller = controller;
         this.leaderboard = leaderboard;
@@ -65,8 +61,8 @@ public class sceneLeaderboard{
         int i = 1;
         if (leaderboard != null) {
             for (Player u : leaderboard) {
-                rank = new Label(String.valueOf(u.getRanking()));
-                name = new Label(u.getUsername());
+                Label rank = new Label(String.valueOf("erik"/*u.getRanking())*/));
+                Label name = new Label(u.getUsername());
 
                 gridLeaderboard.add(rank, 1, i);
                 gridLeaderboard.add(name, 2, i);

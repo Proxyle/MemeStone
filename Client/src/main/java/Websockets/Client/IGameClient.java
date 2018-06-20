@@ -1,8 +1,10 @@
 package Websockets.Client;
 
 import Models.Card.Card;
-import Models.User.Player;
+import Models.Player;
 import Websockets.Shared.interfaces.IClientGUI;
+
+import java.util.List;
 
 public interface IGameClient {
     void registerPlayer(String userName);
@@ -14,4 +16,6 @@ public interface IGameClient {
     void handlePlayerActionFail();
     void handleUpdateBoard(Card[][] board);
     void handleUpdatePlayer(Player player);
+
+    void handleReceivedCollection(List<Card> collection);
 }

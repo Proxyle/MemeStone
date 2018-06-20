@@ -1,8 +1,10 @@
 package Websockets.Shared.interfaces;
 
 import Models.Card.Card;
-import Models.User.Player;
+import Models.Player;
 import javafx.scene.Scene;
+
+import java.util.List;
 
 public interface IClientGUI {
     void processRegistrationResponse(boolean resp);
@@ -18,4 +20,6 @@ public interface IClientGUI {
     void processUpdateBoard(Card[][] board);
 
     void processUpdatePlayer(Player player);
+
+    void processGetCollection(List<Card> collection);
 }
