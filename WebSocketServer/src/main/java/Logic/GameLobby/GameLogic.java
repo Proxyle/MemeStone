@@ -11,22 +11,27 @@ import java.util.Random;
 
 public class GameLogic implements IGameLogic {
 
+    final int START_HEALTH = 20;
+
     IMessageGenerator messageGenerator;
     ArrayList<Player> players = new ArrayList();
     Random r = new Random();
     int currentPlayer;
-    Card[][] board = new Card[2][7];
+    Minion[][] board = new Minion[2][7];
+
 
     public GameLogic(IMessageGenerator messageGenerator)
     {
         this.messageGenerator = messageGenerator;
     }
 
-    public void registerNewPlayer(String userName, String sessionId, Deck deck){
+    public void registerNewPlayer(String sessionId, String userName, Deck deck){
+        System.out.println("registerNewPlayer has been called");
         if(players.size() < 2)
         {
             if(checkPlayerNameAlreadyExists(userName)){
                 messageGenerator.notifyRegisterResult(sessionId, false);
+                System.out.println(" but name already exists!");
                 return;
             }
 
@@ -39,6 +44,7 @@ public class GameLogic implements IGameLogic {
         else
         {
             messageGenerator.notifyRegisterResult(sessionId, false);
+            System.out.println(" but failed!");
         }
     }
 
@@ -56,6 +62,7 @@ public class GameLogic implements IGameLogic {
     private void checkStartingCondition() {
         if (players.size() == 2) {
             //Start the game
+            System.out.println("Round starts");
             startNewRound();
         }
     }
@@ -65,11 +72,13 @@ public class GameLogic implements IGameLogic {
         currentPlayer = r.nextBoolean() ? 0 : 1;
         drawCard(2);
         Player p = players.get(currentPlayer);
-        messageGenerator.notifyPlayerId(p.getSessionId(), players.indexOf(p));
         currentPlayer = 1-currentPlayer;
         drawCard(3);
         p = players.get(currentPlayer);
-        messageGenerator.notifyPlayerId(p.getSessionId(), players.indexOf(p));
+
+        board[0][6] = new Minion("Hero", "", 0, 0, START_HEALTH);
+        board[1][6] = new Minion("Hero", "", 0, 0, START_HEALTH);
+
         endTurn(players.get(currentPlayer).getSessionId());
     }
 
@@ -78,20 +87,28 @@ public class GameLogic implements IGameLogic {
     }
 
     public void endTurn(String sessionId){
-        if (checkPlayerTurn(sessionId))
-        currentPlayer = 1-currentPlayer;
-        startOfTurn();
+        if (checkPlayerTurn(sessionId)) {
+            System.out.println("End turn has been called");
+            currentPlayer = 1 - currentPlayer;
+            startOfTurn();
+        }
     }
 
     private void startOfTurn(){
+        System.out.println("Start turn");
         Player p = players.get(currentPlayer);
+        System.out.println("Draw card");
         p.drawCard();
+        System.out.println("NotifyPlayer");
         messageGenerator.notifyUpdatePlayer(p.getSessionId(), p);
         messageGenerator.notifyPlayerTurn(p.getSessionId());
+        System.out.println("Done!");
     }
 
     public void playCard(String sessionId, Card card, int[] location){
+        System.out.println("Starting playCard method");
         if (checkPlayerTurn(sessionId)){
+            System.out.println("player turn found");
             if (currentPlayer == 1) {
                         location[0] = 1 - location[0];
                         if (location[1] != 6) {
@@ -99,8 +116,9 @@ public class GameLogic implements IGameLogic {
                 }
             }
 
-
+            System.out.println("Trying to find player");
             Player p = players.get(currentPlayer);
+            System.out.print("Player found?"); System.out.println(p != null);
             if (p.playCard(card, this, location))
             {
                 messageGenerator.notifyUpdatePlayer(sessionId, p);
@@ -111,20 +129,65 @@ public class GameLogic implements IGameLogic {
                 messageGenerator.notifyUpdatePlayer(sessionId, p);
             }
         }
+        else{
+            System.out.println("Not this guys turn");
+            messageGenerator.notifyActionFail(sessionId);
+        }
     }
 
-    public void attack(String sessionId, int[] attacker, int[] defender){
+    public void attack(String sessionId, int attacker, int defender){
         if (checkPlayerTurn(sessionId)) {
             if (currentPlayer == 1) {
-                attacker[0] = 1 - attacker[0];
-                defender[0] = 1 - defender[0];
-                if (attacker[1] != 6)
-                    attacker[1] = 5 - attacker[1];
-                if (defender[1] != 6)
-                    defender[1] = 5 - defender[1];
+                if (attacker != 6)
+                    attacker = 5 - attacker;
+                if (defender != 6)
+                    defender = 5 - defender;
             }
-            Minion attack = (Minion)board[attacker[0]][attacker[1]];
-            Minion defend = (Minion)board[defender[0]][defender[1]];
+            Minion attack = board[currentPlayer][attacker];
+            if (attack == null) {
+                messageGenerator.notifyActionFail(sessionId);
+                return;
+            }
+            if (attacker < 3){ // left lane
+                if (defender < 6 && defender > 2){ //if target is in right lane
+                    messageGenerator.notifyActionFail(sessionId);
+                    return;
+                }
+                else if (defender == 6){ //if target is the hero
+                    if (!checkAttackHero()){
+                        messageGenerator.notifyActionFail(sessionId);
+                        return;
+                    }
+                }
+            }
+            else if (attacker < 6){ //right lane
+                if (defender < 3){ //if target is in right lane
+                    messageGenerator.notifyActionFail(sessionId);
+                    return;
+                }
+                else if (defender == 6){ //if target is hero
+                    if (!checkAttackHero()){
+                        messageGenerator.notifyActionFail(sessionId);
+                        return;
+                    }
+
+                }
+            }
+            else{ //hero
+                if (defender == 6){//if target is hero
+                    if (!checkAttackHero()){
+                        messageGenerator.notifyActionFail(sessionId);
+                        return;
+                    }
+                }
+            }
+            Minion defend = board[1-currentPlayer][defender];
+
+            if (defend == null){
+                messageGenerator.notifyActionFail(sessionId);
+                return;
+            }
+
 
             if (attack.getAttackPoints() < 1){
                 messageGenerator.notifyActionFail(sessionId);
@@ -135,19 +198,30 @@ public class GameLogic implements IGameLogic {
                     defend = null;
                 if (!alive)
                     attack = null;
-                board[attacker[0]][attacker[1]] = attack;
-                board[defender[0]][defender[1]] = defend;
+                board[currentPlayer][attacker] = attack;
+                board[1-currentPlayer][defender] = defend;
 
                 messageGenerator.notifyUpdateBoard(board);
-                if (attack == null && attacker[1] == 6)
+
+                if (attack == null && attacker == 6)
                 {
-                    gameEnd(1 - attacker[0]);
+                    gameEnd(1 - currentPlayer);
                 }
-                else if (defend == null && defender[1] == 6){
-                    gameEnd(1- defender[0]);
+                else if (defend == null && defender == 6){
+                    gameEnd(currentPlayer);
                 }
             }
         }
+    }
+
+    private boolean checkAttackHero(){
+        for (int i = 0; i<6; i++){
+            Minion m = board[1-currentPlayer][i];
+            if (m != null){
+                return false;
+            }
+        }
+        return true;
     }
 
     private void gameEnd(int winner){
@@ -156,10 +230,14 @@ public class GameLogic implements IGameLogic {
     }
 
     public boolean placeMinion(int[] location, Minion minion){
+        System.out.println("Placing Minion");
         if (location[0] == currentPlayer && board[location[0]][location[1]] == null) {
+            System.out.println("Spot empty, pacing minion");
             board[location[0]][location[1]] = minion;
             return true;
         }
+        System.out.println(currentPlayer + " " + location[0]);
+        System.out.println("Spot not empty");
         return false;
     }
 

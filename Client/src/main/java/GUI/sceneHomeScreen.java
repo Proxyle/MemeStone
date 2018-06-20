@@ -1,6 +1,7 @@
 package GUI;
 
 
+import Logic.GameMaster.IGameMaster;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -23,10 +24,12 @@ public class sceneHomeScreen{
     Button btnExitGame = new Button("Exit Game");
     Scene scene;
     sceneController controller;
+    IGameMaster gameMaster;
 
-    public sceneHomeScreen(sceneController controller){
+    public sceneHomeScreen(sceneController controller, IGameMaster gameMaster){
         scene = makeScene();
         this.controller = controller;
+        this.gameMaster = gameMaster;
     }
 
     public Scene makeScene(){
@@ -127,6 +130,6 @@ public class sceneHomeScreen{
     }
 
     public void exitGame() {
-        System.exit(0);
+        gameMaster.exitGame();
     }
 }

@@ -1,32 +1,31 @@
 package Logic.GameMaster;
 
 import Models.Card.Card;
-import Models.Setting.Setting;
-import Models.User.User;
 import Websockets.Shared.interfaces.IClientGUI;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface IGameMaster {
     /*Login*/
-    void logIn(String name);
-    void signUp(String name);
+    void logIn(String name, String password);
+    void signUp(String name, String password);
     void registerGameGui(IClientGUI gui);
 
     /*MainMenu*/
-    void startGame();
     void collection() ;
     void leaderboard();
     void exitGame();
     void getSettings();
-    void changeVolume();
-    void changeDisplay();
 
     /*Game*/
-    void drawCard(int amount);
-    void healCard(Card card, int[] target);
     void attackCard(int attack, int defend);
-    void resurrectMinion();
+    void playCard(Card card, int location);
     void nextTurn();
     void escapeConcede();
+
+    /*Collection*/
+    void setCollection(List<Card> collecton);
+    void addCardToDeck(int location);
+    void removeCardFromDeck(int location);
+
 }

@@ -17,6 +17,7 @@ public class DrawSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Draw spell");
         gameLogic.drawCard(drawPoints);
         return true;
     }

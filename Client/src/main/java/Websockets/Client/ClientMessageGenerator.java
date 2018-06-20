@@ -1,9 +1,9 @@
 package Websockets.Client;
 
+
 import Models.Card.Card;
-import Websockets.Shared.interfaces.IClientGUI;
 import Websockets.Shared.messages.*;
-import org.eclipse.persistence.jaxb.javamodel.Helper;
+
 
 public class ClientMessageGenerator implements IClientMessageGenerator {
     private Websockets.Client.IClientWebSocket clientWebSocket;
@@ -23,11 +23,6 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     public void logInToServer(String name) {
         clientWebSocket.start();
         clientWebSocket.send(new LoginMessage(name));
-    }
-
-    @Override
-    public void startGame() {
-        clientWebSocket.send(new StartGameMessage());
     }
 
     @Override
@@ -51,23 +46,8 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void drawCard() {
-        clientWebSocket.send(new DrawCardMessage());
-    }
-
-    @Override
-    public void healCard(Card card,int[] target) {
-        clientWebSocket.send(new HealCardMessage(card, target));
-    }
-
-    @Override
     public void attackCard(int attack, int defend) {
         clientWebSocket.send(new AttackMessage(attack, defend));
-    }
-
-    @Override
-    public void resurrectMinion() {
-        clientWebSocket.send(new ResurrectMinionMessage());
     }
 
     @Override
@@ -80,7 +60,7 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
         clientWebSocket.send(new ForfeitMessage());
     }
 
-    public void playCard(Card card, int[] location){
+    public void playCard(Card card, int location){
         clientWebSocket.send(new PlayCardMessage(card, location));
     }
     //TODO Message Methods

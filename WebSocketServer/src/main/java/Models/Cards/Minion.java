@@ -35,6 +35,7 @@ public class Minion extends Card {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Minion");
         return gameLogic.placeMinion(location, this);
     }
 

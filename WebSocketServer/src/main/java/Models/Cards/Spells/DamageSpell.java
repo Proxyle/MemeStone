@@ -1,7 +1,6 @@
 package Models.Cards.Spells;
 
 import Logic.GameLobby.IGameLogic;
-import Models.Cards.Card;
 
 public class DamageSpell extends Spell {
 
@@ -18,6 +17,7 @@ public class DamageSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Damage Spell");
         return gameLogic.damageTarget(damagePoints, location);
     }
 

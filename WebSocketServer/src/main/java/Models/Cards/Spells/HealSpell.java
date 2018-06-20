@@ -17,6 +17,7 @@ public class HealSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Heal spell");
         return gameLogic.damageTarget(-healPoints, location);
     }
 

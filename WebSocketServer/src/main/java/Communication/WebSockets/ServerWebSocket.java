@@ -3,8 +3,11 @@ package Communication.WebSockets;
 import Communication.EncapsulatingMessageGenerator.EncapsulatingMessageGenerator;
 import Communication.EncapsulatingMessageGenerator.IEncapsulatingMessageGenerator;
 import Communication.MessageProcessor.IMessageProcessor;
+import Messages.CardAdapter;
 import Messages.EncapsulatingMessage;
+import Models.Cards.Card;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -27,6 +30,9 @@ public class ServerWebSocket implements IServerWebSocket {
     public ServerWebSocket()
     {
         gson = new Gson();
+        /*GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(Card.class, new CardAdapter());
+        gson = gsonBuilder.create();*/
     }
 
     public void setMessageHandler(IMessageProcessor handler)
@@ -53,7 +59,9 @@ public class ServerWebSocket implements IServerWebSocket {
     @OnMessage
     public void onText(String message, Session session) {
         String sessionId = session.getId();
+        System.out.println();System.out.println();System.out.println();System.out.println();
         System.out.println(session.getId() + " send message " + message);
+        System.out.println(message.getBytes().length);
         EncapsulatingMessage msg = getGson().fromJson(message, EncapsulatingMessage.class);
         getHandler().processMessage(sessionId, msg.getMessageType(), msg.getMessageData());
     }
@@ -62,6 +70,16 @@ public class ServerWebSocket implements IServerWebSocket {
     public void onClose(CloseReason reason, Session session) {
         sessions.remove(session);
         System.out.println("[Disconnected] SessionID:" + session.getId());
+    }
+
+    @OnError
+    public void onError(Throwable cause, Session session) {
+        System.out.println("Error: ");
+        System.out.println(cause.getMessage());
+        System.out.println();
+        System.out.println(cause.getCause());
+        System.out.println();
+        System.out.println("End of Error");
     }
 
     public void sendTo(String sessionId, Object object)

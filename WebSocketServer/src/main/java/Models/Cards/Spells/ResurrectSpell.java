@@ -17,6 +17,7 @@ public class ResurrectSpell extends Spell {
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
+        System.out.println("Playing a Resurrection card");
         return false;
     }
 
