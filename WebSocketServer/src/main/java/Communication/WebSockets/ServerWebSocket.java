@@ -29,9 +29,10 @@ public class ServerWebSocket implements IServerWebSocket {
 
     public ServerWebSocket()
     {
-        GsonBuilder gsonBuilder = new GsonBuilder();
+        gson = new Gson();
+        /*GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.registerTypeAdapter(Card.class, new CardAdapter());
-        gson = gsonBuilder.create();
+        gson = gsonBuilder.create();*/
     }
 
     public void setMessageHandler(IMessageProcessor handler)
@@ -58,6 +59,7 @@ public class ServerWebSocket implements IServerWebSocket {
     @OnMessage
     public void onText(String message, Session session) {
         String sessionId = session.getId();
+        System.out.println();System.out.println();System.out.println();System.out.println();
         System.out.println(session.getId() + " send message " + message);
         System.out.println(message.getBytes().length);
         EncapsulatingMessage msg = getGson().fromJson(message, EncapsulatingMessage.class);

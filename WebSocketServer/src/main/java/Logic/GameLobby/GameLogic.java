@@ -26,7 +26,7 @@ public class GameLogic implements IGameLogic {
     }
 
     public void registerNewPlayer(String sessionId, String userName, Deck deck){
-        System.out.print("registerNewPlayer has been called");
+        System.out.println("registerNewPlayer has been called");
         if(players.size() < 2)
         {
             if(checkPlayerNameAlreadyExists(userName)){
@@ -236,6 +236,7 @@ public class GameLogic implements IGameLogic {
             board[location[0]][location[1]] = minion;
             return true;
         }
+        System.out.println(currentPlayer + " " + location[0]);
         System.out.println("Spot not empty");
         return false;
     }
