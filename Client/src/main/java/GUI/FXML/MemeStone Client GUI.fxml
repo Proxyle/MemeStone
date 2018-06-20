@@ -35,7 +35,7 @@
       </ImageView>
       <ImageView fitHeight="188.0" fitWidth="137.0" layoutX="439.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Afbeeldingen/leeroy.png" />
+
          </image>
       </ImageView>
       <ImageView fitHeight="188.0" fitWidth="137.0" layoutX="718.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
@@ -93,7 +93,7 @@
             <Image url="@../../../../Afbeeldingen/Jaina_Proudmoore(320).png" />
          </image>
       </ImageView>
-      <ProgressBar layoutX="99.0" layoutY="699.0" prefHeight="18.0" prefWidth="467.0" progress="0.67" />
+      <ProgressBar layoutX="99.0" layoutY="699.0" prefHeight="18.0" prefWidth="467.0" progress="0.0" />
       <ProgressBar layoutX="725.0" layoutY="699.0" prefHeight="18.0" prefWidth="467.0" progress="1.0" />
       <ProgressBar layoutX="99.0" layoutY="138.0" prefHeight="18.0" prefWidth="467.0" progress="1.0" />
       <ProgressBar layoutX="732.0" layoutY="138.0" prefHeight="18.0" prefWidth="467.0" progress="0.1" />
