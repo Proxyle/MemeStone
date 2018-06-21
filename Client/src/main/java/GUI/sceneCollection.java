@@ -1,5 +1,7 @@
 package GUI;
 
+import Logic.GameMaster.GameMaster;
+import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
@@ -22,19 +24,28 @@ import java.util.ArrayList;
 public class sceneCollection {
     //Properties
     double buttonWidth = 150;
+    final protected int packCost = 100;
+    IGameMaster gameMaster;
 
     //Buttons
     Button btnEditDeck = new Button("Edit Deck");
+    Button btnBuyCards = new Button("Buy new cards");
     Button btnBack = new Button("Back");
+    Button btnOk = new Button("Ok");
+
+    Group groupCollections;
+    Group groupNewCards;
+    VBox newCards;
 
     Scene scene;
     sceneController controller;
     ArrayList<Card> collection;
 
-    public sceneCollection(sceneController controller, ArrayList<Card> collection) {
+    public sceneCollection(sceneController controller, IGameMaster gameMaster, ArrayList<Card> collection) {
         scene = makeScene();
         this.collection = collection;
         this.controller = controller;
+        this.gameMaster = gameMaster;
     }
 
     public Scene makeScene() {
@@ -42,6 +53,10 @@ public class sceneCollection {
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
         vBox.setSpacing(10);
+
+        newCards = new VBox();
+        newCards.setPadding(new Insets(10));
+        newCards.setSpacing(10);
 
         //Define grid pane
         GridPane gridCollections = new GridPane();
@@ -51,16 +66,24 @@ public class sceneCollection {
         ScrollPane scrollPane = new ScrollPane(gridCollections);
         scrollPane.setMaxWidth(500);
 
+
         //Overall Pane
         BorderPane layoutPane = new BorderPane();
         layoutPane.setCenter(scrollPane);
+        layoutPane.setCenter(newCards);
         layoutPane.setRight(vBox);
+        layoutPane.setRight(btnOk);
 
         // Create the scene
         Group root = new Group();
         Scene scene = new Scene(root, 1920, 1080);
 
         root.getChildren().add(layoutPane);
+
+        groupCollections = new Group();
+        gridCollections.getChildren().addAll(vBox,scrollPane);
+        groupCollections = new Group();
+        groupNewCards.getChildren().addAll(newCards, btnOk);
 
         // Button to edit deck
         Tooltip tooltipCollection =
@@ -74,8 +97,19 @@ public class sceneCollection {
         });
 
         // Button to go back to collections
+        Tooltip tooltipButCards =
+                new Tooltip("Press to buy a card pack for "+ packCost);
+        btnBuyCards.setTooltip(tooltipButCards);
+        btnBuyCards.setMinWidth(buttonWidth);
+        btnBuyCards.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event) {
+                buyCards();
+            }
+        });
+
+        // Button to go back to collections
         Tooltip tooltipBack =
-                new Tooltip("Press to go back to collections");
+                new Tooltip("Press to go back to home screen");
         btnBack.setTooltip(tooltipBack);
         btnBack.setMinWidth(buttonWidth);
         btnBack.setOnAction(new EventHandler<ActionEvent>() {
@@ -86,13 +120,18 @@ public class sceneCollection {
 
         vBox.getChildren().addAll(btnEditDeck, btnBack);
 
-
-        /*for (Card c:collection) {
-            if (c instanceof Minion) {
-                Minion m = c;
-            sceneCard card = new sceneCard(c.getName(),c.getImage,c.getContext());
+        // Button to go back to collections
+        Tooltip tooltipOk =
+                new Tooltip("Press to go back to collections");
+        btnOk.setTooltip(tooltipOk);
+        btnOk.setMinWidth(buttonWidth);
+        btnOk.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event) {
+                okButton();
             }
-        }*/
+        });
+
+
         sceneCard card = null;
         int x = 1;
         int y = 1;
@@ -117,6 +156,8 @@ public class sceneCollection {
             }
         }
 
+        groupNewCards.setVisible(false);
+
         // Define title and assign the scene for main window
         return scene;
     }
@@ -127,6 +168,25 @@ public class sceneCollection {
 
     public void editDeck() {
         controller.editDeck();
+    }
+
+    public void buyCards(){
+        gameMaster.buyCards();
+    }
+
+    public void showCards(ArrayList<Card> cards) {
+        newCards = new VBox();
+        sceneCard card = null;
+        for (Card c : cards) {
+            if (c instanceof Minion) {
+                Minion m = (Minion) c;
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+            } else if (c instanceof Spell) {
+                Spell s = (Spell) c;
+                card = new sceneCard(s.getName(), null, s.getContext(), s.getCost());
+            }
+            newCards.getChildren().add(card.getGrid());
+        }
     }
 
     public void backButton() {
