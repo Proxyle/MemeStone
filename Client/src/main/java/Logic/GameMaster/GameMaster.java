@@ -71,7 +71,7 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public void playCard(Card card, int location) {
+    public void playCard(Card card, int[] location) {
         generator.playCard(card, location);
     }
 

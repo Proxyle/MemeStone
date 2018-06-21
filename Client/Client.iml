@@ -64,4 +64,5 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.2.7.v20150116" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-servlet:9.2.7.v20150116" level="project" />
   </component>
+  </component>
 </module>

@@ -19,7 +19,7 @@ public interface IGameMaster {
 
     /*Game*/
     void attackCard(int attack, int defend);
-    void playCard(Card card, int location);
+    void playCard(Card card, int[] location);
     void nextTurn();
     void escapeConcede();
 

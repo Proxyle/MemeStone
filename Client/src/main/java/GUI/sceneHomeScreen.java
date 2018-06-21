@@ -81,21 +81,9 @@ public class sceneHomeScreen{
         });
         grid.add(btnLeaderboard, 1,3,1,1);
 
-        // Button to open settings
-        Tooltip tooltipSettings =
-                new Tooltip("Press to view your collection");
-        btnSettings.setTooltip(tooltipSettings);
-        btnSettings.setMinWidth(buttonWidth);
-        btnSettings.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                settings();
-            }
-        });
-        grid.add(btnSettings, 1,4,1,1);
-
         // Button to exit game
         Tooltip tooltipExitGame =
-                new Tooltip("Press to view your collection");
+                new Tooltip("Press to exit game");
         btnExitGame.setTooltip(tooltipExitGame);
         btnExitGame.setMinWidth(buttonWidth);
         btnExitGame.setOnAction(new EventHandler<ActionEvent>() {
@@ -123,10 +111,6 @@ public class sceneHomeScreen{
 
     public void leaderboard() {
         controller.leaderboard();
-    }
-
-    public void settings() {
-        controller.settings();
     }
 
     public void exitGame() {

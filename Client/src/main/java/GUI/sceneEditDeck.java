@@ -1,41 +1,81 @@
 package GUI;
 
+import Models.Card.Card;
+import Models.Card.Minion.Minion;
+import Models.Card.Spell.Spell;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tooltip;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class sceneEditDeck {
     //Properties
     double buttonWidth = 150;
+    ArrayList<Card> collection;
+    ArrayList<Card> deck;
 
     //Buttons
-    Button btnSaveDeck = new Button("Save Deck");
-    Button btnDeleteDeck = new Button("Delete Deck");
-    Button btnBack = new Button("Back");
+    Button btnSaveDeck;
+    Button btnBack;
+    Button btnMoveToCollections;
+    Button btnMoveToDeck;
+
+    //Grids
+    GridPane gridCollection;
+    GridPane gridDeck;
+    ScrollPane spCollections;
+    ScrollPane spDeck;
+    BorderPane layout;
+    HBox moveButtons;
+    VBox otherButtons;
+    VBox containerCenter;
 
     Scene scene;
     sceneController controller;
 
-    public sceneEditDeck(sceneController controller){
+    public sceneEditDeck(sceneController controller, ArrayList<Card> collection, ArrayList<Card> deck){
         scene = makeScene();
         this.controller = controller;
+        this.collection = collection;
+        this.deck = deck;
     }
 
     public Scene makeScene(){
         //Define grid pane
-        GridPane grid = new GridPane();
-        grid.setVgap(10);
-        grid.setPadding(new Insets(390, 10, 10, 880));
+        gridCollection = new GridPane();
+        gridCollection.setHgap(10);
+        gridCollection.setPadding(new Insets(10));
+        spCollections = new ScrollPane(gridCollection);
+
+        gridDeck = new GridPane();
+        gridDeck.setHgap(10);
+        gridDeck.setPadding(new Insets(10));
+        spDeck = new ScrollPane(gridDeck);
+
+        moveButtons = new HBox();
+        otherButtons = new VBox();
+        containerCenter = new VBox();
+
+        containerCenter.getChildren().addAll(gridCollection, moveButtons, gridDeck);
+
+        layout = new BorderPane();
+        layout.setCenter(containerCenter);
+        layout.setRight(otherButtons);
 
         // Create the scene
         Group root = new Group();
-        root.getChildren().add(grid);
+        root.getChildren().add(layout);
         Scene scene = new Scene(root, 1920, 1080);
 
 
@@ -47,22 +87,9 @@ public class sceneEditDeck {
         btnSaveDeck.setMinWidth(buttonWidth);
         btnSaveDeck.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
-                deleteDeck();
-            }
-        });
-        grid.add(btnSaveDeck, 1,1,1,1);
-
-        // Button to delete deck
-        Tooltip tooltipDeleteDeck =
-                new Tooltip("Press to delete deck");
-        btnDeleteDeck.setTooltip(tooltipDeleteDeck);
-        btnDeleteDeck.setMinWidth(buttonWidth);
-        btnDeleteDeck.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
                 saveDeck();
             }
         });
-        grid.add(btnDeleteDeck, 1,2,1,1);
 
         // Button to go back to collections
         Tooltip tooltipBack =
@@ -74,9 +101,9 @@ public class sceneEditDeck {
                 backButton();
             }
         });
-        grid.add(btnBack, 1,3,1,1);
 
-        //TODO Uhm like get some cards up in here somehow but now twice
+        setArrayToGrid(collection, gridCollection);
+        setArrayToGrid(deck, gridDeck);
 
         // Define title and assign the scene for main window
         return scene;
@@ -86,16 +113,31 @@ public class sceneEditDeck {
         return scene;
     }
 
-    public void deleteDeck() {
-
-    }
-
     public void saveDeck() {
 
     }
 
     public void backButton() {
         controller.collections();
+    }
+
+    private void setArrayToGrid(ArrayList<Card> list, GridPane grid){
+        int i = 0;
+        for (Card c: list) {
+            sceneCard card;
+            GridPane gridCard = null;
+            if (c instanceof Minion) {
+                Minion m = (Minion) c;
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                gridCard = card.getGrid();
+            } else if (c instanceof Spell) {
+                Spell m = (Spell) c;
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getCost());
+                gridCard = card.getGrid();
+            }
+            grid.add(gridCard, i, 0);
+            i++;
+        }
     }
 
 }
