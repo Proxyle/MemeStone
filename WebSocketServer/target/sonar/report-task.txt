@@ -1,0 +1,6 @@
+projectKey=WebsocketServer:WebsocketServer
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/WebsocketServer:WebsocketServer
+ceTaskId=AWQck0eS8fA0PeLciCa1
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWQck0eS8fA0PeLciCa1
