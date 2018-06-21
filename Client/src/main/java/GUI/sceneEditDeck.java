@@ -1,5 +1,6 @@
 package GUI;
 
+import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
@@ -18,6 +19,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class sceneEditDeck {
     //Properties
@@ -28,8 +30,6 @@ public class sceneEditDeck {
     //Buttons
     Button btnSaveDeck;
     Button btnBack;
-    Button btnMoveToCollections;
-    Button btnMoveToDeck;
 
     //Grids
     GridPane gridCollection;
@@ -37,18 +37,19 @@ public class sceneEditDeck {
     ScrollPane spCollections;
     ScrollPane spDeck;
     BorderPane layout;
-    HBox moveButtons;
     VBox otherButtons;
     VBox containerCenter;
 
     Scene scene;
     sceneController controller;
+    IGameMaster gameMaster;
 
-    public sceneEditDeck(sceneController controller, ArrayList<Card> collection, ArrayList<Card> deck){
+    public sceneEditDeck(sceneController controller, IGameMaster gameMaster, ArrayList<Card> collection, ArrayList<Card> deck){
         scene = makeScene();
         this.controller = controller;
         this.collection = collection;
         this.deck = deck;
+        this.gameMaster = gameMaster;
     }
 
     public Scene makeScene(){
@@ -63,11 +64,10 @@ public class sceneEditDeck {
         gridDeck.setPadding(new Insets(10));
         spDeck = new ScrollPane(gridDeck);
 
-        moveButtons = new HBox();
         otherButtons = new VBox();
         containerCenter = new VBox();
 
-        containerCenter.getChildren().addAll(gridCollection, moveButtons, gridDeck);
+        containerCenter.getChildren().addAll(gridCollection, gridDeck);
 
         layout = new BorderPane();
         layout.setCenter(containerCenter);
@@ -114,7 +114,7 @@ public class sceneEditDeck {
     }
 
     public void saveDeck() {
-
+        gameMaster.saveDeck(collection,deck);
     }
 
     public void backButton() {
@@ -135,9 +135,31 @@ public class sceneEditDeck {
                 card = new sceneCard(m.getName(), null, m.getContext(), m.getCost());
                 gridCard = card.getGrid();
             }
-            grid.add(gridCard, i, 0);
+
+            if (grid == gridCollection)
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> moveToDeck(GridPane.getColumnIndex( grid)));
+            else if(grid == gridDeck)
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> moveToCollections(GridPane.getColumnIndex( grid)));
+
+                grid.add(gridCard, i, 0);
             i++;
         }
+    }
+
+    private void moveToDeck(int location){
+        gameMaster.addCardToDeck(location,collection,deck);
+        gridDeck = new GridPane();
+        gridCollection = new GridPane();
+        setArrayToGrid(deck, gridDeck);
+        setArrayToGrid(collection, gridCollection);
+    }
+
+    private void moveToCollections(int location){
+        gameMaster.removeCardFromDeck(location,collection,deck);
+        gridDeck = new GridPane();
+        gridCollection = new GridPane();
+        setArrayToGrid(deck, gridDeck);
+        setArrayToGrid(collection, gridCollection);
     }
 
 }

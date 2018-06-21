@@ -86,7 +86,7 @@ public class sceneLogin{
     }
 
     public void signIn(){
-
+        controller.gameMaster.logIn(txtUsername.getText(), txtPassword.getText());
         if(true){
             System.out.println(txtUsername.getText());
             controller.home(txtUsername.getText());

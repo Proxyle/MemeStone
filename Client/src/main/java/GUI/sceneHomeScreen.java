@@ -10,6 +10,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class sceneHomeScreen{
@@ -22,6 +23,10 @@ public class sceneHomeScreen{
     Button btnLeaderboard = new Button("Leaderboard");
     Button btnSettings = new Button("Settings");
     Button btnExitGame = new Button("Exit Game");
+    Label lblQuest1 = new Label();
+    Label lblQuest2 = new Label();
+    Label lblQuest3 = new Label();
+
     Scene scene;
     sceneController controller;
     IGameMaster gameMaster;
@@ -37,6 +42,8 @@ public class sceneHomeScreen{
         GridPane grid = new GridPane();
         grid.setVgap(10);
         grid.setPadding(new Insets(390, 10, 10, 880));
+
+        VBox vboxQuests = new VBox();
 
         // Create the scene
         Group root = new Group();
@@ -91,7 +98,15 @@ public class sceneHomeScreen{
                 exitGame();
             }
         });
-        grid.add(btnExitGame, 1,5,1,1);
+        grid.add(btnExitGame, 1,4,1,1);
+
+        String[] dailyQuests = gameMaster.getDailyQuests();
+        lblQuest1.setText(dailyQuests[0]);
+        lblQuest2.setText(dailyQuests[1]);
+        lblQuest3.setText(dailyQuests[2]);
+
+        vboxQuests.getChildren().addAll(lblQuest1,lblQuest2,lblQuest3);
+        grid.add(vboxQuests, 1,5,1,1);
 
         // Define title and assign the scene for main window
         return scene;

@@ -1,23 +1,21 @@
 package GUI;
 
-import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
@@ -32,6 +30,7 @@ public class sceneCollection {
     Button btnBuyCards = new Button("Buy new cards");
     Button btnBack = new Button("Back");
     Button btnOk = new Button("Ok");
+    Label lblScore;
 
     Group groupCollections;
     Group groupNewCards;
@@ -41,7 +40,7 @@ public class sceneCollection {
     sceneController controller;
     ArrayList<Card> collection;
 
-    public sceneCollection(sceneController controller, IGameMaster gameMaster, ArrayList<Card> collection) {
+    public sceneCollection(sceneController controller, IGameMaster gameMaster, ArrayList<Card> collection, int score) {
         scene = makeScene();
         this.collection = collection;
         this.controller = controller;
@@ -175,6 +174,8 @@ public class sceneCollection {
     }
 
     public void showCards(ArrayList<Card> cards) {
+        groupCollections.setVisible(false);
+        groupNewCards.setVisible(true);
         newCards = new VBox();
         sceneCard card = null;
         for (Card c : cards) {
@@ -191,6 +192,10 @@ public class sceneCollection {
 
     public void backButton() {
         controller.home("derp");
+    }
+
+    public void okButton(){
+        controller.collections();
     }
 
 }

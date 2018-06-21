@@ -17,5 +17,9 @@ public interface IGameClient {
     void handleUpdateBoard(Card[][] board);
     void handleUpdatePlayer(Player player);
 
+
+
     void handleReceivedCollection(List<Card> collection);
+
+    void handleRoundStart();
 }

@@ -25,6 +25,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class sceneGame{
     //Properties
@@ -374,8 +375,8 @@ public class sceneGame{
     public void updatePlayer(Player player){
         gridHeroHand = new GridPane();
         sceneCard card;
-        ArrayList<Card> c = player.getCards();
-        for (int i = 0; i >= 5; i++){
+        List<Card> c = player.getCards();
+        for (int i = 0; i <= 5; i++){
             if (c.get(i) instanceof Minion){
                 Minion m = (Minion)c.get(i);
                 card = new sceneCard(m.getName(),null,m.getContext(),m.getHealthPoints(),m.getCost(),m.getAttackPoints());

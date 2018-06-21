@@ -33,11 +33,11 @@ public class GameMaster implements IGameMaster, Observer {
 
     /*Login*/
     public void logIn(String name, String password) {
-        generator.logInToServer(name);
+        generator.logIn(name, password);
     }
 
-    public void signUp(String name, String password) {
-        generator.registerPlayerOnServer(name);
+    public void signUp(String name, String password, String email) {
+        generator.registerPlayerOnServer(name, password, email);
     }
 
     @Override
@@ -86,13 +86,33 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public void addCardToDeck(int location) {
+    public void addCardToDeck(int location, List<Card> collection, List<Card> deck) {
         deck.add(collection.get(location));
+        collection.remove(location);
     }
 
     @Override
-    public void removeCardFromDeck(int location) {
-        deck.remove(location);
+    public void removeCardFromDeck(int location, List<Card> collection, List<Card> deck) {
+        if(deck.size() > 30){
+            deck.remove(location);
+            collection.add(deck.get(location));
+        }
+    }
+    @Override
+    public void saveDeck(ArrayList<Card> collections, ArrayList<Card> deck){
+        //TODO send to rest? or websockets
+        //send back to collections
+    }
+
+    @Override
+    public void buyCards() {
+        //TODO send to server
+    }
+
+    @Override
+    public String[] getDailyQuests() {
+        //TODO get 3 daily quests from rest
+        return new String[0];
     }
 
     /*Menu*/

@@ -8,7 +8,9 @@ import Models.Card.Spell.DamageSpell;
 import Models.Card.Spell.DrawSpell;
 import Models.Card.Spell.HealSpell;
 import Models.Card.Spell.ResurrectSpell;
+
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Player {
@@ -39,5 +41,15 @@ public class Player {
 
     public String getUsername() {
         return userName;
+    }
+
+    public List<Card> getCards() {
+        List<Card> cardsInHand = new ArrayList<>();
+        cardsInHand.addAll(minionInHand);
+        cardsInHand.addAll(damageSpellsInHand);
+        cardsInHand.addAll(drawSpellsInHand);
+        cardsInHand.addAll(healSpellsInHand);
+        cardsInHand.addAll(resurrectSpellsInHand);
+        return cardsInHand;
     }
 }

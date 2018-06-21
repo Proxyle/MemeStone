@@ -2,8 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f826f1cd-449c-4801-b789-dd3039e6c810" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java" />
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/REST/RESTmodels/Player.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_1_1_v20140108.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_2_3_v20140905.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_3_v20140905.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_2_3_v20140905.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_3_v20140905.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_2_7_v20150116.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Client.iml" afterPath="$PROJECT_DIR$/Client.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/skg.memestone.client.iml" afterPath="$PROJECT_DIR$/skg.memestone.client.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" afterPath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java" afterPath="$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +63,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="sceneGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneGame.java">
@@ -27,6 +77,16 @@
                 <element signature="e#10989#10990#0" expanded="true" />
                 <element signature="e#11019#11020#0" expanded="true" />
                 <element signature="e#11056#11057#0" expanded="true" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/User/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               </folding>
             </state>
           </provider>
@@ -35,23 +95,37 @@
       <file leaf-file-name="sceneLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="763">
               <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+=======
+            <state relative-caret-position="194">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MemeStoneRest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+      <file leaf-file-name="IGameMaster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="sceneCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,10 +147,19 @@
                 <element signature="e#5964#5965#0" expanded="true" />
                 <element signature="e#6003#6004#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="sceneController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-309">
+              <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="GameMaster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,41 +172,99 @@
                 <element signature="e#2084#2085#0" expanded="true" />
                 <element signature="e#2150#2151#0" expanded="true" />
                 <element signature="e#2187#2188#0" expanded="true" />
+=======
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTmodels/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="IClientMessageGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
               <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+=======
+      <file leaf-file-name="MemestoneGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MemestoneGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ClientWebSocket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ClientWebSocket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="719">
               <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
               <folding />
+=======
+      <file leaf-file-name="MemeStoneRest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+              </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="IGameMaster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+=======
+      <file leaf-file-name="IRestClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/IRestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="sceneEditDeck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneEditDeck.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,11 +279,22 @@
                 <element signature="e#3205#3206#0" expanded="true" />
                 <element signature="e#3274#3275#0" expanded="true" />
                 <element signature="e#3314#3315#0" expanded="true" />
+=======
+      <file leaf-file-name="GameMaster.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+              <folding>
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="sceneRegister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneRegister.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -157,6 +309,14 @@
                 <element signature="e#2497#2498#0" expanded="true" />
                 <element signature="e#2531#2532#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="ClientMessageGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="81" lean-forward="false" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
+              <folding />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
             </state>
           </provider>
         </entry>
@@ -167,6 +327,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -188,15 +349,17 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Models/Card/Deck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GetCollectionMessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
+        <option value="$PROJECT_DIR$/Client.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
         <option value="$PROJECT_DIR$/Client.iml" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
@@ -205,6 +368,20 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneEditDeck.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/REST/Client/IRestClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/REST/RESTmodels/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/REST/RESTmodels/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneNewCards.java" />
@@ -218,10 +395,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="784" />
+    <option name="y" value="-19" />
+    <option name="width" value="1035" />
+    <option name="height" value="685" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -252,7 +437,98 @@
             <path>
               <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GameMaster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="REST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="REST" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="REST" type="462c0819:PsiDirectoryNode" />
+              <item name="RESTmodels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Websockets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Websockets" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Websockets" type="462c0819:PsiDirectoryNode" />
+              <item name="Shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Websockets" type="462c0819:PsiDirectoryNode" />
+              <item name="Shared" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skgmemestoneclient" type="b2602c69:ProjectViewProjectNode" />
@@ -473,13 +749,18 @@
       <workItem from="1528710050710" duration="1045000" />
       <workItem from="1528788537812" duration="27000" />
       <workItem from="1529305040028" duration="5028000" />
+<<<<<<< HEAD
       <workItem from="1529486734605" duration="654000" />
       <workItem from="1529493652092" duration="8857000" />
       <workItem from="1529567443725" duration="5093000" />
+=======
+      <workItem from="1529486734605" duration="8600000" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="21287000" />
   </component>
   <component name="ToolWindowManager">
@@ -488,10 +769,31 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="15270000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -505,6 +807,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3210913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -514,9 +828,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +879,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -577,6 +900,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -592,6 +919,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -599,10 +930,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#1963#1964#0" expanded="false" />
             <element signature="e#2016#2017#0" expanded="false" />
           </folding>
+=======
+          <folding />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -612,11 +947,15 @@
           <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
           <folding>
             <element signature="e#972#973#0" expanded="true" />
+<<<<<<< HEAD
             <element signature="e#1017#1018#0" expanded="true" />
             <element signature="e#2034#2035#0" expanded="true" />
             <element signature="e#2084#2085#0" expanded="true" />
             <element signature="e#2150#2151#0" expanded="true" />
             <element signature="e#2187#2188#0" expanded="true" />
+=======
+            <element signature="e#1019#1020#0" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>
@@ -632,6 +971,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#291#292#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -646,7 +992,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -654,7 +1006,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -662,7 +1020,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
@@ -719,10 +1083,25 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ClientWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/MessageProcessorBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,15 +1126,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="198">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+=======
+        <state relative-caret-position="506">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Board/Board.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="726">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
         </state>
@@ -846,10 +1234,45 @@
           <folding>
             <element signature="e#1963#1964#0" expanded="false" />
             <element signature="e#2016#2017#0" expanded="false" />
+=======
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GetCollectionMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#174#175#0" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/Card/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -870,10 +1293,20 @@
             <element signature="e#3205#3206#0" expanded="true" />
             <element signature="e#3274#3275#0" expanded="true" />
             <element signature="e#3314#3315#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#291#292#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -886,34 +1319,239 @@
             <element signature="e#2102#2103#0" expanded="true" />
             <element signature="e#2497#2498#0" expanded="true" />
             <element signature="e#2531#2532#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RoundStartMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/skg.memestone.client:skg.memestone.client:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>skg.memestone.client:skg.memestone.client:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">skg.memestone.client:skg.memestone.client:1.0-SNAPSHOT</node>
+            <node x="" y="">org.eclipse.jetty:jetty-server:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty:jetty-server:jar:9.2.3.v20140905/javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="" y="">org.eclipse.jetty:jetty-server:jar:9.2.3.v20140905/org.eclipse.jetty:jetty-http:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty:jetty-server:jar:9.2.3.v20140905/org.eclipse.jetty:jetty-http:jar:9.2.3.v20140905/org.eclipse.jetty:jetty-util:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty:jetty-server:jar:9.2.3.v20140905/org.eclipse.jetty:jetty-io:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty:jetty-servlet:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty:jetty-servlet:jar:9.2.3.v20140905/org.eclipse.jetty:jetty-security:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.jersey.core:jersey-common:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.jersey.core:jersey-common:jar:2.7/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.jersey.core:jersey-common:jar:2.7/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.jersey.core:jersey-client:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2:hk2-utils:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2:hk2-locator:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.javassist:javassist:jar:3.18.1-GA</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-server:jar:2.7/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.containers:jersey-container-jetty-http:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.containers:jersey-container-jetty-http:jar:2.7/org.eclipse.jetty:jetty-server:jar:9.1.1.v20140108</node>
+            <node x="" y="">org.glassfish.jersey.containers:jersey-container-jetty-http:jar:2.7/org.eclipse.jetty:jetty-continuation:jar:9.1.1.v20140108</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7/org.glassfish.jersey.ext:jersey-entity-filtering:jar:2.7</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7/org.eclipse.persistence:org.eclipse.persistence.moxy:jar:2.5.0</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7/org.eclipse.persistence:org.eclipse.persistence.moxy:jar:2.5.0/org.eclipse.persistence:org.eclipse.persistence.core:jar:2.5.0</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7/org.eclipse.persistence:org.eclipse.persistence.moxy:jar:2.5.0/org.eclipse.persistence:org.eclipse.persistence.core:jar:2.5.0/org.eclipse.persistence:org.eclipse.persistence.asm:jar:2.5.0</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-moxy:jar:2.7/org.eclipse.persistence:org.eclipse.persistence.antlr:jar:2.5.0</node>
+            <node x="" y="">com.google.code.gson:gson:jar:2.8.2</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.3/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.3/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.3/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">javax.websocket:javax.websocket-api:jar:1.0</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-plus:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-plus:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-jndi:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-plus:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-jndi:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-util:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-webapp:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-webapp:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-xml:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-webapp:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-xml:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-util:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-webapp:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-servlet:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.ow2.asm:asm:jar:5.0.1</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.ow2.asm:asm-commons:jar:5.0.1</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-annotations:jar:9.2.7.v20150116/org.ow2.asm:asm-commons:jar:5.0.1/org.ow2.asm:asm-tree:jar:5.0.1</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-client:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-client:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-util:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-client:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-io:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-common:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-common:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-api:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-common:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-util:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-common:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-io:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-servlet:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-servlet:jar:9.2.3.v20140905</node>
+            <node x="" y="">org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.7.v20150116/org.eclipse.jetty.websocket:websocket-server:jar:9.2.7.v20150116/org.eclipse.jetty:jetty-http:jar:9.2.7.v20150116</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:unknown</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:unknown</node>
+            <node x="" y="">com.jayway.jsonpath:json-path:jar:unknown</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:unknown</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/org.apache.httpcomponents:httpclient:jar:4.3.6</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/javax.mail:mail:jar:1.4.5</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/javax.mail:mail:jar:1.4.5/javax.activation:activation:jar:1.1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-client:jar:1.13</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-client:jar:1.13/com.sun.jersey:jersey-core:jar:1.13</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jettison:jettison:jar:1.1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jettison:jettison:jar:1.1/stax:stax-api:jar:1.0.1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jackson:jackson-core-asl:jar:1.9.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:azure-core:jar:0.9.3/com.sun.jersey:jersey-json:jar:1.13/org.codehaus.jackson:jackson-xc:jar:1.9.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/javax.inject:javax.inject:jar:1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/javax.mail:mail:jar:1.4.7</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/net.jcip:jcip-annotations:jar:1.0</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/org.apache.commons:commons-lang3:jar:3.3.1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/net.minidev:json-smart:jar:1.1.1</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/com.nimbusds:lang-tag:jar:1.4</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/com.nimbusds:nimbus-jose-jwt:jar:3.1.2</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.nimbusds:oauth2-oidc-sdk:jar:4.5/com.nimbusds:nimbus-jose-jwt:jar:3.1.2/org.bouncycastle:bcprov-jdk15on:jar:1.51</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/com.google.code.gson:gson:jar:2.2.4</node>
+            <node x="" y="">com.microsoft.sqlserver:mssql-jdbc:jar:6.1.0.jre8/com.microsoft.azure:azure-keyvault:jar:0.9.3/com.microsoft.azure:adal4j:jar:1.0.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.1.1</node>
+            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.1.1/org.apache.commons:commons-pool2:jar:2.4.2</node>
+            <node x="" y="">javax.xml.bind:jaxb-api:jar:2.3.0</node>
+            <node x="" y="">com.monitorjbl:json-view:jar:0.16</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9871385842472581" x="709.3808706191295" y="421.3695586304414" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="326" column="37" lean-forward="false" selection-start-line="326" selection-start-column="37" selection-end-line="326" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/User/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MemestoneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="763">
           <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneNewCards.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/IRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -925,26 +1563,96 @@
             <element signature="e#2084#2085#0" expanded="true" />
             <element signature="e#2150#2151#0" expanded="true" />
             <element signature="e#2187#2188#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/RESTmodels/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="81" lean-forward="false" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/ClientWebSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
           <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -979,6 +1687,15 @@
             <element signature="e#5327#5328#0" expanded="true" />
             <element signature="e#5964#5965#0" expanded="true" />
             <element signature="e#6003#6004#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+>>>>>>> 1ad205fbc1a0671715e8b653418f325a5d2548e4
           </folding>
         </state>
       </provider>

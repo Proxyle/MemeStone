@@ -2,7 +2,10 @@ package Websockets.Client;
 
 
 import Models.Card.Card;
+import REST.Client.MemeStoneRest;
 import Websockets.Shared.messages.*;
+
+import java.util.ArrayList;
 
 
 public class ClientMessageGenerator implements IClientMessageGenerator {
@@ -13,21 +16,20 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     public ClientMessageGenerator(Websockets.Client.IClientWebSocket clientWebSocket){
         this.clientWebSocket = clientWebSocket;
     }
-    public void registerPlayerOnServer(String name) {
-        clientWebSocket.start();
-        clientWebSocket.send(new RegisterPlayerMessage(name));
+    public void registerPlayerOnServer(String name, String password, String email) {
+        MemeStoneRest rest = new MemeStoneRest();
+        rest.register(name, password, email);
 
     }
 
-    @Override
-    public void logInToServer(String name) {
-        clientWebSocket.start();
-        clientWebSocket.send(new LoginMessage(name));
+    public void logIn(String name, String password) {
+        MemeStoneRest rest = new MemeStoneRest();
+        rest.getLogin(name, password);
     }
 
     @Override
     public void getCollection() {
-        clientWebSocket.send(new GetCollectionMessage());
+        clientWebSocket.send(new GetCollectionMessage(new ArrayList<Card>()));
     }
 
     @Override
