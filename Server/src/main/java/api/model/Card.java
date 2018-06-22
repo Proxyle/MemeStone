@@ -1,22 +1,12 @@
 package api.model;
 
 import api.model.resources.Collection;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/*@JsonTypeInfo(
-        use = JsonTypeInfo.Id.NAME,
-        include = JsonTypeInfo.As.PROPERTY,
-        property = "type"
-)
-@JsonSubTypes({
-        @JsonSubTypes.Type(value = Minion.class, name = "minion"),
-        @JsonSubTypes.Type(value = Spell.class, name = "spell")
-})*/
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(
         name = "minion",
@@ -38,9 +28,6 @@ public abstract class Card {
     @Column(name="manacost")
     private int manaCost;
 
-    @Column(name="imageURL")
-    private String imageUrl;
-
     @Column(name="abilitystrength")
     private Integer abilityStrength;
 
@@ -50,23 +37,17 @@ public abstract class Card {
         inverseJoinColumns = @JoinColumn(name = "ability_id", referencedColumnName = "ability_id"))
     private List<Ability> abilities;
 
-    private List<Collection> collection;
+    @ManyToMany(mappedBy = "collection")
+    private List<Player> players;
 
     public Card() { }
 
-    public Card(Long id, String name, int manaCost, List<Ability> abilities, String imageUrl, Integer abilityStrength){
+    public Card(Long id, String name, int manaCost, List<Ability> abilities, Integer abilityStrength){
         this.id = id;
         this.name = name;
         this.manaCost = manaCost;
         this.abilities = abilities;
-        this.imageUrl = imageUrl;
         this.abilityStrength = abilityStrength;
-        collection = new ArrayList<>();
-    }
-
-    @OneToMany(mappedBy = "card", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Collection> getCollection() {
-        return collection;
     }
 
     public Long getId() {
@@ -79,10 +60,6 @@ public abstract class Card {
 
     public String getName() {
         return name;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
     }
 
     public Integer getAbilityStrength() {

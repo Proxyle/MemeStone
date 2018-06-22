@@ -8,7 +8,7 @@ import java.util.List;
 public class Spell extends Card {
     public Spell() { super(); }
 
-    public Spell(Long id, String name, int manaCost, List<Ability> abilities, String imageUrl, Integer abilityStrength) {
-        super(id, name, manaCost, abilities, imageUrl, abilityStrength);
+    public Spell(Long id, String name, int manaCost, List<Ability> abilities, Integer abilityStrength) {
+        super(id, name, manaCost, abilities, abilityStrength);
     }
 }
