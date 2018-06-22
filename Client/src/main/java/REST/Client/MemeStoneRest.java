@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 public class MemeStoneRest implements IRestClient {
-    private final String url = "http://145.93.105.181:8105/api";
+    private final String url = "http://145.116.44.209:8105/api";
     private RestTemplate restTemplate = new RestTemplate();
 
     public String getBaseUrl() {

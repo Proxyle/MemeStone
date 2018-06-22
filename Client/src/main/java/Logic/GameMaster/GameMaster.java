@@ -1,6 +1,5 @@
 package Logic.GameMaster;
 
-import Models.Board.IBoard;
 import Models.Card.Card;
 import Models.User.IPlayer;
 import Models.User.Player;
@@ -15,7 +14,6 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class GameMaster implements IGameMaster {
-    private IBoard board;
     public  IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
