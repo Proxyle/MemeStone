@@ -12,5 +12,7 @@ public interface IGameServerMain {
     void attack(int lobbyId, String sessionId, int attacker, int defender);
     void joinQueue(Player player);
     void leaveQueue(String sessionId);
-    void updateDeck(List<Card> deck, List<Card> collection);
+    void updateDeck(int playerId, List<Card> deck);
+    void forfeit(String sessionId, int lobbyId);
+    void buyCard(int playerId);
 }

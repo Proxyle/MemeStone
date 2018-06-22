@@ -12,6 +12,6 @@ public interface IGameServerMainGameLogic {
     void notifyPlayerTurn(String sessionId);
     void notifyUpdateBoard(String sessionId, Board board);
     void notifyActionFail(String sessionId);
-    void notifyGameEnd(int lobbyId, List<String> sessionIds, String winner);
+    void notifyGameEnd(int lobbyId, List<String> sessionIds, String winningName, Player winner, Player loser);
     void notifyStartRound(List<String> sessionIds, int lobbyId);
 }

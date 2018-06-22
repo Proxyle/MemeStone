@@ -12,4 +12,5 @@ public interface IGameLogic {
     boolean placeMinion(int location, Minion minion);
     boolean damageTarget(int amount, int[] location);
     void drawCard(int amount);
+    void forfeit(String sessionId);
 }

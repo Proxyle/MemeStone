@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic{
+    private static final int WIN_SCORE = 100;
+    private static final int LOSE_SCORE = 20;
+
     int counter = 0;
     IMessageGenerator messageGenerator;
     List<Player> playersInQueue = new ArrayList<>();
@@ -53,8 +56,18 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
     }
 
     @Override
-    public void updateDeck(List<Card> deck, List<Card> collection) {
+    public void updateDeck(int playerId, List<Card> deck) {
+        //todo
+    }
 
+    @Override
+    public void forfeit(String sessionId, int lobbyId){
+        findLobby(lobbyId).forfeit(sessionId);
+    }
+
+    @Override
+    public void buyCard(int playerId){
+        //todo
     }
     //endregion
 
@@ -80,8 +93,10 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
     }
 
     @Override
-    public void notifyGameEnd(int lobbyId, List<String> sessionIds, String winner) {
-        messageGenerator.notifyGameEnd(sessionIds, winner);
+    public void notifyGameEnd(int lobbyId, List<String> sessionIds, String winningName, Player winner, Player loser) {
+        //todo
+
+        messageGenerator.notifyGameEnd(sessionIds, winningName);
         lobbies.remove(findLobby(lobbyId));
     }
 

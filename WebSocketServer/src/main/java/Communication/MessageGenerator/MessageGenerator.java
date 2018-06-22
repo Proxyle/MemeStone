@@ -18,19 +18,6 @@ public class MessageGenerator implements IMessageGenerator {
     }
 
     @Override
-    public void notifyRegisterResult(String sessionId, boolean success) {
-        RegistrationResultMessage msg = new RegistrationResultMessage(success);
-        serverSocket.sendTo(sessionId, msg);
-
-    }
-
-    @Override
-    public void notifyPlayerAdded(String sessionId, String userName) {
-        PlayerHasRegisteredMessage msg = new PlayerHasRegisteredMessage(userName);
-        serverSocket.sendTo(sessionId, msg);
-    }
-
-    @Override
     public void notifyStartRound(List<String> sessionIds, int lobbyId) {
         RoundStartMessage msg = new RoundStartMessage(lobbyId);
         serverSocket.sendToGroup((String[])sessionIds.toArray(), msg);

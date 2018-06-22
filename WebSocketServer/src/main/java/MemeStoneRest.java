@@ -12,7 +12,7 @@ public class MemeStoneRest {
         return url;
     }
 
-    /*public void getLogin(String username, String password) {
+    public void getLogin(String username, String password) {
         HttpEntity<Player> requestBody = new HttpEntity<>(new Player(username, password));
         String query = url + "/player/login";
         ResponseEntity<Player> result = restTemplate.postForEntity(query, requestBody, Player.class);
@@ -37,6 +37,6 @@ public class MemeStoneRest {
         } else {
             System.out.println("Error while signing up");
         }
-    }*/
+    }
 
 }

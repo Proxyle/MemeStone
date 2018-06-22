@@ -140,8 +140,10 @@ public class GameLogic implements IGameLogic {
     }
 
     private void gameEnd(){
-        String winningName = players.get(currentPlayer).getName();
-        gameServer.notifyGameEnd(lobbyId, getSessionIds(), winningName);
+        Player winner = players.get(currentPlayer);
+        Player loser = players.get(1-currentPlayer);
+        String winningName = winner.getName();
+        gameServer.notifyGameEnd(lobbyId, getSessionIds(), winningName, winner, loser);
     }
 
     public boolean placeMinion(int location, Minion minion){
@@ -159,5 +161,16 @@ public class GameLogic implements IGameLogic {
 
     public boolean damageTarget(int amount, int[] location){
         return gameBoard.damage(location[1], amount, currentPlayer == location[0]);
+    }
+
+    public void forfeit(String sessionId){
+        Player winner = players.get(1);
+        Player loser = players.get(0);
+        if (players.get(0).getSessionId().equals(sessionId)) {
+            winner = players.get(0);
+            loser = players.get(1);
+        }
+        String winningName = winner.getName();
+        gameServer.notifyGameEnd(lobbyId, getSessionIds(), winningName, winner, loser);
     }
 }

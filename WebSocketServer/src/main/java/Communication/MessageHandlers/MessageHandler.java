@@ -1,14 +1,12 @@
 package Communication.MessageHandlers;
 
-import Logic.GameLogic.IGameLogic;
 import Logic.GameServer.IGameServerMain;
-import Messages.ClientToServer.AttackMessage;
-import Messages.ClientToServer.EndTurnMessage;
-import Messages.ClientToServer.PlayCardMessage;
-import Messages.ClientToServer.RegisterPlayerMessage;
+import Messages.ClientToServer.*;
 import Models.Cards.Card;
-import Models.Deck;
+import Models.Player;
 import com.google.gson.Gson;
+
+import java.util.List;
 
 public class MessageHandler implements IMessageHandler {
     IGameServerMain gameServer;
@@ -35,17 +33,24 @@ public class MessageHandler implements IMessageHandler {
                 System.out.println("PlayCardMessage parsing finished");
                 playCard(sessionId, playCardMessage.getCard(), playCardMessage.getLocation(), playCardMessage.getLobbyId());
                 return;
-            case "FindGame"://Todo fix name
-                //Todo fix matchmaking
+            case "BuyCardMessage":
+                BuyCardMessage buyCardMessage = gson.fromJson(data, BuyCardMessage.class);
+                buyCard(buyCardMessage.getPlayerId());
                 return;
-            case "GetCollection": //Todo fix name
-                //Todo fix returning matchmaking
+            case "ForfeitMessage":
+                ForfeitMessage forfeitMessage = gson.fromJson(data, ForfeitMessage.class);
+                forfeit(sessionId, forfeitMessage.getLobbyId());
                 return;
-            case "UpdateDeck": //Todo fix name
-                //Todo fix updating deck
+            case "SaveDeckMessage":
+                SaveDeckMessage saveDeckMessage = gson.fromJson(data, SaveDeckMessage.class);
+                saveDeck(saveDeckMessage.getPlayerId(), saveDeckMessage.getDeck());
                 return;
-            case "Concede": //todo fix name
-                //todo fix handler
+            case "JoinQueueMessage":
+                JoinQueueMessage joinQueueMessage = gson.fromJson(data, JoinQueueMessage.class);
+                joinQueue(sessionId, joinQueueMessage.getPlayer());
+                return;
+            case "LeaveQueueMessage":
+                leaveQueue(sessionId);
                 return;
             default:
                 return;
@@ -62,5 +67,26 @@ public class MessageHandler implements IMessageHandler {
 
     private void playCard(String sessionId, Card card, int[] location, int lobbyId){
         gameServer.playCard(lobbyId, sessionId, card, location);
+    }
+
+    private void forfeit(String sessionId, int lobbyId){
+        gameServer.forfeit(sessionId, lobbyId);
+    }
+
+    private void saveDeck(int playerId, List<Card> deck){
+        gameServer.updateDeck(playerId, deck);
+    }
+
+    private void joinQueue(String sessionId, Player player){
+        player.setSessionId(sessionId);
+        gameServer.joinQueue(player);
+    }
+
+    private void leaveQueue(String sessionId){
+        gameServer.leaveQueue(sessionId);
+    }
+
+    private void buyCard(int playerId){
+        gameServer.buyCard(playerId);
     }
 }
