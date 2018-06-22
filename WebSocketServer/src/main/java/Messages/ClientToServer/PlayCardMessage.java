@@ -7,6 +7,7 @@ import Models.Cards.Spells.*;
 import java.lang.reflect.Type;
 
 public class PlayCardMessage {
+    int lobbyId;
     Minion minion;
     DamageSpell damageSpell;
     DrawSpell drawSpell;
@@ -29,36 +30,46 @@ public class PlayCardMessage {
         return null;
     }
 
+    public int getLobbyId() {
+        return lobbyId;
+    }
+
     public int[] getLocation() {
         return location;
     }
 
-    public PlayCardMessage(Minion minion, int[] location){
+    public PlayCardMessage(int lobbyId, Minion minion, int[] location){
+        this.lobbyId = lobbyId;
         this.minion = minion;
         this.location = location;
     }
 
-    public PlayCardMessage(DamageSpell damageSpell, int[] location){
+    public PlayCardMessage(int lobbyId, DamageSpell damageSpell, int[] location){
+        this.lobbyId = lobbyId;
         this.damageSpell = damageSpell;
         this.location = location;
     }
 
-    public PlayCardMessage(DrawSpell drawSpell, int[] location){
+    public PlayCardMessage(int lobbyId, DrawSpell drawSpell, int[] location){
+        this.lobbyId = lobbyId;
         this.drawSpell = drawSpell;
         this.location = location;
     }
 
-    public PlayCardMessage(HealSpell healSpell, int[] location){
+    public PlayCardMessage(int lobbyId, HealSpell healSpell, int[] location){
+        this.lobbyId = lobbyId;
         this.healSpell = healSpell;
         this.location = location;
     }
 
-    public PlayCardMessage(ResurrectSpell resurrectSpell, int[] location){
+    public PlayCardMessage(int lobbyId, ResurrectSpell resurrectSpell, int[] location){
+        this.lobbyId = lobbyId;
         this.resurrectSpell = resurrectSpell;
         this.location = location;
     }
 
-    public PlayCardMessage(Card card, int[] location){
+    public PlayCardMessage(int lobbyId, Card card, int[] location){
+        this.lobbyId = lobbyId;
         String type = card.getClass().getName();
         switch(type){
             case "Minion":

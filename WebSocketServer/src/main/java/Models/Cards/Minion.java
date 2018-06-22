@@ -1,8 +1,10 @@
 package Models.Cards;
 
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
 
 public class Minion extends Card {
+
+    boolean Attacked = false;
 
     public Minion(String name, String context, int cost, int attackPoints, int healthPoints) {
         super(name, context, cost);
@@ -27,20 +29,27 @@ public class Minion extends Card {
         return minionState;
     }
 
-    public boolean receiveDamage(int damage){
+    public Minion receiveDamage(int damage){
         healthPoints-=damage;
-        return healthPoints > 0;
+        if (healthPoints > 1)
+            return null;
+        return this;
     }
 
 
     @Override
     public boolean play(IGameLogic gameLogic, int[] location) {
         System.out.println("Playing a Minion");
-        return gameLogic.placeMinion(location, this);
+        return gameLogic.placeMinion(location[1], this);
     }
 
     @Override
     public String toString() {
         return "Minion: " + super.toString() + ", attack points: " + attackPoints + ", health points: " + healthPoints;
     }
+
+    public void newTurn(){
+        Attacked = false;
+    }
+    public boolean hasAttacked(){return Attacked;}
 }

@@ -1,6 +1,6 @@
 package Models;
 
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
 import Models.Cards.Card;
 import Models.Cards.Minion;
 import Models.Cards.Spells.DamageSpell;
@@ -8,7 +8,6 @@ import Models.Cards.Spells.DrawSpell;
 import Models.Cards.Spells.HealSpell;
 import Models.Cards.Spells.ResurrectSpell;
 
-import java.awt.dnd.DragGestureEvent;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;

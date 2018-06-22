@@ -1,7 +1,7 @@
 package Communication.MessageHandlers;
 
-import Logic.GameLobby.GameLogic;
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
+import Logic.GameServer.IGameServerMain;
 import Messages.ClientToServer.AttackMessage;
 import Messages.ClientToServer.EndTurnMessage;
 import Messages.ClientToServer.PlayCardMessage;
@@ -10,58 +10,57 @@ import Models.Cards.Card;
 import Models.Deck;
 import com.google.gson.Gson;
 
-import java.lang.reflect.Type;
-
 public class MessageHandler implements IMessageHandler {
-    IGameLogic gameLogic;
+    IGameServerMain gameServer;
 
-    public void setGameLogic(IGameLogic gameLogic){
-        this.gameLogic = gameLogic;
+    public void setGameServer(IGameServerMain gameServer){
+        this.gameServer = gameServer;
     }
     @Override
     public void handleMessage(String sessionId, String data, String simpleType, Gson gson) {
         switch(simpleType) {
-            case "RegisterPlayerMessage":
-                System.out.println("RegisterPlayedMessage parsing started");
-                RegisterPlayerMessage registerPlayerMessage = gson.fromJson(data, RegisterPlayerMessage.class);
-                System.out.println("RegisterPlayerMessage parsing finished");
-                registerPlayer(sessionId, registerPlayerMessage.getUserName(), registerPlayerMessage.getDeck());
-                return;
             case "AttackMessage":
                 System.out.println("AttackMessage parsing started");
                 AttackMessage attackMessage = gson.fromJson(data, AttackMessage.class);
                 System.out.println("AttackMessage parsing finished");
-                attack(sessionId, attackMessage.getAttacker(), attackMessage.getDefender());
+                attack(sessionId, attackMessage.getLobbyId(), attackMessage.getAttacker(), attackMessage.getDefender());
                 return;
             case "EndTurnMessage":
-                endTurn(sessionId);
+                EndTurnMessage endTurnMessage = gson.fromJson(data, EndTurnMessage.class);
+                endTurn(sessionId, endTurnMessage.getLobbyId());
                 return;
             case "PlayCardMessage":
                 System.out.println("PlayCardMessage parsing started");
                 PlayCardMessage playCardMessage = gson.fromJson(data, PlayCardMessage.class);
                 System.out.println("PlayCardMessage parsing finished");
-                playCard(sessionId, playCardMessage.getCard(), playCardMessage.getLocation());
+                playCard(sessionId, playCardMessage.getCard(), playCardMessage.getLocation(), playCardMessage.getLobbyId());
+                return;
+            case "FindGame"://Todo fix name
+                //Todo fix matchmaking
+                return;
+            case "GetCollection": //Todo fix name
+                //Todo fix returning matchmaking
+                return;
+            case "UpdateDeck": //Todo fix name
+                //Todo fix updating deck
+                return;
+            case "Concede": //todo fix name
+                //todo fix handler
                 return;
             default:
                 return;
         }
     }
 
-    private void registerPlayer(String sessionId, String userName, Deck deck){
-        System.out.println("RegisterPlayer");
-        gameLogic.registerNewPlayer(sessionId, userName, deck);
-        System.out.println("End of RegisterPlayer");
+    private void attack(String sessionId, int lobbyId, int attacker, int defender){
+        gameServer.attack(lobbyId, sessionId, attacker, defender);
     }
 
-    private void attack(String sessionId, int attacker, int defender){
-        gameLogic.attack(sessionId, attacker, defender);
+    private void endTurn(String sessionId, int lobbyId){
+        gameServer.endTurn(lobbyId, sessionId);
     }
 
-    private void endTurn(String sessionId){
-        gameLogic.endTurn(sessionId);
-    }
-
-    private void playCard(String sessionId, Card card, int[] location){
-        gameLogic.playCard(sessionId, card, location);
+    private void playCard(String sessionId, Card card, int[] location, int lobbyId){
+        gameServer.playCard(lobbyId, sessionId, card, location);
     }
 }
