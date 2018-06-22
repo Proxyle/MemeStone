@@ -3,6 +3,7 @@ package Logic.GameMaster;
 import Models.Board.IBoard;
 import Models.Card.Card;
 import Models.User.IPlayer;
+import Models.User.Player;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.IClientMessageGenerator;
@@ -13,31 +14,31 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-public class GameMaster implements IGameMaster, Observer {
+public class GameMaster implements IGameMaster {
     private IBoard board;
-    private IPlayer user;
+    public  IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
 
-    private List<Card> collection;
-    private List<Card> deck;
-
-    public void setCollection(List<Card> collection) {
-        this.collection = collection;
-    }
-
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
-        this.deck = new ArrayList<>();
     }
 
-    /*Login*/
-    public void logIn(String name, String password) {
-        generator.logIn(name, password);
+    public boolean logIn(String name, String password) {
+        Player p = generator.logIn(name, password);
+        if (p != null){
+            this.user = p;
+            return true;
+        }
+        return false;
     }
 
     public void signUp(String name, String password, String email) {
         generator.registerPlayerOnServer(name, password, email);
+    }
+
+    public IPlayer getUser() {
+        return user;
     }
 
     @Override
@@ -87,7 +88,7 @@ public class GameMaster implements IGameMaster, Observer {
 
     @Override
     public void addCardToDeck(int location, List<Card> collection, List<Card> deck) {
-        deck.add(collection.get(location));
+        user.getDeck().add(user.getCollection().get(location));
         collection.remove(location);
     }
 
@@ -98,26 +99,19 @@ public class GameMaster implements IGameMaster, Observer {
             collection.add(deck.get(location));
         }
     }
+
     @Override
-    public void saveDeck(ArrayList<Card> collections, ArrayList<Card> deck){
-        //TODO send to rest? or websockets
-        //send back to collections
+    public void saveDeck(ArrayList<Card> collection, ArrayList<Card> deck){
+        generator.saveDeck((ArrayList) user.getCollection(), (ArrayList) user.getDeck());
     }
 
     @Override
     public void buyCards() {
-        //TODO send to server
+        generator.buyCards();
     }
 
     @Override
-    public String[] getDailyQuests() {
-        //TODO get 3 daily quests from rest
-        return new String[0];
-    }
-
-    /*Menu*/
-    @Override
-    public void update(Observable o, Object arg) {
-
+    public void getDailyQuests() {
+        generator.getDailyQuest();
     }
 }

@@ -1,19 +1,14 @@
 package Models.User;
 
-import Models.Board.Board;
-import Models.Card.Collection;
-import Models.Card.Deck;
-import Models.Quest.Quest;
+import Models.Card.Card;
 import java.util.List;
 
 public interface IPlayer {
-    List<Deck> getDecks();
-    List<Quest> getQuests();
-    String getDisplaySetting();
+    List<String> getQuests();
     int getRanking();
     String getUsername();
     String getPassword();
     String getEmail();
-    Collection getCollection();
-    Board getBoard();
+    List<Card> getDeck();
+    List<Card> getCollection();
 }

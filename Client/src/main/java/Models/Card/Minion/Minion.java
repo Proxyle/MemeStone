@@ -1,19 +1,19 @@
 package Models.Card.Minion;
 
 import Models.Card.Card;
-import Models.Card.Rarity;
 
 public class Minion extends Card {
-    private int attackPoints;
-    private int healthPoints;
-    private IMinionState currentState;
 
-    public Minion(Rarity rarity, String name, String context, int cost, int attackPoints, int healthPoints) {
-        super(rarity, name, context, cost);
+    public Minion(String name, String context, int cost, int attackPoints, int healthPoints) {
+        super(name, context, cost);
         this.attackPoints = attackPoints;
         this.healthPoints = healthPoints;
-        setCurrentState(new AliveState());
+        this.minionState = MinionState.AliveState;
     }
+
+    private int attackPoints;
+    private int healthPoints;
+    private MinionState minionState;
 
     public int getAttackPoints() {
         return attackPoints;
@@ -23,7 +23,13 @@ public class Minion extends Card {
         return healthPoints;
     }
 
-    public void setCurrentState(final IMinionState currentState) {
-        this.currentState = currentState;
+    public MinionState getMinionState() {
+        return minionState;
     }
+
+    public boolean receiveDamage(int damage){
+        healthPoints-=damage;
+        return healthPoints > 0;
+    }
+
 }

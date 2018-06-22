@@ -1,6 +1,9 @@
 package REST.RESTmodels;
 
+import Models.Card.Card;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "[User]")
@@ -22,6 +25,8 @@ public class Player {
     @Column(name = "rank")
     private int rankPoints;
 
+    private List<Card> collection;
+
     public Player() { }
 
     public Player(Long id, String username, String password) {
@@ -39,6 +44,10 @@ public class Player {
         this.userName = userName;
         this.password = password;
         this.email = email;
+    }
+
+    public List<Card> getCollection() {
+        return collection;
     }
 
     public Long getId() {

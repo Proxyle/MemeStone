@@ -1,14 +1,17 @@
 package Websockets.Shared.messages;
 
-public class RegisterPlayerMessage {
-    String userName;
 
-    public String getUserName() {
-        return userName;
+import Models.User.Player;
+
+public class RegisterPlayerMessage {
+    Player player;
+
+    public Player getPlayer() {
+        return player;
     }
 
-    public RegisterPlayerMessage(String userName){
-        this.userName = userName;
+    public RegisterPlayerMessage(Player p){
+        this.player = p;
     }
 
 }

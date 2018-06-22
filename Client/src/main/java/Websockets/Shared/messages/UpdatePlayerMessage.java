@@ -1,6 +1,5 @@
 package Websockets.Shared.messages;
 
-import Models.Player;
 import Models.User.*;
 
 public class UpdatePlayerMessage {

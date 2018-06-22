@@ -1,7 +1,7 @@
 package Websockets.Shared.interfaces;
 
 import Models.Card.Card;
-import Models.Player;
+import Models.User.Player;
 import javafx.scene.Scene;
 
 import java.util.List;

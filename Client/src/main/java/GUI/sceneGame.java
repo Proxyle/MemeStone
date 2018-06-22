@@ -4,7 +4,7 @@ import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
-import Models.Player;
+import Models.User.Player;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
