@@ -57,7 +57,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     public void collections(){
-        collections = new sceneCollection(this, new ArrayList<Card>());
+        collections = new sceneCollection(this, gameMaster, new ArrayList<>(), gameMaster.getUser().getRanking());
         application.Draw(collections.getScene());
     }
 
@@ -150,6 +150,6 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     @Override
     public void processGetCollection(List<Card> collection) {
-        gameMaster.setCollection(collection);
+        //gameMaster.setCollection(collection);
     }
 }

@@ -1,6 +1,7 @@
 package Logic.GameMaster;
 
 import Models.Card.Card;
+import Models.User.IPlayer;
 import Websockets.Shared.interfaces.*;
 
 import java.util.ArrayList;
@@ -31,4 +32,6 @@ public interface IGameMaster {
     void saveDeck(ArrayList<Card> collections, ArrayList<Card> deck);
     void buyCards();
 
+    /* User */
+    IPlayer getUser();
 }

@@ -2,359 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa59db6-206b-4ed9-b805-ffe89a65bed0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_azure_adal4j_1_0_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_azure_azure_core_0_9_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_azure_azure_keyvault_0_9_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_6_1_0_jre8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_monitorjbl_json_view_0_16.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_lang_tag_1_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_3_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_4_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_client_api_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_51.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_2_3_v20140905.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_2_3_v20140905.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_2_7_v20150116.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_antlr_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_moxy_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_jetty_http_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_26.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_26.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_26.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_moxy_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_16_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_6_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bc3cdf04ccc8e7efaccc15679cbbc2ea3535e0f" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Client.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/skg.memestone.client.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/BaseController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/FXML/MemeStone Client GUI.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/IMemestoneGUI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/MemestoneGUI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneCard.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneEditDeck.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLogin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneNewDeck.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneRegister.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Board/Board.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Board/IBoard.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Card.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Minion/Minion.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Minion/MinionState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Rarity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Spell/DamageSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Spell/DrawSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Spell/HealSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Spell/ResurrectSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Card/Spell/Spell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Entity/Entity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/Setting/Setting.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/User/IPlayer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models/User/Player.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/REST/Client/IRestClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/REST/Client/MemeStoneRest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/REST/RESTmodels/Player.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientMessageProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/ClientWebSocket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientWebSocket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GameEndMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GetCollectionMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerActionFailMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerHasRegisteredMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/PlayerTurnMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RegistrationResultMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/RoundStartMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdateBoardMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdatePlayerMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/EncapsulatingMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/MessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/MessageProcessorBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/WebSocketBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IDataContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IEncapsulatingMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageHandlerFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IWebSocket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/AttackMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/BuyCardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/DailyQuestMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/EncapsulatingMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/EndTurnMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/ForfeitMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GameEndMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetCollectionMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetLeaderBoardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/GetSettingsMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/LoginMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayCardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayerActionFailMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayerHasRegisteredMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayerIdMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayerTurnMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/RegisterPlayerMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/RegistrationResultMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/RoundStartMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/SaveDeckMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdateBoardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/dataSources.local.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/dataSources/1c218d46-79eb-4234-8737-a729213e37c8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/dataSources/1c218d46-79eb-4234-8737-a729213e37c8/storage_v2/_src_/database/dbi341449.NNVXuw.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/dataSources/1c218d46-79eb-4234-8737-a729213e37c8/storage_v2/_src_/database/dbi341449.NNVXuw/schema/dbo.sYMBAA.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.idea/libraries/com_microsoft_sqlserver_mssql_jdbc_6_4_0_jre8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.scannerwork/.sonar_lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/.scannerwork/report-task.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/sonar-project.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/Database/DataAccessLayerTemp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Server/src/main/java/Database/DataTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/WebSocketServer.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/sonar-project.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/EncapsulatingMessageGenerator/EncapsulatingMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/EncapsulatingMessageGenerator/IEncapsulatingMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageGenerator/IMessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageGenerator/MessageGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageHandlers/IMessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageHandlers/MessageHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageProcessor/IMessageProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/MessageProcessor/MessageProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/WebSockets/IServerWebSocket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Communication/WebSockets/ServerWebSocket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Logic/GameLobby/GameLogic.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Logic/GameLobby/IGameLogic.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Logic/f.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/CardAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ClientToServer/AttackMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ClientToServer/EndTurnMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ClientToServer/PlayCardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ClientToServer/RegisterPlayerMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/EncapsulatingMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/GameEndMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/PlayerActionFailMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/PlayerHasRegisteredMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/PlayerIdMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/PlayerTurnMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/RegistrationResultMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/RoundStartMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/UpdateBoardMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Messages/ServerToClient/UpdatePlayerMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Card.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Minion.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/MinionState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Spells/DamageSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Spells/DrawSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Spells/HealSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Spells/ResurrectSpell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Cards/Spells/Spell.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Collection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Deck.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/Player.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/Models/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/src/main/java/ServerApp/ServerApp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/EncapsulatingMessageGenerator/EncapsulatingMessageGenerator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/EncapsulatingMessageGenerator/IEncapsulatingMessageGenerator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageGenerator/IMessageGenerator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageGenerator/MessageGenerator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageHandlers/IMessageHandler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageHandlers/MessageHandler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageProcessor/IMessageProcessor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/MessageProcessor/MessageProcessor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/WebSockets/IServerWebSocket.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Communication/WebSockets/ServerWebSocket.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Logic/GameLobby/GameLogic.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Logic/GameLobby/IGameLogic.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Logic/f.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/CardAdapter.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ClientToServer/AttackMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ClientToServer/EndTurnMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ClientToServer/PlayCardMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ClientToServer/RegisterPlayerMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/EncapsulatingMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/GameEndMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/PlayerActionFailMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/PlayerHasRegisteredMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/PlayerIdMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/PlayerTurnMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/RegistrationResultMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/RoundStartMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/UpdateBoardMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Messages/ServerToClient/UpdatePlayerMessage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Card.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Minion.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/MinionState.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Spells/DamageSpell.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Spells/DrawSpell.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Spells/HealSpell.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Spells/ResurrectSpell.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Cards/Spells/Spell.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Collection.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Deck.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/Player.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/Models/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/ServerApp/ServerApp$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/classes/ServerApp/ServerApp.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../WebSocketServer/target/sonar/report-task.txt" />
-      <change beforePath="$PROJECT_DIR$/../.circleci/config.yml" afterPath="$PROJECT_DIR$/../.circleci/config.yml" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/index.pb" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Server/MemeStoneServerApplication.iml" afterPath="$PROJECT_DIR$/../Server/MemeStoneServerApplication.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -366,61 +19,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sceneGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneGame.java">
+      <file leaf-file-name="sceneCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="42" column="119" lean-forward="true" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
+              <folding>
+                <element signature="method#makeScene#0;class#sceneCollection#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <file leaf-file-name="MemestoneGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MemestoneGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="sceneLeaderboard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sceneSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/MessageHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IClientMessageGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -431,9 +58,10 @@
       <file leaf-file-name="GameMaster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="272">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#logIn#0;class#GameMaster#0" expanded="false" />
                 <element signature="method#signUp#0;class#GameMaster#0" expanded="false" />
                 <element signature="method#addCardToDeck#0;class#GameMaster#0" expanded="false" />
@@ -444,31 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameEndMessageHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GameEndMessageHandler.java">
+      <file leaf-file-name="IGameMaster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientMessageHandlerFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/ClientMessageHandlerFactory.java">
+      <file leaf-file-name="sceneController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="742">
+              <caret line="152" column="10" lean-forward="false" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMessageHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageHandler.java">
+      <file leaf-file-name="sceneHomeScreen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="177">
+              <caret line="102" column="59" lean-forward="false" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -516,20 +144,22 @@
         <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Models/User/IPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/UpdatePlayerMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IGameClient.java" />
         <option value="$PROJECT_DIR$/Client.iml" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IClientGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/messageHandlers/GetCollectionMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/MessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/sceneGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/UpdatePlayerMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/GameClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/messages/PlayCardMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Websockets/Client/IClientMessageGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java" />
       </list>
     </option>
   </component>
@@ -868,12 +498,12 @@
       <updated>1529665290179</updated>
       <workItem from="1529665291581" duration="12528000" />
       <workItem from="1529679219031" duration="540000" />
-      <workItem from="1529684435985" duration="7000" />
+      <workItem from="1529684435985" duration="509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13075000" />
+    <option name="totallyTimeSpent" value="13577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -890,12 +520,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319194" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -908,7 +539,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33262712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,23 +555,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Websockets/Shared/interfaces/IMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Card/Collection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/Card/Minion/MinionState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1084,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/User/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1103,7 +709,7 @@
         <state relative-caret-position="239">
           <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1142,7 +748,7 @@
         <state relative-caret-position="481">
           <caret line="56" column="0" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1170,31 +776,19 @@
             <element signature="method#ClientMessageGenerator#0;class#ClientMessageGenerator#0" expanded="false" />
             <element signature="method#registerPlayerOnServer#0;class#ClientMessageGenerator#0" expanded="false" />
             <element signature="method#logIn#0;class#ClientMessageGenerator#0" expanded="false" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1286#1287#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1425#1426#0" expanded="false" />
+            <element signature="e#1469#1470#0" expanded="false" />
+            <element signature="e#1527#1528#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1634#1635#0" expanded="false" />
             <element signature="method#saveDeck#0;class#ClientMessageGenerator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3614#3615#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1203,14 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2134">
           <caret line="126" column="12" lean-forward="false" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="186" column="27" lean-forward="false" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1228,21 +814,7 @@
         <state relative-caret-position="51">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="method#logIn#0;class#GameMaster#0" expanded="false" />
-            <element signature="method#signUp#0;class#GameMaster#0" expanded="false" />
-            <element signature="method#addCardToDeck#0;class#GameMaster#0" expanded="false" />
-            <element signature="method#removeCardFromDeck#0;class#GameMaster#0" expanded="false" />
-            <element signature="method#saveDeck#0;class#GameMaster#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1294,9 +866,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneLeaderboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/GameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#logIn#0;class#GameMaster#0" expanded="false" />
+            <element signature="method#signUp#0;class#GameMaster#0" expanded="false" />
+            <element signature="method#addCardToDeck#0;class#GameMaster#0" expanded="false" />
+            <element signature="method#removeCardFromDeck#0;class#GameMaster#0" expanded="false" />
+            <element signature="method#saveDeck#0;class#GameMaster#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Logic/GameMaster/IGameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="152" column="10" lean-forward="false" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="17">
           <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding />
         </state>
@@ -1312,8 +925,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+        <state relative-caret-position="-1564">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="119" lean-forward="true" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
+          <folding>
+            <element signature="method#makeScene#0;class#sceneCollection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MemestoneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/sceneHomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="102" column="59" lean-forward="false" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
           <folding />
         </state>
       </provider>

@@ -100,7 +100,7 @@ public class sceneHomeScreen{
         });
         grid.add(btnExitGame, 1,4,1,1);
 
-        String[] dailyQuests = gameMaster.getDailyQuests();
+        String[] dailyQuests = { "FAKA1", "FAKA2", "FAKA3" }; //gameMaster.getDailyQuests();
         lblQuest1.setText(dailyQuests[0]);
         lblQuest2.setText(dailyQuests[1]);
         lblQuest3.setText(dailyQuests[2]);
