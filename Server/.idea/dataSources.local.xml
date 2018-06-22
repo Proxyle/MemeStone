@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="dbi341449@mssql.fhict.local" uuid="1c218d46-79eb-4234-8737-a729213e37c8">
+      <database-info product="Microsoft SQL Server" version="12.00.5579" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.4 for SQL Server" driver-version="6.4.0.0">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>dbi341449</user-name>
+      <introspection-schemas>dbi341449:dbo</introspection-schemas>
+    </data-source>
+  </component>
+</project>

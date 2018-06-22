@@ -1,0 +1,4 @@
+
+‡squid:S1488"mImmediately return this expression instead of assigning it to the temporary variable "jpaTransactionManager".(ÓÕ¼†úÿÿÿÿ
+ysquid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "adapter".(Èğ¯âÿÿÿÿÿ
+_squid:UselessImportCheck"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ

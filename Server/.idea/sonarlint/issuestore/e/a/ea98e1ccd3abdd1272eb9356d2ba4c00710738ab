@@ -1,0 +1,4 @@
+
+@squid:S1168"+Return an empty collection instead of null.(¥¹ï
+Asquid:S1612",Replace this lambda with a method reference.(¦‡ò½
+Qsquid:S3655"7Call "Optional#isPresent()" before accessing the value.(ç¢‡¼ıÿÿÿÿ
