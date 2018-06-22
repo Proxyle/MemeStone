@@ -1,14 +1,12 @@
 package GUI;
 
+import Logic.GameMaster.IGameMaster;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -22,16 +20,18 @@ public class sceneRegister {
     Button btnBack = new Button("Back");
     TextField txtEmail = new TextField();
     TextField txtUsername = new TextField();
-    TextField txtPassword = new TextField();
+    PasswordField txtPassword = new PasswordField();
     Label lblEmail = new Label("Email:");
     Label lblUsername = new Label("Username:");
     Label lblPassword = new Label("Password:");
     Scene scene;
     sceneController controller;
+    IGameMaster gameMaster;
 
-    public sceneRegister(sceneController controller){
+    public sceneRegister(sceneController controller, IGameMaster gameMaster){
         scene = makeScene();
         this.controller = controller;
+        this.gameMaster = gameMaster;
     }
 
     private Scene makeScene(){
@@ -82,6 +82,8 @@ public class sceneRegister {
     }
 
     public void signUp() {
+        if (gameMaster.signUp(txtUsername.getText(), txtPassword.getText(), txtEmail.getText()))
+            controller.home();
 
     }
 

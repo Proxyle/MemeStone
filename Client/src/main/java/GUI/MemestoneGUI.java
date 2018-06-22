@@ -22,5 +22,6 @@ public class MemestoneGUI extends Application implements IMemestoneGUI{
 
     public void Draw(Scene scene){
         window.setScene(scene);
+        window.setFullScreen(true);
     }
 }
