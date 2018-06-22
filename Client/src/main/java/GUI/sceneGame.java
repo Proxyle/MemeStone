@@ -265,21 +265,8 @@ public class sceneGame{
         ivEmptySlot.setImage(iEmptySlot);
         ivEmptySlot.setFitWidth(120);
         ivEmptySlot.setFitHeight(200);
-        //TODO save coordinates somewhere and shit like fuck me what am I doing aaah I have an idea but that needs server side editing and we dont have time and shit
         ivEmptySlot.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex( ivEmptySlot),GridPane.getRowIndex( ivEmptySlot)));
         return ivEmptySlot;
-    }
-
-    public void removeNodeByRowColumnIndex(final int row,final int column,GridPane gridPane) {
-
-        ObservableList<Node> childrens = gridPane.getChildren();
-        for(Node node : childrens) {
-            if(node instanceof GridPane && gridPane.getRowIndex(node) == row && gridPane.getColumnIndex(node) == column) {
-                GridPane grid = (GridPane) node; // use what you want to remove
-                gridPane.getChildren().remove(grid);
-                break;
-            }
-        }
     }
 
     private GridPane makeGridWithEmptySlots(int amount){
@@ -392,11 +379,11 @@ public class sceneGame{
         }
     }
 
-    public void notifyPlayer(){
+    public void notifyPlayer(String text){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
-        alert.setContentText("It's your turn");
+        alert.setContentText(text);
 
         alert.showAndWait();
     }

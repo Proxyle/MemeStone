@@ -18,6 +18,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class sceneCollection {
     //Properties
@@ -38,9 +39,9 @@ public class sceneCollection {
 
     Scene scene;
     sceneController controller;
-    ArrayList<Card> collection;
+    List<Card> collection;
 
-    public sceneCollection(sceneController controller, IGameMaster gameMaster, ArrayList<Card> collection, int score) {
+    public sceneCollection(sceneController controller, IGameMaster gameMaster, List<Card> collection, int score) {
         scene = makeScene();
         this.collection = collection;
         this.controller = controller;
@@ -138,7 +139,7 @@ public class sceneCollection {
             for (Card c : collection) {
                 if (c instanceof Minion) {
                     Minion m = (Minion) c;
-                    card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                    card = new sceneCard(m.getName(), m.getId(), m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
                 } else if (c instanceof Spell) {
                     Spell s = (Spell) c;
                     card = new sceneCard(s.getName(), null, s.getContext(), s.getCost());
@@ -174,6 +175,7 @@ public class sceneCollection {
     }
 
     public void showCards(ArrayList<Card> cards) {
+        //TODO Roep deze methode aan wanneer kaarten worden gestuurd
         groupCollections.setVisible(false);
         groupNewCards.setVisible(true);
         newCards = new VBox();
@@ -191,7 +193,7 @@ public class sceneCollection {
     }
 
     public void backButton() {
-        controller.home("derp");
+        controller.home();
     }
 
     public void okButton(){

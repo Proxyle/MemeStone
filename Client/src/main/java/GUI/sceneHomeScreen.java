@@ -2,7 +2,6 @@ package GUI;
 
 
 import Logic.GameMaster.IGameMaster;
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -11,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class sceneHomeScreen{
     //Properties
@@ -23,9 +21,9 @@ public class sceneHomeScreen{
     Button btnLeaderboard = new Button("Leaderboard");
     Button btnSettings = new Button("Settings");
     Button btnExitGame = new Button("Exit Game");
-    Label lblQuest1 = new Label();
-    Label lblQuest2 = new Label();
-    Label lblQuest3 = new Label();
+    Label lblTask1 = new Label();
+    Label lblTask2 = new Label();
+    Label lblTask3 = new Label();
 
     Scene scene;
     sceneController controller;
@@ -100,12 +98,12 @@ public class sceneHomeScreen{
         });
         grid.add(btnExitGame, 1,4,1,1);
 
-        String[] dailyQuests = gameMaster.getDailyQuests();
-        lblQuest1.setText(dailyQuests[0]);
-        lblQuest2.setText(dailyQuests[1]);
-        lblQuest3.setText(dailyQuests[2]);
+        String[] dailyQuests = gameMaster.getTaskQuests();
+        lblTask1.setText(dailyQuests[0]);
+        lblTask2.setText(dailyQuests[1]);
+        lblTask3.setText(dailyQuests[2]);
 
-        vboxQuests.getChildren().addAll(lblQuest1,lblQuest2,lblQuest3);
+        vboxQuests.getChildren().addAll(lblTask1, lblTask2, lblTask3);
         grid.add(vboxQuests, 1,5,1,1);
 
         // Define title and assign the scene for main window

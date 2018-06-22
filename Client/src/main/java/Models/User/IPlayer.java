@@ -1,6 +1,7 @@
 package Models.User;
 
 import Models.Board.Board;
+import Models.Card.Card;
 import Models.Card.Collection;
 import Models.Card.Deck;
 import Models.Quest.Quest;
@@ -14,6 +15,6 @@ public interface IPlayer {
     String getUsername();
     String getPassword();
     String getEmail();
-    Collection getCollection();
+    List<Card> getCards();
     Board getBoard();
 }

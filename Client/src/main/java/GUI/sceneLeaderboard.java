@@ -92,6 +92,6 @@ public class sceneLeaderboard{
     }
 
     public void backButton() {
-        controller.home("erik");
+        controller.home();
     }
 }

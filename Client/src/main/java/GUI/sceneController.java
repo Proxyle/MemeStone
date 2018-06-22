@@ -3,8 +3,10 @@ package GUI;
 import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
 import Models.Card.Card;
+import Models.Card.Minion.Minion;
 import Models.Setting.Setting;
 import Models.Player;
+import Models.User.IPlayer;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.GameClient;
@@ -23,7 +25,6 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     sceneHomeScreen home;
     sceneCollection collections;
     sceneEditDeck editDeck;
-    sceneNewDeck newDeck;
     sceneLeaderboard leaderboard;
     sceneGame game;
     IMemestoneGUI application;
@@ -42,7 +43,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
         home = new sceneHomeScreen(this, gameMaster);
         leaderboard =  new sceneLeaderboard(this, leaderboardUsers);
         game = new sceneGame(this);
-        //getGameClient().registerGUI(this);
+        getGameClient().registerGUI(this);
         this.application =  application;
         this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
     }
@@ -52,13 +53,13 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     }
 
-    public void home(String name){
-        //getGameClient().registerPlayer(name);
+    public void home(){
         application.Draw(home.getScene());
     }
 
     public void collections(){
-        collections = new sceneCollection(this, new ArrayList<Card>());
+        IPlayer user = gameMaster.getPlayer;
+        collections = new sceneCollection(this,gameMaster,user.getCards(), user.getRanking());
         application.Draw(collections.getScene());
     }
 
@@ -124,28 +125,34 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     @Override
     public void processGameEnd(String winner) {
         Platform.runLater(()->{
-
+            IPlayer user = gameMaster.getPlayer;
+            if(winner.equals(user.getUsername())){
+                game.notifyPlayer("GG EZ");
+            } else{
+                game.notifyPlayer("You lost! Get Shrekt!");
+            }
+            home();
         });
     }
 
     @Override
     public void processPlayerActionFail() {
         Platform.runLater(()->{
-
+            game.notifyPlayer("No, just no...");
         });
     }
 
     @Override
     public void processUpdateBoard(Card[][] board) {
         Platform.runLater(()->{
-
+            game.updateBoard((Minion[][])board);
         });
     }
 
     @Override
     public void processUpdatePlayer(Player player) {
         Platform.runLater(()->{
-
+            game.updatePlayer(player);
         });
     }
 

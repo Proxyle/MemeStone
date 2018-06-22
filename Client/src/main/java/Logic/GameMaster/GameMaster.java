@@ -15,7 +15,7 @@ import java.util.Observer;
 
 public class GameMaster implements IGameMaster, Observer {
     private IBoard board;
-    private IPlayer user;
+    public IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
 
@@ -110,7 +110,7 @@ public class GameMaster implements IGameMaster, Observer {
     }
 
     @Override
-    public String[] getDailyQuests() {
+    public String[] getTaskQuests() {
         //TODO get 3 daily quests from rest
         return new String[0];
     }

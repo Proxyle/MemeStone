@@ -1,16 +1,11 @@
 package GUI;
 
-import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
-import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
+import javafx.scene.text.Font;
 
 public class sceneCard{
     //Properties
@@ -29,9 +24,9 @@ public class sceneCard{
     Label lblSummary;
     ImageView iIcon = new ImageView();
 
-    public sceneCard(String name, String imgUrl, String summary, int healthPoints, int energyPoints, int attackPoints) {
+    public sceneCard(String name, Long imgUrl, String summary, int healthPoints, int energyPoints, int attackPoints) {
         this.name = name;
-        this.imgUrl = imgUrl;
+        this.imgUrl = "resources/" + imgUrl + "/.jpg";
         this.summary = summary;
         this.healthPoints = healthPoints;
         this.energyPoints = energyPoints;
@@ -71,6 +66,7 @@ public class sceneCard{
         }
 
         lblSummary = new Label(summary);
+        lblSummary.setFont(Font.font("Lucida",8));
         lblSummary.setMaxSize(100, 50);
         lblSummary.setWrapText(true);
         //TODO change font size of label so it's readable

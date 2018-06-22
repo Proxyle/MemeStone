@@ -1,16 +1,18 @@
 package Models.Card;
 
 public abstract class Card {
+    private Long id;
     private Rarity rarity;
     private String name;
     private String context;
     private int cost;
 
-    public Card(Rarity rarity, String name, String context, int cost) {
+    public Card(Rarity rarity, String name, String context, int cost, Long id) {
         this.rarity = rarity;
         this.name = name;
         this.context = context;
         this.cost = cost;
+        this.id = id;
     }
 
     public Card() {
@@ -30,5 +32,9 @@ public abstract class Card {
 
     public int getCost() {
         return cost;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
