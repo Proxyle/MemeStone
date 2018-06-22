@@ -1,10 +1,6 @@
 package api.model;
 
-import api.model.resources.Collection;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -38,7 +34,10 @@ public abstract class Card {
     private List<Ability> abilities;
 
     @ManyToMany(mappedBy = "collection")
-    private List<Player> players;
+    private List<Player> playersCollection;
+
+    @ManyToMany(mappedBy = "deck")
+    private List<Player> playersDeck;
 
     public Card() { }
 
@@ -48,6 +47,10 @@ public abstract class Card {
         this.manaCost = manaCost;
         this.abilities = abilities;
         this.abilityStrength = abilityStrength;
+    }
+
+    public void addPlayerToCollection(Player player) {
+        playersCollection.add(player);
     }
 
     public Long getId() {

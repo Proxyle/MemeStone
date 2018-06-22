@@ -1,8 +1,5 @@
 package api.model;
 
-import api.model.resources.Collection;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,10 +26,17 @@ public class Player {
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "User_Card",
-        joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
-        inverseJoinColumns = @JoinColumn(name = "card_id", referencedColumnName = "card_id")
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "card_id", referencedColumnName = "card_id")
     )
     private List<Card> collection;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "Deck",
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "card_id", referencedColumnName = "card_id")
+    )
+    private List<Card> deck;
 
     public Player() {}
 
@@ -45,12 +49,9 @@ public class Player {
         collection = new ArrayList<>();
     }
 
-
     public void addCardToCollection(Card card) {
-    }
-
-    public List<Card> getCollection() {
-        return collection;
+        collection.add(card);
+        card.addPlayerToCollection(this);
     }
 
     public Long getId() {
@@ -91,5 +92,21 @@ public class Player {
 
     public void setRankPoints(int rankPoints) {
         this.rankPoints = rankPoints;
+    }
+
+    public List<Card> getCollection() {
+        return collection;
+    }
+
+    public void setCollection(List<Card> collection) {
+        this.collection = collection;
+    }
+
+    public List<Card> getDeck() {
+        return deck;
+    }
+
+    public void setDeck(List<Card> deck) {
+        this.deck = deck;
     }
 }
