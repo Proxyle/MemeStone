@@ -1,12 +1,13 @@
 package Communication.MessageProcessor;
 
 import Communication.MessageHandlers.IMessageHandler;
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
+import Logic.GameServer.IGameServerMain;
 import com.google.gson.Gson;
 
 public class MessageProcessor implements IMessageProcessor {
 
-    IGameLogic gameLogic;
+    IGameServerMain gameServer;
 
     private IMessageHandler handler;
 
@@ -24,9 +25,9 @@ public class MessageProcessor implements IMessageProcessor {
 
     }
 
-    public void connectLobby(IGameLogic gameLogic) {
-        this.gameLogic = gameLogic;
-        handler.setGameLogic(gameLogic);
+    public void connectMainServer(IGameServerMain gameServer) {
+        this.gameServer = gameServer;
+        handler.setGameServer(gameServer);
     }
 
     private Gson gson;

@@ -7,8 +7,10 @@ import Communication.MessageHandlers.MessageHandler;
 import Communication.MessageProcessor.IMessageProcessor;
 import Communication.MessageProcessor.MessageProcessor;
 import Communication.WebSockets.ServerWebSocket;
-import Logic.GameLobby.GameLogic;
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.GameLogic;
+import Logic.GameLogic.IGameLogic;
+import Logic.GameServer.GameServerMain;
+import Logic.GameServer.IGameServerMain;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -32,8 +34,9 @@ public class ServerApp {
 
         IMessageGenerator messageGenerator = new MessageGenerator(socket);
 
-        IGameLogic gameLobby = new GameLogic(messageGenerator);
-        messageHandler.connectLobby(gameLobby);
+        IGameServerMain gameServer = new GameServerMain(messageGenerator);
+        messageHandler.connectMainServer(gameServer);
+
 
         Server webSocketServer = new Server();
         ServerConnector connector = new ServerConnector(webSocketServer);

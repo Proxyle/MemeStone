@@ -1,6 +1,6 @@
 package Models.Cards;
 
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
 
 public abstract class Card {
 

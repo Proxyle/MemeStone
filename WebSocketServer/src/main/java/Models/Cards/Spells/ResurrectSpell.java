@@ -1,6 +1,6 @@
 package Models.Cards.Spells;
 
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
 
 public class ResurrectSpell extends Spell {
 

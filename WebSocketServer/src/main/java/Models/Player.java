@@ -1,6 +1,6 @@
 package Models;
 
-import Logic.GameLobby.IGameLogic;
+import Logic.GameLogic.IGameLogic;
 import Models.Cards.Card;
 import Models.Cards.Minion;
 import Models.Cards.Spells.DamageSpell;
@@ -8,13 +8,13 @@ import Models.Cards.Spells.DrawSpell;
 import Models.Cards.Spells.HealSpell;
 import Models.Cards.Spells.ResurrectSpell;
 
-import java.awt.dnd.DragGestureEvent;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Player {
     String sessionId;
+    int userId;
     String userName;
     Deck deck;
     ArrayList<Minion> minionInHand = new ArrayList();
@@ -31,6 +31,14 @@ public class Player {
         return sessionId;
     }
 
+    public int getUserId(){
+        return userId;
+    }
+
+    public void setSessionId(String sessionId){
+        this.sessionId = sessionId;
+    }
+
     public ArrayList<Card> getCards(){
         ArrayList<Card> hand = (ArrayList<Card>)minionInHand.clone();
         hand.addAll(damageSpellsInHand);
@@ -40,7 +48,8 @@ public class Player {
         return hand;
     }
 
-    public Player(String sessionId, String userName, Deck deck){
+    public Player(int userId, String sessionId, String userName, Deck deck){
+        this.userId = userId;
         this.sessionId = sessionId;
         this.userName = userName;
         this.deck = deck;
