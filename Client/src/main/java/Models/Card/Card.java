@@ -37,7 +37,8 @@ public abstract class Card {
         return id;
     }
 
-    public Card(String name, String context, int cost){
+    public Card(Long id, String name, String context, int cost){
+        this.id = id;
         this.name = name;
         this.context = context;
         this.cost = cost;
