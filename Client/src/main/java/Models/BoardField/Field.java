@@ -21,7 +21,7 @@ public class Field {
         this.lowerField = lowerField;
         this.fieldBuff = fieldBuff;
     }
-
+    
     public FieldBuff getFieldBuff() {
         return fieldBuff;
     }
@@ -44,9 +44,9 @@ public class Field {
                 return false;
         if (location > 3 || location < 0)
             return false;
-        if (lowerField[location] == null)
+        if (lowerField[location] != null)
             return false;
-        //lowerField[location] = minion.includeFieldBuff(fieldBuff);
+        lowerField[location] = minion.includeFieldBuff(fieldBuff);
         return true;
     }
 
@@ -61,7 +61,7 @@ public class Field {
         Minion defending = upperField[defender];
         upperField[defender] = upperField[defender].receiveDamage(attacking.getAttackPoints());
         lowerField[attacker] = lowerField[attacker].receiveDamage(defending.getAttackPoints());
-        //lowerField[attacker].setAttacked();
+        lowerField[attacker].setAttacked();
         return true;
     }
 
