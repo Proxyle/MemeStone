@@ -2,6 +2,7 @@ package GUI;
 
 import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
+import Models.Board;
 import Models.Card.Card;
 import Models.User.Player;
 import Websockets.Client.ClientMessageGenerator;
@@ -14,7 +15,6 @@ import javafx.scene.Scene;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TimerTask;
 
 public class sceneController extends BaseController implements IClientGUI, IMemestoneGUI {
 
@@ -83,14 +83,12 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     @Override
-    public void processRoundStart() {
+    public void processRoundStart(int lobbyId) {
         Platform.runLater(()->{
-            new java.util.Timer().schedule(new TimerTask(){
-                @Override
-                public void run() {
-                    //TODO startRound();
-                }
-            },5);
+            if (gameMaster.getLobbyId() == -1){
+                gameMaster.setLobbyId(lobbyId);
+            }
+
         });
     }
 
@@ -135,7 +133,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     @Override
-    public void processUpdateBoard(Card[][] board) {
+    public void processUpdateBoard(Board board) {
         Platform.runLater(()->{
 
         });
@@ -151,5 +149,10 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     @Override
     public void processGetCollection(List<Card> collection) {
         //gameMaster.setCollection(collection);
+    }
+
+    @Override
+    public void processCardBought() {
+
     }
 }

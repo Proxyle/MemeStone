@@ -12,6 +12,6 @@ public class RoundStartMessageHandler extends MessageHandler<RoundStartMessage> 
 
     @Override
     public void handleMessageInternal(RoundStartMessage message, String sessionId) {
-        getGameClient().handleRoundStart();
+        getGameClient().handleRoundStart(message.getLobbyId());
     }
 }

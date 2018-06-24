@@ -17,6 +17,7 @@ public class GameMaster implements IGameMaster {
     public  IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
+    private int lobbyId = -1;
 
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
@@ -39,6 +40,14 @@ public class GameMaster implements IGameMaster {
         return user;
     }
 
+    public int getLobbyId() {
+        return lobbyId;
+    }
+
+    public void setLobbyId(int lobbyId) {
+        this.lobbyId = lobbyId;
+    }
+
     @Override
     public void registerGameGui(IClientGUI gui) {
         this.gui = gui;
@@ -56,7 +65,7 @@ public class GameMaster implements IGameMaster {
 
     @Override
     public void exitGame() {
-        generator.exitGame();
+        generator.exitGame(lobbyId);
     }
 
     @Override
@@ -66,22 +75,22 @@ public class GameMaster implements IGameMaster {
 
     @Override
     public void attackCard(int attack, int defend) {
-        generator.attackCard(attack, defend);
+        generator.attackCard(lobbyId, attack, defend);
     }
 
     @Override
     public void playCard(Card card, int[] location) {
-        generator.playCard(card, location);
+        generator.playCard(lobbyId, card, location);
     }
 
     @Override
     public void nextTurn() {
-        generator.nextTurn();
+        generator.nextTurn(lobbyId);
     }
 
     @Override
     public void escapeConcede() {
-        generator.escapeConcede();
+        generator.escapeConcede(lobbyId);
     }
 
     @Override
@@ -105,7 +114,7 @@ public class GameMaster implements IGameMaster {
 
     @Override
     public void buyCards() {
-        generator.buyCards();
+        generator.buyCards(user.getId());
     }
 
     @Override

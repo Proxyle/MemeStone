@@ -7,7 +7,7 @@ public class GameEndMessage {
         return winner;
     }
 
-    public GameEndMessage(String winner){
+    public GameEndMessage(String winner) {
         this.winner = winner;
     }
 }

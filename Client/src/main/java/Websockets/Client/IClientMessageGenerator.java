@@ -11,16 +11,16 @@ public interface IClientMessageGenerator {
     Player logIn(String name, String password);
     void getCollection();
     void getLeaderboard();
-    void exitGame();
+    void exitGame(int lobbyId);
     void getSettings();
-    void attackCard(int attack, int defend);
-    void nextTurn();
-    void escapeConcede();
-    void playCard(Card card, int[] location);
+    void attackCard(int lobbyId, int attack, int defend);
+    void nextTurn(int lobbyId);
+    void escapeConcede(int lobbyId);
+    void playCard(int lobbyId, Card card, int[] location);
 
     void saveDeck(ArrayList<Card> collection, ArrayList<Card> deck);
 
-    void buyCards();
+    void buyCards(int id);
 
     void getDailyQuest();
 

@@ -1,5 +1,6 @@
 package Websockets.Client;
 
+import Models.Board;
 import Models.Card.Card;
 import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;
@@ -20,10 +21,6 @@ public class GameClient implements IGameClient {
         this.clientGUI = clientGUI;
     }
 
-    @Override
-    public void handlePlayerTurn() {
-        clientGUI.processRoundStart();
-    }
 
     @Override
     public void handleGameEnd(String winner) {
@@ -36,7 +33,7 @@ public class GameClient implements IGameClient {
     }
 
     @Override
-    public void handleUpdateBoard(Card[][] board) {
+    public void handleUpdateBoard(Board board) {
         clientGUI.processUpdateBoard(board);
     }
 
@@ -51,8 +48,13 @@ public class GameClient implements IGameClient {
     }
 
     @Override
-    public void handleRoundStart() {
+    public void handleRoundStart(int lobbyId) {
+        clientGUI.processRoundStart(lobbyId);
+    }
 
+    @Override
+    public void handleCardBought() {
+        clientGUI.processCardBought();
     }
 
     @Override

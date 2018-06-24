@@ -37,6 +37,10 @@ public class Player implements IPlayer {
         return sessionId;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public ArrayList<Card> getCards(){
         ArrayList<Card> hand = (ArrayList<Card>)minionInHand.clone();
         hand.addAll(damageSpellsInHand);

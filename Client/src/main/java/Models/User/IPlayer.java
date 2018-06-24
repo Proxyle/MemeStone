@@ -11,4 +11,5 @@ public interface IPlayer {
     String getEmail();
     List<Card> getDeck();
     List<Card> getCollection();
+    int getId();
 }

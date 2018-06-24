@@ -38,8 +38,8 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void exitGame() {
-        clientWebSocket.send(new ForfeitMessage());
+    public void exitGame(int lobbyId) {
+        clientWebSocket.send(new ForfeitMessage(lobbyId));
     }
 
     @Override
@@ -48,22 +48,22 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void attackCard(int attack, int defend) {
-        clientWebSocket.send(new AttackMessage(attack, defend));
+    public void attackCard(int lobbyId, int attack, int defend) {
+        clientWebSocket.send(new AttackMessage(lobbyId, attack, defend));
     }
 
     @Override
-    public void nextTurn() {
-        clientWebSocket.send(new EndTurnMessage());
+    public void nextTurn(int lobbyId) {
+        clientWebSocket.send(new EndTurnMessage(lobbyId));
     }
 
     @Override
-    public void escapeConcede() {
-        clientWebSocket.send(new ForfeitMessage());
+    public void escapeConcede(int lobbyId) {
+        clientWebSocket.send(new ForfeitMessage(lobbyId));
     }
 
-    public void playCard(Card card, int[] location){
-        clientWebSocket.send(new PlayCardMessage(card, location));
+    public void playCard(int lobbyId, Card card, int[] location){
+        clientWebSocket.send(new PlayCardMessage(lobbyId, card, location));
     }
 
     @Override
@@ -72,13 +72,13 @@ public class ClientMessageGenerator implements IClientMessageGenerator {
     }
 
     @Override
-    public void buyCards() {
-        clientWebSocket.send(new BuyCardMessage());
+    public void buyCards(int id) {
+        clientWebSocket.send(new BuyCardMessage(id));
     }
 
     @Override
     public void getDailyQuest() {
-        clientWebSocket.send(new DailyQuestMessage());
+        //something with rest
     }
 
     //TODO Message Methods

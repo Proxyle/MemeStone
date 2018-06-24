@@ -17,8 +17,6 @@ public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
                 return new PlayerActionFailMessageHandler(gc);
             case "PlayerHasRegisterdMessage":
                 return new PlayerHasRegisteredMessageHandler(gc);
-            case "PlayerTurnMessage":
-                return new PlayerTurnMessageHandler(gc);
             case "RegistrationResultMessage":
                 return new RegistrationResultMessageHandler(gc);
             case "RoundStartMessage":
@@ -27,8 +25,6 @@ public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
                 return new UpdateBoardMessageHandler(gc);
             case "UpdatePlayerMessage":
                 return new UpdatePlayerMessageHandler(gc);
-            case "getCollectionMessage":
-                return new GetCollectionMessageHandler(gc);
             default:
                 return null;
         }

@@ -1,5 +1,6 @@
 package Websockets.Shared.interfaces;
 
+import Models.Board;
 import Models.Card.Card;
 import Models.User.Player;
 import javafx.scene.Scene;
@@ -8,7 +9,7 @@ import java.util.List;
 
 public interface IClientGUI {
     void processRegistrationResponse(boolean resp);
-    void processRoundStart();
+    void processRoundStart(int lobbyId);
     void processPlayerRegisterd(String name);
     void Draw(Scene guiScene);
 
@@ -17,9 +18,11 @@ public interface IClientGUI {
 
     void processPlayerActionFail();
 
-    void processUpdateBoard(Card[][] board);
+    void processUpdateBoard(Board board);
 
     void processUpdatePlayer(Player player);
 
     void processGetCollection(List<Card> collection);
+
+    void processCardBought();
 }
