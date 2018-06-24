@@ -382,6 +382,7 @@ public class sceneGame{
         }
 
         //Set bottom lane
+        x = 0;
         for(Minion m: board.getLeftField().getLowerField()){
             if (m != null) {
                 card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
