@@ -1,6 +1,7 @@
 package GUI;
 
 import Logic.GameMaster.IGameMaster;
+import Models.Board.Board;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
@@ -326,10 +327,11 @@ public class sceneGame{
         gameMaster.exitGame();
     }
 
-    public void updateBoard(Minion[][] cards){
+    public void updateBoard(Board board){
         sceneCard card;
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
+        
         for (int i = 0; i <= 1; i++){
             for (int j = 0; j <= 6; j++){
                 Minion m =(Minion)cards[i][j];
