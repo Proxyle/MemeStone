@@ -7,8 +7,8 @@ public class DamageSpell extends Spell {
 
     private int damagePoints;
 
-    public DamageSpell(String name, String context, int cost, int damagePoints) {
-        super(name, context, cost);
+    public DamageSpell(Long id, String name, String context, int cost, int damagePoints) {
+        super(id, name, context, cost);
         this.damagePoints = damagePoints;
     }
 
