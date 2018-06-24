@@ -6,8 +6,8 @@ public class Minion extends Card {
 
     boolean Attacked = false;
 
-    public Minion(String name, String context, int cost, int attackPoints, int healthPoints) {
-        super(name, context, cost);
+    public Minion(Long id, String name, String context, int cost, int attackPoints, int healthPoints) {
+        super(id, name, context, cost);
         this.attackPoints = attackPoints;
         this.healthPoints = healthPoints;
         this.minionState = MinionState.AliveState;
