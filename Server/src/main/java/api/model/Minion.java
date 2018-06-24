@@ -14,8 +14,8 @@ public class Minion extends Card {
 
     public Minion() { super(); }
 
-    public Minion(Long id, String name, int manaCost, List<Ability> abilities, String imageUrl, Integer abilityStrength) {
-        super(id, name, manaCost, abilities, imageUrl, abilityStrength);
+    public Minion(Long id, String name, int manaCost, List<Ability> abilities, Integer abilityStrength) {
+        super(id, name, manaCost, abilities, abilityStrength);
     }
 
     public Integer getAttackPoints() {

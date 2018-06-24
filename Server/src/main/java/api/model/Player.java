@@ -1,6 +1,7 @@
 package api.model;
 
 import api.model.resources.Collection;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -26,7 +27,12 @@ public class Player {
     @Column(name = "rank")
     private int rankPoints;
 
-    private List<Collection> collection;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "User_Card",
+        joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
+        inverseJoinColumns = @JoinColumn(name = "card_id", referencedColumnName = "card_id")
+    )
+    private List<Card> collection;
 
     public Player() {}
 
@@ -39,8 +45,11 @@ public class Player {
         collection = new ArrayList<>();
     }
 
-    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Collection> getCollection() {
+
+    public void addCardToCollection(Card card) {
+    }
+
+    public List<Card> getCollection() {
         return collection;
     }
 

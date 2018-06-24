@@ -1,7 +1,7 @@
 package Websockets.Client;
 
 import Models.Card.Card;
-import Models.Player;
+import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;
 
 import java.util.List;

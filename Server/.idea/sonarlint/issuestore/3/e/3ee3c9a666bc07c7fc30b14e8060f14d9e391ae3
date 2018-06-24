@@ -1,0 +1,5 @@
+
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(˜½‘8Ü ¤ºÂ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Äééûÿÿÿÿ8Ü ¤ºÂ,
+„squid:UselessImportCheck"[Remove this unused import 'sun.reflect.generics.reflectiveObjects.NotImplementedException'.(˜½‘8Ü ¤ºÂ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïÿÁ¸ÿÿÿÿÿ8Ü ¤ºÂ,

@@ -1,12 +1,12 @@
 package Websockets.Shared.interfaces;
 
 
-import Models.Entity.Entity;
+
 
 import java.util.List;
 
 
-public interface IRepository <T extends Entity> {
+public interface IRepository <T> {
     void add(T item);
 
     void update(T item);

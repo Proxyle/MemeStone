@@ -20,12 +20,11 @@ public class CollectionService implements ICollectionService {
 
     @Override
     public List<Card> getCollectionByPlayerName(String playerName) {
-        Collection collection = new Collection();
-        playerRepository.find
+        return null;
     }
 
     @Override
     public List<Card> getCollectionByPlayerId(Long playerId) {
-
+        return null;
     }
 }

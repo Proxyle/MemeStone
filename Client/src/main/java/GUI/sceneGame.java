@@ -5,7 +5,7 @@ import Models.Board.Board;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
-import Models.Player;
+import Models.User.Player;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -331,7 +331,10 @@ public class sceneGame{
         sceneCard card;
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
-        
+        pbEnergyBarHero.setProgress(progressNumber(board.getLowerHeroMana(),10));
+        pbHealthBarOpponent.setProgress(progressNumber(board.getUpperHero(),30));
+        pbEnergyBarOpponent.setProgress(progressNumber(board.getUpperHeroMana(),10));
+        pbHealthBarHero.setProgress(progressNumber(board.getLowerHero(),20));
         for (int i = 0; i <= 1; i++){
             for (int j = 0; j <= 6; j++){
                 Minion m =(Minion)cards[i][j];
@@ -356,6 +359,10 @@ public class sceneGame{
                 }
             }
         }
+    }
+
+    private double progressNumber(int n, int base) {
+
     }
 
     public void updatePlayer(Player player){

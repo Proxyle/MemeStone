@@ -1,6 +1,8 @@
 package REST.Client;
 
+import Models.User.Player;
+
 public interface IRestClient {
-        void getLogin(String username, String password);
+        Player Login(String username, String password);
 
 }

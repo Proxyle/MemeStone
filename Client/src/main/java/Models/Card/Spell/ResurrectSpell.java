@@ -1,13 +1,27 @@
 package Models.Card.Spell;
 
-public class ResurrectSpell extends Spell {
-    private int ResurrectPoints;
 
-    public ResurrectSpell(int resurrectPoints) {
-        ResurrectPoints = resurrectPoints;
+import Models.Card.Spell.Spell;
+
+public class ResurrectSpell extends Spell {
+
+    private int ressurectPoints;
+
+    public ResurrectSpell(String name, String context, int cost, int ressurectPoints) {
+        super(name, context, cost);
+        this.ressurectPoints = ressurectPoints;
     }
 
-    public int getResurrectPoints() {
-        return ResurrectPoints;
+    public int getRessurectPoints(){
+        return ressurectPoints;
+    }
+
+
+    @Override
+    public String toString() {
+        if (ressurectPoints > 1)
+            return super.toString() + ", resurrects " + ressurectPoints + " minions.";
+        else
+            return super.toString() + ", resurrects a minion.";
     }
 }

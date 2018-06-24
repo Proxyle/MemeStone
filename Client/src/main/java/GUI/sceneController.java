@@ -2,11 +2,10 @@ package GUI;
 
 import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
+import Models.Board.Board;
 import Models.Card.Card;
-import Models.Card.Minion.Minion;
-import Models.Setting.Setting;
-import Models.Player;
 import Models.User.IPlayer;
+import Models.User.Player;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
 import Websockets.Client.GameClient;
@@ -36,10 +35,9 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
         super(application);
 
         gameMaster = new GameMaster();
-        login = new sceneLogin(this);
+        login = new sceneLogin(this, gameMaster);
         home = new sceneHomeScreen(this, gameMaster);
         this.application =  application;
-        login = new sceneLogin(this);
         home = new sceneHomeScreen(this, gameMaster);
         leaderboard =  new sceneLeaderboard(this, leaderboardUsers);
         game = new sceneGame(this);
@@ -143,9 +141,9 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     @Override
-    public void processUpdateBoard(Card[][] board) {
+    public void processUpdateBoard(Board board) {
         Platform.runLater(()->{
-            game.updateBoard((Minion[][])board);
+            game.updateBoard(board);
         });
     }
 
@@ -158,6 +156,6 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     @Override
     public void processGetCollection(List<Card> collection) {
-        gameMaster.setCollection(collection);
+        //gameMaster.setCollection(collection);
     }
 }

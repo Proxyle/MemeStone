@@ -16,19 +16,25 @@ public class CollectionController {
 
     @GetMapping(value = "/id/{playerId}")
     public ResponseEntity<Collection> getCollectionById(@PathVariable long playerId) {
+        /*
         Collection collection = collectionService.getCollectionByPlayerId(playerId);
         if (collection == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(collection, HttpStatus.OK);
+        */
+        return null;
     }
 
     @GetMapping(value = "/name/{playerName}")
     public ResponseEntity<Collection> getCollectionByName(@PathVariable String playerName) {
+        /*
         Collection collection = collectionService.getCollectionByPlayerName(playerName);
         if (collection == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(collection, HttpStatus.OK);
+        */
+        return null;
     }
 }

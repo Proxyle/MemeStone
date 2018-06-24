@@ -1,14 +1,15 @@
 package Logic.GameMaster;
 
 import Models.Card.Card;
-import Websockets.Shared.interfaces.IClientGUI;
+import Models.User.IPlayer;
+import Websockets.Shared.interfaces.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public interface IGameMaster {
     /*Login*/
-    void logIn(String name, String password);
+    boolean logIn(String name, String password);
     void signUp(String name, String password, String email);
     void registerGameGui(IClientGUI gui);
 
@@ -17,7 +18,11 @@ public interface IGameMaster {
     void leaderboard();
     void exitGame();
     void getSettings();
+<<<<<<< HEAD
     String[] getTaskQuests();
+=======
+    void getDailyQuests();
+>>>>>>> 87372e4c50283964452a73fec05721bd10608253
 
     /*Game*/
     void attackCard(int attack, int defend);
@@ -26,10 +31,11 @@ public interface IGameMaster {
     void escapeConcede();
 
     /*Collection*/
-    void setCollection(List<Card> collecton);
     void addCardToDeck(int location, List<Card> collection, List<Card> deck);
     void removeCardFromDeck(int location, List<Card> collection, List<Card> deck);
     void saveDeck(ArrayList<Card> collections, ArrayList<Card> deck);
     void buyCards();
 
+    /* User */
+    IPlayer getUser();
 }

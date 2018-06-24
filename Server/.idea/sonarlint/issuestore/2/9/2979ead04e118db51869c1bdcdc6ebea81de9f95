@@ -1,0 +1,4 @@
+
+{squid:UselessImportCheck"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(ô’ˆî8ºÕÚ¼Â,
+isquid:UselessImportCheck";Remove this unused import 'api.model.resources.Collection'.(ÛÑÏ¦úÿÿÿÿ8üíÙ¼Â,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Ê÷8üíÙ¼Â,

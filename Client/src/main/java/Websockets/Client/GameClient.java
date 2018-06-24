@@ -1,7 +1,7 @@
 package Websockets.Client;
 
 import Models.Card.Card;
-import Models.Player;
+import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;
 
 import java.util.List;
@@ -18,11 +18,6 @@ public class GameClient implements IGameClient {
 
     public void registerGUI(IClientGUI clientGUI){
         this.clientGUI = clientGUI;
-    }
-
-    @Override
-    public void registerPlayer(String userName) {
-        messageGenerator.registerPlayerOnServer(name, password, userName);
     }
 
     @Override
@@ -58,6 +53,11 @@ public class GameClient implements IGameClient {
     @Override
     public void handleRoundStart() {
 
+    }
+
+    @Override
+    public void registerPlayer(String userName) {
+        //nee
     }
 
     @Override
