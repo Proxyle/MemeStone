@@ -529,12 +529,12 @@
       <workItem from="1529486510411" duration="15694000" />
       <workItem from="1529685340183" duration="40000" />
       <workItem from="1529685409588" duration="7146000" />
-      <workItem from="1529693434073" duration="727000" />
+      <workItem from="1529693434073" duration="1025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139594000" />
+    <option name="totallyTimeSpent" value="139892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -620,14 +620,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/api/mscontroller/RankingController.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
