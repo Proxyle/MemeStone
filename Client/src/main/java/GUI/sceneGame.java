@@ -1,17 +1,14 @@
 package GUI;
 
 import Logic.GameMaster.IGameMaster;
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
 import Models.User.Player;
-import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -19,7 +16,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -265,21 +261,8 @@ public class sceneGame{
         ivEmptySlot.setImage(iEmptySlot);
         ivEmptySlot.setFitWidth(120);
         ivEmptySlot.setFitHeight(200);
-        //TODO save coordinates somewhere and shit like fuck me what am I doing aaah I have an idea but that needs server side editing and we dont have time and shit
         ivEmptySlot.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex( ivEmptySlot),GridPane.getRowIndex( ivEmptySlot)));
         return ivEmptySlot;
-    }
-
-    public void removeNodeByRowColumnIndex(final int row,final int column,GridPane gridPane) {
-
-        ObservableList<Node> childrens = gridPane.getChildren();
-        for(Node node : childrens) {
-            if(node instanceof GridPane && gridPane.getRowIndex(node) == row && gridPane.getColumnIndex(node) == column) {
-                GridPane grid = (GridPane) node; // use what you want to remove
-                gridPane.getChildren().remove(grid);
-                break;
-            }
-        }
     }
 
     private GridPane makeGridWithEmptySlots(int amount){
@@ -339,34 +322,78 @@ public class sceneGame{
         gameMaster.exitGame();
     }
 
-    public void updateBoard(Minion[][] cards){
+    public void updateBoard(Board board){
         sceneCard card;
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
-        for (int i = 0; i <= 1; i++){
-            for (int j = 0; j <= 6; j++){
-                Minion m =(Minion)cards[i][j];
-                card = new sceneCard(m.getName(),null,m.getContext(),m.getHealthPoints(),m.getCost(),m.getAttackPoints());
+
+        pbEnergyBarHero.setProgress(progressNumber(board.getLowerHeroMana(),10));
+        lblEnergyHero.setText(String.valueOf(board.getLowerHeroMana()));
+
+        pbHealthBarOpponent.setProgress(progressNumber(board.getUpperHero(),30));
+        lblHealthOpponent.setText(String.valueOf(board.getUpperHero()));
+
+        pbEnergyBarOpponent.setProgress(progressNumber(board.getUpperHeroMana(),10));
+        lblEnergyOpponent.setText(String.valueOf(board.getUpperHeroMana()));
+
+        pbHealthBarHero.setProgress(progressNumber(board.getLowerHero(),30));
+        lblHealthHero.setText(String.valueOf(board.getLowerHero()));
+
+        //Set top lane
+        int x = 0;
+        for(Minion m: board.getLeftField().getUpperField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
                 GridPane gridCard = card.getGrid();
-                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex( gridCard),GridPane.getRowIndex( gridCard)));
-                if (i == 0){
-                    if (j == 6){
-
-                    } else if (cards[i][j] == null){
-                        gridHeroField.add(emptySlotImage(), j, i);
-                    } else {
-                        gridHeroField.add(card.getGrid(), j, i);
-                    }
-
-                } else if (i == 1){
-                    if (cards[i][j] == null){
-                        gridOpponentField.add(emptySlotImage(), i, j);
-                    } else {
-                        gridOpponentField.add(card.getGrid(), i, j);
-                    }
-                }
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            } else {
+                gridOpponentField.add(emptySlotImage(), x, 1);
             }
+            x++;
         }
+        for (Minion m: board.getRightField().getUpperField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            } else {
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            }
+            x++;
+        }
+
+        //Set bottom lane
+        for(Minion m: board.getLeftField().getLowerField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridHeroField.add(emptySlotImage(), x, 0);
+            } else {
+                gridHeroField.add(emptySlotImage(), x, 0);
+            }
+            x++;
+        }
+        for (Minion m: board.getRightField().getLowerField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridHeroField.add(emptySlotImage(), x, 0);
+            } else {
+                gridHeroField.add(emptySlotImage(), x, 0);
+            }
+            x++;
+        }
+    }
+
+    private double progressNumber(int n, int base) {
+        int value = base/n;
+        if (value > 1)
+            return 1;
+        return value;
     }
 
     public void updatePlayer(Player player){
@@ -392,11 +419,11 @@ public class sceneGame{
         }
     }
 
-    public void notifyPlayer(){
+    public void notifyPlayer(String text){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
-        alert.setContentText("It's your turn");
+        alert.setContentText(text);
 
         alert.showAndWait();
     }

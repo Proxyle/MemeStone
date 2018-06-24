@@ -1,4 +1,4 @@
-package Models;
+package Models.BoardField;
 
 import Models.Card.Minion.Minion;
 
@@ -7,6 +7,8 @@ public class Board {
     Field rightField;
     int upperHero;
     int lowerHero;
+    int upperHeroMana;
+    int lowerHeroMana;
 
     public Board(int heroHealth){
         leftField = new Field();
@@ -28,6 +30,22 @@ public class Board {
 
     public Field getRightField() {
         return rightField;
+    }
+
+    public int getLowerHero() {
+        return lowerHero;
+    }
+
+    public int getLowerHeroMana() {
+        return lowerHeroMana;
+    }
+
+    public int getUpperHero() {
+        return upperHero;
+    }
+
+    public int getUpperHeroMana() {
+        return upperHeroMana;
     }
 
     public Board flipBoard(){
@@ -68,5 +86,3 @@ public class Board {
         return leftField.damage(location, damage, own);
     }
 }
-
-

@@ -1,6 +1,6 @@
 package Websockets.Client;
 
-import Models.Board;
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;

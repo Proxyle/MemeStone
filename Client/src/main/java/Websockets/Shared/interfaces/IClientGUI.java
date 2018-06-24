@@ -1,6 +1,6 @@
 package Websockets.Shared.interfaces;
 
-import Models.Board;
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.User.Player;
 import javafx.scene.Scene;

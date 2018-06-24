@@ -13,11 +13,13 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
+
 public class GameMaster implements IGameMaster {
     public  IPlayer user;
     private IClientMessageGenerator generator;
     private IClientGUI gui;
     private int lobbyId = -1;
+
 
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());

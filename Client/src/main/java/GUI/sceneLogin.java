@@ -1,33 +1,33 @@
 package GUI;
 
+import Logic.GameMaster.IGameMaster;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class sceneLogin{
     //Properties
     double buttonWidth = 150;
+    IGameMaster gameMaster;
 
     //Buttons
     Button btnSignIn = new Button("Sign In");
     Button btnSignUp = new Button("Sign Up");
     TextField txtUsername = new TextField();
-    TextField txtPassword = new TextField();
+    PasswordField txtPassword = new PasswordField();
     Label lblUsername = new Label("Username:");
     Label lblPassword = new Label("Password:");
     Scene scene;
     sceneController controller;
 
-    public sceneLogin(sceneController controller){
+    public sceneLogin(sceneController controller, IGameMaster gameMaster){
+        this.gameMaster = gameMaster;
         scene = makeScene();
         this.controller = controller;
     }
@@ -86,10 +86,8 @@ public class sceneLogin{
     }
 
     public void signIn(){
-        controller.gameMaster.logIn(txtUsername.getText(), txtPassword.getText());
-        if(true){
-            System.out.println(txtUsername.getText());
-            controller.home(txtUsername.getText());
+        if(gameMaster.logIn(txtUsername.getText(), txtPassword.getText())){
+            controller.home();
         }
     }
 

@@ -1,7 +1,6 @@
 package Websockets.Shared.messages;
 
-import Models.Board;
-import Models.Card.Card;
+import Models.BoardField.*;
 
 public class UpdateBoardMessage {
     Board board;

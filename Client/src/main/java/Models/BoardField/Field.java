@@ -1,4 +1,4 @@
-package Models;
+package Models.BoardField;
 
 import Models.Card.Minion.Minion;
 
@@ -14,6 +14,14 @@ public class Field {
     public Field(Minion[] upperField, Minion[] lowerField){
         this.upperField = upperField;
         this.lowerField = lowerField;
+    }
+
+    public Minion[] getUpperField() {
+        return upperField;
+    }
+
+    public Minion[] getLowerField() {
+        return lowerField;
     }
 
     public Field flipField(){
@@ -68,5 +76,3 @@ public class Field {
         }
     }
 }
-
-

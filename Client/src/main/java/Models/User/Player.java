@@ -1,6 +1,7 @@
 package Models.User;
 
 
+import Models.BoardField.Board;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.DamageSpell;
@@ -48,6 +49,11 @@ public class Player implements IPlayer {
         hand.addAll(healSpellsInHand);
         hand.addAll(resurrectSpellsInHand);
         return hand;
+    }
+
+    @Override
+    public Board getBoard() {
+        return null;
     }
 
     public Player(String sessionId, String userName, String email, long id, int points, List<Card> collection){

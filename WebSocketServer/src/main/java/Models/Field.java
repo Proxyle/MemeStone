@@ -1,6 +1,6 @@
-package Models;
+package Models.Board;
 
-import Models.Cards.Minion;
+import Models.Card.Minion.Minion;
 
 public class Field {
     Minion[] upperField;
@@ -16,8 +16,16 @@ public class Field {
         this.lowerField = lowerField;
     }
 
-    public Field flipField(){
-        return new Field(lowerField, upperField);
+    public Minion[] getUpperField() {
+        return upperField;
+    }
+
+    public Minion[] getLowerField() {
+        return lowerField;
+    }
+
+    public Models.Board.Field flipField(){
+        return new Models.Board.Field(lowerField, upperField);
     }
 
     public boolean placeMinion(Minion minion, int location){

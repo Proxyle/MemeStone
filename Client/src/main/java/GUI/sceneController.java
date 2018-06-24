@@ -2,8 +2,9 @@ package GUI;
 
 import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
-import Models.Board;
+import Models.BoardField.*;
 import Models.Card.Card;
+import Models.User.IPlayer;
 import Models.User.Player;
 import Websockets.Client.ClientMessageGenerator;
 import Websockets.Client.ClientWebSocket;
@@ -22,7 +23,6 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     sceneHomeScreen home;
     sceneCollection collections;
     sceneEditDeck editDeck;
-    sceneNewDeck newDeck;
     sceneLeaderboard leaderboard;
     sceneGame game;
     IMemestoneGUI application;
@@ -34,14 +34,13 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
         super(application);
 
         gameMaster = new GameMaster();
-        login = new sceneLogin(this);
+        login = new sceneLogin(this, gameMaster);
         home = new sceneHomeScreen(this, gameMaster);
         this.application =  application;
-        login = new sceneLogin(this);
         home = new sceneHomeScreen(this, gameMaster);
         leaderboard =  new sceneLeaderboard(this, leaderboardUsers);
         game = new sceneGame(this);
-        //getGameClient().registerGUI(this);
+        getGameClient().registerGUI(this);
         this.application =  application;
         this.gameClient = new GameClient(new ClientMessageGenerator(new ClientWebSocket()));
     }
@@ -51,13 +50,13 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
 
     }
 
-    public void home(String name){
-        //getGameClient().registerPlayer(name);
+    public void home(){
         application.Draw(home.getScene());
     }
 
     public void collections(){
-        collections = new sceneCollection(this, gameMaster, new ArrayList<>(), gameMaster.getUser().getRanking());
+        IPlayer user = gameMaster.getUser();
+        collections = new sceneCollection(this,gameMaster,user.getCards(), user.getRanking());
         application.Draw(collections.getScene());
     }
 
@@ -121,28 +120,34 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     @Override
     public void processGameEnd(String winner) {
         Platform.runLater(()->{
-
+            IPlayer user = gameMaster.getUser();
+            if(winner.equals(user.getUsername())){
+                game.notifyPlayer("GG EZ");
+            } else{
+                game.notifyPlayer("You lost! Get Shrekt!");
+            }
+            home();
         });
     }
 
     @Override
     public void processPlayerActionFail() {
         Platform.runLater(()->{
-
+            game.notifyPlayer("No, just no...");
         });
     }
 
     @Override
     public void processUpdateBoard(Board board) {
         Platform.runLater(()->{
-
+            game.updateBoard(board);
         });
     }
 
     @Override
     public void processUpdatePlayer(Player player) {
         Platform.runLater(()->{
-
+            game.updatePlayer(player);
         });
     }
 
