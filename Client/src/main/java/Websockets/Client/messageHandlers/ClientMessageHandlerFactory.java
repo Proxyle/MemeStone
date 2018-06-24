@@ -25,6 +25,8 @@ public class ClientMessageHandlerFactory implements IMessageHandlerFactory {
                 return new UpdateBoardMessageHandler(gc);
             case "UpdatePlayerMessage":
                 return new UpdatePlayerMessageHandler(gc);
+            case "CardBoughtMessage":
+                return new CardBoughtMessageHandler(gc);
             default:
                 return null;
         }
