@@ -4,8 +4,8 @@ public class HealSpell extends Spell {
 
     private int healPoints;
 
-    public HealSpell(String name, String context, int cost, int healPoints) {
-        super(name, context, cost);
+    public HealSpell(Long id, String name, String context, int cost, int healPoints) {
+        super(id, name, context, cost);
         this.healPoints = healPoints;
     }
 
