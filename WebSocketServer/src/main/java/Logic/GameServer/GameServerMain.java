@@ -1,5 +1,6 @@
 package Logic.GameServer;
 
+import Communication.MemeStoneRest;
 import Communication.MessageGenerator.IMessageGenerator;
 import Logic.GameLogic.GameLogic;
 import Logic.GameLogic.IGameLogic;
@@ -10,6 +11,7 @@ import Models.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic{
     private static final int WIN_SCORE = 100;
@@ -19,9 +21,12 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
     IMessageGenerator messageGenerator;
     List<Player> playersInQueue = new ArrayList<>();
     List<IGameLogic> lobbies = new ArrayList<>();
+    MemeStoneRest rest = new MemeStoneRest();
+    List<RESTmodels.Card> cardsInDataBase;
 
     public GameServerMain(IMessageGenerator messageGenerator){
         this.messageGenerator = messageGenerator;
+        cardsInDataBase = rest.getCards();
     }
 
     //region Main
@@ -57,7 +62,7 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
 
     @Override
     public void updateDeck(int playerId, List<Card> deck) {
-        //todo
+        rest.updateDeck(playerId, deck);
     }
 
     @Override
@@ -66,8 +71,14 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
     }
 
     @Override
-    public void buyCard(int playerId){
-        //todo
+    public void buyCard(String sessionId, int playerId){
+        Random r = new Random();
+        int amount = r.nextInt(11);
+        for (int i = 0; i<amount; i++){
+            int cardId = r.nextInt(cardsInDataBase.size());
+            rest.updateCollection(playerId, cardId);
+        }
+        messageGenerator.notifyCardBought(sessionId);
     }
     //endregion
 
@@ -94,8 +105,8 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
 
     @Override
     public void notifyGameEnd(int lobbyId, List<String> sessionIds, String winningName, Player winner, Player loser) {
-        //todo
-
+        rest.updateScore(winner.getUserId(), WIN_SCORE);
+        rest.updateScore(loser.getUserId(), LOSE_SCORE);
         messageGenerator.notifyGameEnd(sessionIds, winningName);
         lobbies.remove(findLobby(lobbyId));
     }

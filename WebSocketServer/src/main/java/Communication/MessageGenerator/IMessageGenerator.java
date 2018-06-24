@@ -8,7 +8,7 @@ import Models.Player;
 import java.util.List;
 
 public interface IMessageGenerator {
-
+    void notifyCardBought(String sessionId);
     void notifyStartRound(List<String> sessionIds, int lobbyId);
     void notifyPlayerTurn(String sessionId);
     void notifyUpdatePlayer(String sessionId, Player player);

@@ -52,4 +52,10 @@ public class MessageGenerator implements IMessageGenerator {
         GameEndMessage msg = new GameEndMessage(winningName);
         serverSocket.sendToGroup((String[])sessionIds.toArray(), msg);
     }
+
+    @Override
+    public void notifyCardBought(String sessionId){
+        CardBoughtMessage msg = new CardBoughtMessage();
+        serverSocket.sendTo(sessionId, msg);
+    }
 }

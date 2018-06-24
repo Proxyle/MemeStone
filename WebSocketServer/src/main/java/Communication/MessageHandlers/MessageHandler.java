@@ -35,7 +35,7 @@ public class MessageHandler implements IMessageHandler {
                 return;
             case "BuyCardMessage":
                 BuyCardMessage buyCardMessage = gson.fromJson(data, BuyCardMessage.class);
-                buyCard(buyCardMessage.getPlayerId());
+                buyCard(sessionId, buyCardMessage.getPlayerId());
                 return;
             case "ForfeitMessage":
                 ForfeitMessage forfeitMessage = gson.fromJson(data, ForfeitMessage.class);
@@ -86,7 +86,7 @@ public class MessageHandler implements IMessageHandler {
         gameServer.leaveQueue(sessionId);
     }
 
-    private void buyCard(int playerId){
-        gameServer.buyCard(playerId);
+    private void buyCard(String sessionId, int playerId){
+        gameServer.buyCard(sessionId, playerId);
     }
 }
