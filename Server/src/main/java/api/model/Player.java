@@ -54,6 +54,11 @@ public class Player {
         card.addPlayerToCollection(this);
     }
 
+    public void updateDeck(List<Card> deck) {
+        deck.clear();
+        this.deck = deck;
+    }
+
     public Long getId() {
         return this.id;
     }

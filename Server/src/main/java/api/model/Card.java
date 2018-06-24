@@ -53,6 +53,11 @@ public abstract class Card {
         playersCollection.add(player);
     }
 
+    public void addPlayerToDeck(Player player) {
+        playersDeck.remove(player);
+        playersDeck.add(player);
+    }
+
     public Long getId() {
         return id;
     }
