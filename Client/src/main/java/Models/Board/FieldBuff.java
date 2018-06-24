@@ -4,9 +4,9 @@ public enum FieldBuff {
     n1Health,
     p1Health,
     p2Health,
-    P3Health,
+    p3Health,
     n1Dmg,
     p1Dmg,
     p2Dmg,
-    P3Dmg
+    p3Dmg
 }
