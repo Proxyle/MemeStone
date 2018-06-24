@@ -7,8 +7,8 @@ public class ResurrectSpell extends Spell {
 
     private int ressurectPoints;
 
-    public ResurrectSpell(String name, String context, int cost, int ressurectPoints) {
-        super(name, context, cost);
+    public ResurrectSpell(Long id, String name, String context, int cost, int ressurectPoints) {
+        super(id, name, context, cost);
         this.ressurectPoints = ressurectPoints;
     }
 
