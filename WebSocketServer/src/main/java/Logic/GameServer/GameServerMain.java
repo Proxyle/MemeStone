@@ -22,7 +22,7 @@ public class GameServerMain implements IGameServerMain, IGameServerMainGameLogic
     List<Player> playersInQueue = new ArrayList<>();
     List<IGameLogic> lobbies = new ArrayList<>();
     MemeStoneRest rest = new MemeStoneRest();
-    List<RESTmodels.Card> cardsInDataBase;
+    ArrayList cardsInDataBase;
 
     public GameServerMain(IMessageGenerator messageGenerator){
         this.messageGenerator = messageGenerator;

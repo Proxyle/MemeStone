@@ -15,4 +15,5 @@ public interface IGameServerMain {
     void updateDeck(int playerId, List<Card> deck);
     void forfeit(String sessionId, int lobbyId);
     void buyCard(String sessionId, int playerId);
+    void matchPlayers();
 }

@@ -71,7 +71,7 @@ public class Board {
         if (minion.getCost() > lowerHeroMana)
             return false;
         boolean success;
-        if (location > 3)
+        if (location > 2)
             success = rightField.placeMinion(minion, location-3);
         else
             success = leftField.placeMinion(minion, location);
@@ -81,14 +81,14 @@ public class Board {
     }
 
     public boolean attack(int attacker, int defender){
-        if (attacker > 3)
+        if (attacker > 2)
             return rightField.attack(attacker-3, defender-3);
         return leftField.attack(attacker, defender);
     }
 
     public boolean attackOpponentHero(int attacker){
         int damage;
-        if (attacker > 3)
+        if (attacker > 2)
             damage = rightField.getDamage(attacker-3);
         else
             damage = leftField.getDamage(attacker);
@@ -97,13 +97,13 @@ public class Board {
     }
 
     public boolean canAttackHero(int attacker){
-        if (attacker > 3)
+        if (attacker > 2)
             return rightField.isLaneClear();
         return leftField.isLaneClear();
     }
 
     public boolean damage(int location, int damage, boolean own){
-        if (location > 3)
+        if (location > 2)
             return rightField.damage(location-3, damage, own);
         return leftField.damage(location, damage, own);
     }

@@ -4,9 +4,14 @@ import Logic.GameLogic.IGameLogic;
 
 public abstract class Card {
 
+    Long id;
     private String name;
     private String context;
     private int cost;
+
+    public Long getId() {
+        return id;
+    }
 
     public String getName() {
         return name;
@@ -20,7 +25,7 @@ public abstract class Card {
         return cost;
     }
 
-    public Card(String name, String context, int cost){
+    public Card(Long id, String name, String context, int cost){
         this.name = name;
         this.context = context;
         this.cost = cost;

@@ -11,6 +11,7 @@ import Logic.GameLogic.GameLogic;
 import Logic.GameLogic.IGameLogic;
 import Logic.GameServer.GameServerMain;
 import Logic.GameServer.IGameServerMain;
+import Logic.MatchmakingLoop;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -65,6 +66,10 @@ public class ServerApp {
             wscontainer.addEndpoint(config);
             webSocketServer.start();
             webSocketServer.join();
+
+            //create matchmaking loop
+            MatchmakingLoop matchmakingLoop = new MatchmakingLoop(gameServer);
+            matchmakingLoop.run();
 
         } catch (Exception ex) {
         }

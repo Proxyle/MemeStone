@@ -7,8 +7,8 @@ public class Minion extends Card {
 
     boolean attacked = false;
 
-    public Minion(String name, String context, int cost, int attackPoints, int healthPoints) {
-        super(name, context, cost);
+    public Minion(Long id, String name, String context, int cost, int attackPoints, int healthPoints) {
+        super(id, name, context, cost);
         this.attackPoints = attackPoints;
         this.healthPoints = healthPoints;
         this.minionState = MinionState.AliveState;
@@ -40,21 +40,21 @@ public class Minion extends Card {
     public Minion includeFieldBuff(FieldBuff fieldBuff){
         switch(fieldBuff){
             case n1Health:
-                return new Minion(getName(), getContext(), getCost(), attackPoints, healthPoints-1);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints, healthPoints-1);
             case p1Health:
-                return new Minion(getName(), getContext(), getCost(), attackPoints, healthPoints+1);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints, healthPoints+1);
             case p2Health:
-                return new Minion(getName(), getContext(), getCost(), attackPoints, healthPoints+2);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints, healthPoints+2);
             case p3Health:
-                return new Minion(getName(), getContext(), getCost(), attackPoints, healthPoints-3);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints, healthPoints-3);
             case n1Dmg:
-                return new Minion(getName(), getContext(), getCost(), attackPoints-1, healthPoints);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints-1, healthPoints);
             case p1Dmg:
-                return new Minion(getName(), getContext(), getCost(), attackPoints+1, healthPoints);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints+1, healthPoints);
             case p2Dmg:
-                return new Minion(getName(), getContext(), getCost(), attackPoints+2, healthPoints);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints+2, healthPoints);
             case p3Dmg:
-                return new Minion(getName(), getContext(), getCost(), attackPoints+3, healthPoints);
+                return new Minion(getId(), getName(), getContext(), getCost(), attackPoints+3, healthPoints);
             default:
                 return null;
         }

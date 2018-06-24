@@ -31,7 +31,7 @@ public class Field {
                 return false;
         if (location > 3 || location < 0)
             return false;
-        if (lowerField[location] == null)
+        if (lowerField[location] != null)
             return false;
         lowerField[location] = minion.includeFieldBuff(fieldBuff);
         return true;
