@@ -98,17 +98,10 @@ public class sceneHomeScreen{
         });
         grid.add(btnExitGame, 1,4,1,1);
 
-<<<<<<< HEAD
-        String[] dailyQuests = gameMaster.getTaskQuests();
+        String[] dailyQuests = gameMaster.getDailyQuests();
         lblTask1.setText(dailyQuests[0]);
         lblTask2.setText(dailyQuests[1]);
         lblTask3.setText(dailyQuests[2]);
-=======
-        String[] dailyQuests = { "FAKA1", "FAKA2", "FAKA3" }; //gameMaster.getDailyQuests();
-        lblQuest1.setText(dailyQuests[0]);
-        lblQuest2.setText(dailyQuests[1]);
-        lblQuest3.setText(dailyQuests[2]);
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
 
         vboxQuests.getChildren().addAll(lblTask1, lblTask2, lblTask3);
         grid.add(vboxQuests, 1,5,1,1);

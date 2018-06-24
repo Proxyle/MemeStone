@@ -13,16 +13,10 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-<<<<<<< HEAD
-public class GameMaster implements IGameMaster, Observer {
-    private IBoard board;
-    public IPlayer user;
-=======
-public class GameMaster implements IGameMaster {
-    public  IPlayer user;
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
-    private IClientMessageGenerator generator;
-    private IClientGUI gui;
+    public class GameMaster implements IGameMaster {
+        public  IPlayer user;
+        private IClientMessageGenerator generator;
+        private IClientGUI gui;
 
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
@@ -110,14 +104,8 @@ public class GameMaster implements IGameMaster {
     }
 
     @Override
-<<<<<<< HEAD
-    public String[] getTaskQuests() {
-        //TODO get 3 daily quests from rest
-        return new String[0];
-=======
     public void buyCards() {
         generator.buyCards();
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
     }
 
     @Override

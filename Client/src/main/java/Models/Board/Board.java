@@ -10,13 +10,11 @@ public class Board {
     int upperHeroMana;
     int lowerHeroMana;
 
-    public Board(int heroHealth, int heroMana){
+    public Board(int heroHealth){
         leftField = new Field();
         rightField = new Field();
         upperHero = heroHealth;
         lowerHero = heroHealth;
-        upperHeroMana = heroMana;
-        lowerHeroMana = heroMana;
     }
 
     public Board(Field leftField, Field rightField, int upperHero, int lowerHero){

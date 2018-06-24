@@ -18,11 +18,7 @@ public interface IGameMaster {
     void leaderboard();
     void exitGame();
     void getSettings();
-<<<<<<< HEAD
-    String[] getTaskQuests();
-=======
     void getDailyQuests();
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
 
     /*Game*/
     void attackCard(int attack, int defend);

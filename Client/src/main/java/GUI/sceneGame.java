@@ -331,38 +331,74 @@ public class sceneGame{
         sceneCard card;
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
+
         pbEnergyBarHero.setProgress(progressNumber(board.getLowerHeroMana(),10));
+        lblEnergyHero.setText(String.valueOf(board.getLowerHeroMana()));
+
         pbHealthBarOpponent.setProgress(progressNumber(board.getUpperHero(),30));
+        lblHealthOpponent.setText(String.valueOf(board.getUpperHero()));
+
         pbEnergyBarOpponent.setProgress(progressNumber(board.getUpperHeroMana(),10));
-        pbHealthBarHero.setProgress(progressNumber(board.getLowerHero(),20));
-        for (int i = 0; i <= 1; i++){
-            for (int j = 0; j <= 6; j++){
-                Minion m =(Minion)cards[i][j];
-                card = new sceneCard(m.getName(),null,m.getContext(),m.getHealthPoints(),m.getCost(),m.getAttackPoints());
+        lblEnergyOpponent.setText(String.valueOf(board.getUpperHeroMana()));
+
+        pbHealthBarHero.setProgress(progressNumber(board.getLowerHero(),30));
+        lblHealthHero.setText(String.valueOf(board.getLowerHero()));
+
+        //Set top lane
+        int x = 0;
+        for(Minion m: board.getLeftField().getUpperField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
                 GridPane gridCard = card.getGrid();
-                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex( gridCard),GridPane.getRowIndex( gridCard)));
-                if (i == 0){
-                    if (j == 6){
-
-                    } else if (cards[i][j] == null){
-                        gridHeroField.add(emptySlotImage(), j, i);
-                    } else {
-                        gridHeroField.add(card.getGrid(), j, i);
-                    }
-
-                } else if (i == 1){
-                    if (cards[i][j] == null){
-                        gridOpponentField.add(emptySlotImage(), i, j);
-                    } else {
-                        gridOpponentField.add(card.getGrid(), i, j);
-                    }
-                }
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            } else {
+                gridOpponentField.add(emptySlotImage(), x, 1);
             }
+            x++;
+        }
+        for (Minion m: board.getRightField().getUpperField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            } else {
+                gridOpponentField.add(emptySlotImage(), x, 1);
+            }
+            x++;
+        }
+
+        //Set bottom lane
+        for(Minion m: board.getLeftField().getLowerField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridHeroField.add(emptySlotImage(), x, 0);
+            } else {
+                gridHeroField.add(emptySlotImage(), x, 0);
+            }
+            x++;
+        }
+        for (Minion m: board.getRightField().getLowerField()){
+            if (m != null) {
+                card = new sceneCard(m.getName(), null, m.getContext(), m.getHealthPoints(), m.getCost(), m.getAttackPoints());
+                GridPane gridCard = card.getGrid();
+                gridCard.addEventFilter(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> clickObject(GridPane.getColumnIndex(gridCard), GridPane.getRowIndex(gridCard)));
+                gridHeroField.add(emptySlotImage(), x, 0);
+            } else {
+                gridHeroField.add(emptySlotImage(), x, 0);
+            }
+            x++;
         }
     }
 
     private double progressNumber(int n, int base) {
-
+        int value = base/n;
+        if (value > 1)
+            return 1;
+        return value;
     }
 
     public void updatePlayer(Player player){
