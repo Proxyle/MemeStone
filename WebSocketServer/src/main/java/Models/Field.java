@@ -20,6 +20,18 @@ public class Field {
         this.lowerField = lowerField;
         this.fieldBuff = fieldBuff;
     }
+    
+    public FieldBuff getFieldBuff() {
+        return fieldBuff;
+    }
+
+    public Minion[] getLowerField() {
+        return lowerField;
+    }
+
+    public Minion[] getUpperField() {
+        return upperField;
+    }
 
     public Field flipField(){
         return new Field(lowerField, upperField, fieldBuff);
