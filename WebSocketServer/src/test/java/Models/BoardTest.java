@@ -8,18 +8,14 @@ import static org.junit.Assert.*;
 
 public class BoardTest {
     private Board board;
-    private Field leftField;
-    private Field rightField;
     private int START_HEALTH = 20;
     private Minion minion;
 
     @Before
     public void TestInitialize() {
-        leftField = new Field();
-        rightField = new Field();
-        board = new Board(leftField, rightField, START_HEALTH, START_HEALTH);
+        board = new Board(START_HEALTH);
 
-        minion = new Minion("Wilrekt", "You just got wilrekt", 4, 9, 9);
+        minion = new Minion(new Long(1), "Wilrekt", "You just got wilrekt", 0, 9, 9);
     }
 
     @Test
@@ -37,6 +33,8 @@ public class BoardTest {
     @Test
     public void TestAttackOpponentHero()
     {
-        assertEquals(true, board.attackOpponentHero(2));
+        board.placeMinion(minion, 2);
+        board.attackOpponentHero(2);
+        assertNotEquals(20, board.upperHero);
     }
 }
