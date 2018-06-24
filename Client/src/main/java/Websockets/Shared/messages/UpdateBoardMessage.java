@@ -1,15 +1,15 @@
 package Websockets.Shared.messages;
 
-import Models.Card.Card;
+import Models.BoardField.*;
 
 public class UpdateBoardMessage {
-    Card[][] board;
+    Board board;
 
-    public Card[][] getBoard() {
+    public Board getBoard() {
         return board;
     }
 
-    public UpdateBoardMessage(Card[][] board){
+    public UpdateBoardMessage(Board board){
         this.board = board;
     }
 }

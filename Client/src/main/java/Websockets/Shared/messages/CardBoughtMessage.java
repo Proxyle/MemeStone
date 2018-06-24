@@ -1,4 +1,4 @@
 package Websockets.Shared.messages;
 
-public class GetSettingsMessage {
+public class CardBoughtMessage {
 }

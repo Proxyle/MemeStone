@@ -1,17 +1,15 @@
 package Models.Card;
 
 public abstract class Card {
-<<<<<<< HEAD
+
     private Long id;
     private Rarity rarity;
-=======
 
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
     private String name;
     private String context;
     private int cost;
 
-<<<<<<< HEAD
+
     public Card(Rarity rarity, String name, String context, int cost, Long id) {
         this.rarity = rarity;
         this.name = name;
@@ -27,8 +25,7 @@ public abstract class Card {
         return rarity;
     }
 
-=======
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
+
     public String getName() {
         return name;
     }
@@ -41,10 +38,11 @@ public abstract class Card {
         return cost;
     }
 
-<<<<<<< HEAD
+
     public Long getId() {
         return id;
-=======
+    }
+
     public Card(String name, String context, int cost){
         this.name = name;
         this.context = context;
@@ -54,6 +52,6 @@ public abstract class Card {
     @Override
     public String toString() {
         return name + ", " + context + ", cost: " + cost;
->>>>>>> 87372e4c50283964452a73fec05721bd10608253
+
     }
 }

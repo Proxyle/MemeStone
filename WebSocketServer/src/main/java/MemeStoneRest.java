@@ -2,6 +2,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
+import RESTmodels.*;
 
 
 public class MemeStoneRest {
@@ -12,31 +13,45 @@ public class MemeStoneRest {
         return url;
     }
 
-    public void getLogin(String username, String password) {
-        HttpEntity<Player> requestBody = new HttpEntity<>(new Player(username, password));
-        String query = url + "/player/login";
-        ResponseEntity<Player> result = restTemplate.postForEntity(query, requestBody, Player.class);
+    public void updateCollection() {
+        HttpEntity<Deck> requestBody = new HttpEntity<>(new Deck());
+        String query = url + "";
+        ResponseEntity<Deck> result = restTemplate.postForEntity(query, requestBody, Deck.class);
 
-        if (result.getStatusCode() == HttpStatus.OK) {
-            Player player = result.getBody();
-            System.out.println("Log in request");
-            System.out.println("username is: " + player.getUserName());
-            System.out.println("password is: " + player.getPassword());
-        } else {
-            System.out.println("Error while logging in");
+        if (!(result.getStatusCode() == HttpStatus.OK)) {
+            System.out.println(result.getStatusCode());
         }
     }
 
-    public void register(String username, String password, String email){
-        HttpEntity<Player> requestBody = new HttpEntity<>(new Player(username, password, email));
-        String query = url + "/player/register";
-        ResponseEntity<Player> result = restTemplate.postForEntity(query, requestBody, Player.class);
+    public void updateScore(){
+        HttpEntity<PlayerCard> requestBody = new HttpEntity<>(new Deck());
+        String query = url + "";
+        ResponseEntity<Deck> result = restTemplate.postForEntity(query, requestBody, Deck.class);
 
-        if (result.getStatusCode() == HttpStatus.OK) {
-            Player player = result.getBody();
-        } else {
-            System.out.println("Error while signing up");
+        if (!(result.getStatusCode() == HttpStatus.OK)){
+            System.out.println(result.getStatusCode());
         }
     }
 
+    public void updateDeck(){
+        HttpEntity<Deck> requestBody = new HttpEntity<>(new Deck());
+        String query = url + "";
+        ResponseEntity<Deck> result = restTemplate.postForEntity(query, requestBody, Deck.class);
+
+        if (!(result.getStatusCode() == HttpStatus.OK)){
+            System.out.println(result.getStatusCode());
+        }
+    }
+
+    public A getCards(){
+        String query = url + "/card/";
+        ResponseEntity<A> result = restTemplate.getForEntity(query, A.class);
+
+        if (result.getStatusCode() == HttpStatus.OK){
+            return result.getBody();
+        }
+        else{
+            return null;
+        }
+    }
 }

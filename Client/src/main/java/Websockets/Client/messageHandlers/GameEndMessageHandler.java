@@ -2,7 +2,6 @@ package Websockets.Client.messageHandlers;
 
 import Websockets.Client.IGameClient;
 import Websockets.Shared.MessageHandler;
-import Websockets.Shared.interfaces.IMessageHandler;
 import Websockets.Shared.messages.GameEndMessage;
 
 public class GameEndMessageHandler extends MessageHandler<GameEndMessage> {

@@ -98,7 +98,7 @@ public class sceneHomeScreen{
         });
         grid.add(btnExitGame, 1,4,1,1);
 
-        String[] dailyQuests = gameMaster.getDailyQuests();
+        String[] dailyQuests = {"Kill 30 minions", "Play 15 spells", "Win 7 games"};
         lblTask1.setText(dailyQuests[0]);
         lblTask2.setText(dailyQuests[1]);
         lblTask3.setText(dailyQuests[2]);

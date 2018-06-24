@@ -13,10 +13,13 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-    public class GameMaster implements IGameMaster {
-        public  IPlayer user;
-        private IClientMessageGenerator generator;
-        private IClientGUI gui;
+
+public class GameMaster implements IGameMaster {
+    public  IPlayer user;
+    private IClientMessageGenerator generator;
+    private IClientGUI gui;
+    private int lobbyId = -1;
+
 
     public GameMaster() {
         this.generator = new ClientMessageGenerator(new ClientWebSocket());
@@ -39,6 +42,14 @@ import java.util.Observer;
         return user;
     }
 
+    public int getLobbyId() {
+        return lobbyId;
+    }
+
+    public void setLobbyId(int lobbyId) {
+        this.lobbyId = lobbyId;
+    }
+
     @Override
     public void registerGameGui(IClientGUI gui) {
         this.gui = gui;
@@ -56,7 +67,7 @@ import java.util.Observer;
 
     @Override
     public void exitGame() {
-        generator.exitGame();
+        generator.exitGame(lobbyId);
     }
 
     @Override
@@ -66,22 +77,22 @@ import java.util.Observer;
 
     @Override
     public void attackCard(int attack, int defend) {
-        generator.attackCard(attack, defend);
+        generator.attackCard(lobbyId, attack, defend);
     }
 
     @Override
     public void playCard(Card card, int[] location) {
-        generator.playCard(card, location);
+        generator.playCard(lobbyId, card, location);
     }
 
     @Override
     public void nextTurn() {
-        generator.nextTurn();
+        generator.nextTurn(lobbyId);
     }
 
     @Override
     public void escapeConcede() {
-        generator.escapeConcede();
+        generator.escapeConcede(lobbyId);
     }
 
     @Override
@@ -105,7 +116,7 @@ import java.util.Observer;
 
     @Override
     public void buyCards() {
-        generator.buyCards();
+        generator.buyCards(user.getId());
     }
 
     @Override

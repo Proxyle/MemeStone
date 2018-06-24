@@ -1,8 +1,8 @@
 package GUI;
 
 import Logic.GameMaster.IGameMaster;
-import Models.Board.Board;
 import Models.Board.FieldBuff;
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
@@ -326,22 +326,22 @@ public class sceneGame{
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
 
-        if (board.getLeftField().getBuff() == FieldBuff.p1Dmg || board.getLeftField().getBuff() == FieldBuff.p2Dmg || board.getLeftField().getBuff() == FieldBuff.P3Dmg)
+        if (board.getLeftField().getFieldBuff() == FieldBuff.p1Dmg || board.getLeftField().getFieldBuff() == FieldBuff.p2Dmg || board.getLeftField().getFieldBuff() == FieldBuff.P3Dmg)
             iBuffLeft = new Image("resources/images/posDmg.jpg", 120, 120, false, false);
-        else if (board.getLeftField().getBuff() == FieldBuff.p1Health || board.getLeftField().getBuff() == FieldBuff.p2Health || board.getLeftField().getBuff() == FieldBuff.P3Health)
+        else if (board.getLeftField().getFieldBuff() == FieldBuff.p1Health || board.getLeftField().getFieldBuff() == FieldBuff.p2Health || board.getLeftField().getFieldBuff() == FieldBuff.P3Health)
             iBuffLeft = new Image("resources/images/posHealth.jpg", 120, 120, false, false);
-        else if (board.getLeftField().getBuff() == FieldBuff.n1Health)
+        else if (board.getLeftField().getFieldBuff() == FieldBuff.n1Health)
             iBuffLeft = new Image("resources/images/negHealth.jpg", 120, 120, false, false);
-        else if (board.getLeftField().getBuff() == FieldBuff.n1Dmg)
+        else if (board.getLeftField().getFieldBuff() == FieldBuff.n1Dmg)
             iBuffLeft = new Image("resources/images/negDmg.jpg", 120, 120, false, false);
 
-        if (board.getRightField().getBuff() == FieldBuff.p1Dmg || board.getRightField().getBuff() == FieldBuff.p2Dmg || board.getRightField().getBuff() == FieldBuff.P3Dmg)
+        if (board.getRightField().getFieldBuff() == FieldBuff.p1Dmg || board.getRightField().getFieldBuff() == FieldBuff.p2Dmg || board.getRightField().getFieldBuff() == FieldBuff.P3Dmg)
             iBuffRight = new Image("resources/images/posDmg.jpg", 120, 120, false, false);
-        else if (board.getRightField().getBuff() == FieldBuff.p1Health || board.getRightField().getBuff() == FieldBuff.p2Health || board.getRightField().getBuff() == FieldBuff.P3Health)
+        else if (board.getRightField().getFieldBuff() == FieldBuff.p1Health || board.getRightField().getFieldBuff() == FieldBuff.p2Health || board.getRightField().getFieldBuff() == FieldBuff.P3Health)
             iBuffRight = new Image("resources/images/posHealth.jpg", 120, 120, false, false);
-        else if (board.getRightField().getBuff() == FieldBuff.n1Health)
+        else if (board.getRightField().getFieldBuff() == FieldBuff.n1Health)
             iBuffRight = new Image("resources/images/negHealth.jpg", 120, 120, false, false);
-        else if (board.getRightField().getBuff() == FieldBuff.n1Dmg)
+        else if (board.getRightField().getFieldBuff() == FieldBuff.n1Dmg)
             iBuffRight = new Image("resources/images/negDmg.jpg", 120, 120, false, false);
 
         pbEnergyBarHero.setProgress(progressNumber(board.getLowerHeroMana(),10));

@@ -2,7 +2,7 @@ package GUI;
 
 import Logic.GameMaster.GameMaster;
 import Logic.GameMaster.IGameMaster;
-import Models.Board.Board;
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.User.IPlayer;
 import Models.User.Player;
@@ -16,7 +16,6 @@ import javafx.scene.Scene;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TimerTask;
 
 public class sceneController extends BaseController implements IClientGUI, IMemestoneGUI {
 
@@ -56,7 +55,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     public void collections(){
-        IPlayer user = gameMaster.getPlayer;
+        IPlayer user = gameMaster.getUser();
         collections = new sceneCollection(this,gameMaster,user.getCards(), user.getRanking());
         application.Draw(collections.getScene());
     }
@@ -83,14 +82,12 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     }
 
     @Override
-    public void processRoundStart() {
+    public void processRoundStart(int lobbyId) {
         Platform.runLater(()->{
-            new java.util.Timer().schedule(new TimerTask(){
-                @Override
-                public void run() {
-                    //TODO startRound();
-                }
-            },5);
+            if (gameMaster.getLobbyId() == -1){
+                gameMaster.setLobbyId(lobbyId);
+            }
+
         });
     }
 
@@ -123,7 +120,7 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     @Override
     public void processGameEnd(String winner) {
         Platform.runLater(()->{
-            IPlayer user = gameMaster.getPlayer;
+            IPlayer user = gameMaster.getUser();
             if(winner.equals(user.getUsername())){
                 game.notifyPlayer("GG EZ");
             } else{
@@ -157,5 +154,10 @@ public class sceneController extends BaseController implements IClientGUI, IMeme
     @Override
     public void processGetCollection(List<Card> collection) {
         //gameMaster.setCollection(collection);
+    }
+
+    @Override
+    public void processCardBought() {
+
     }
 }

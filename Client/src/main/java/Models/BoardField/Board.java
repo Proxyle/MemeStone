@@ -1,4 +1,4 @@
-package Models.Board;
+package Models.BoardField;
 
 import Models.Card.Minion.Minion;
 

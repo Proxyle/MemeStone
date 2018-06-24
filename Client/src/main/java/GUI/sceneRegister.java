@@ -82,7 +82,7 @@ public class sceneRegister {
     }
 
     public void signUp() {
-        if (gameMaster.signUp(txtUsername.getText(), txtPassword.getText(), txtEmail.getText()))
+        gameMaster.signUp(txtUsername.getText(), txtPassword.getText(), txtEmail.getText());
             controller.home();
 
     }

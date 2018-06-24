@@ -1,5 +1,6 @@
 package Websockets.Client;
 
+import Models.BoardField.*;
 import Models.Card.Card;
 import Models.User.Player;
 import Websockets.Shared.interfaces.IClientGUI;
@@ -11,15 +12,16 @@ public interface IGameClient {
     void handlePlayerRegistrationResponse(boolean success);
     void handlePlayerRegistered(String playerName);
     void registerGUI(IClientGUI clientGUI);
-    void handlePlayerTurn();
     void handleGameEnd(String winner);
     void handlePlayerActionFail();
-    void handleUpdateBoard(Card[][] board);
+    void handleUpdateBoard(Board board);
     void handleUpdatePlayer(Player player);
 
 
 
     void handleReceivedCollection(List<Card> collection);
 
-    void handleRoundStart();
+    void handleRoundStart(int lobbyId);
+
+    void handleCardBought();
 }
