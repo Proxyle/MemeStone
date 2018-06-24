@@ -2,17 +2,14 @@ package GUI;
 
 import Logic.GameMaster.IGameMaster;
 import Models.Board.Board;
+import Models.Board.FieldBuff;
 import Models.Card.Card;
 import Models.Card.Minion.Minion;
 import Models.Card.Spell.Spell;
 import Models.User.Player;
-import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -20,7 +17,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,13 +24,11 @@ import java.util.List;
 public class sceneGame{
     //Properties
     double buttonWidth = 150;
-    Image iHerosHero = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
-    Image iOpponentsHero = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
-    Image iCardBack = new Image("file:C:\\Test\\MemestonePicas\\EmptySlot.jpg", 120, 120, false, false);
-    Image iEmptySlot = new Image("file:C:\\Test\\MemestonePicas\\EmptySlot.jpg", 120, 120, false, false);
-    Image iBuffLeft = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
-    Image iBuffRight = new Image("file:C:\\Test\\MemestonePicas\\ggg.jpg", 120, 120, false, false);
-    Image imgLoad;
+    Image iHerosHero = new Image("resources/images/hero.jpg", 120, 120, false, false);
+    Image iOpponentsHero = new Image("resources/images/opponent.jpg", 120, 120, false, false);
+    Image iEmptySlot = new Image("resources/images/EmptySlot.jpg", 120, 120, false, false);
+    Image iBuffLeft;
+    Image iBuffRight;
 
     ArrayList<Integer> clickOne;
     ArrayList<Integer> clickTwo;
@@ -88,7 +82,7 @@ public class sceneGame{
     Scene scene;
     sceneController controller;
 
-    public sceneGame(sceneController controller/*, IGameMaster gameMaster*/){
+    public sceneGame(sceneController controller, IGameMaster gameMaster){
         this.gameMaster = gameMaster;
         scene = makeScene();
         this.controller = controller;
@@ -331,6 +325,24 @@ public class sceneGame{
         sceneCard card;
         gridOpponentField = new GridPane();
         gridHeroField = new GridPane();
+
+        if (board.getLeftField().getBuff() == FieldBuff.p1Dmg || board.getLeftField().getBuff() == FieldBuff.p2Dmg || board.getLeftField().getBuff() == FieldBuff.P3Dmg)
+            iBuffLeft = new Image("resources/images/posDmg.jpg", 120, 120, false, false);
+        else if (board.getLeftField().getBuff() == FieldBuff.p1Health || board.getLeftField().getBuff() == FieldBuff.p2Health || board.getLeftField().getBuff() == FieldBuff.P3Health)
+            iBuffLeft = new Image("resources/images/posHealth.jpg", 120, 120, false, false);
+        else if (board.getLeftField().getBuff() == FieldBuff.n1Health)
+            iBuffLeft = new Image("resources/images/negHealth.jpg", 120, 120, false, false);
+        else if (board.getLeftField().getBuff() == FieldBuff.n1Dmg)
+            iBuffLeft = new Image("resources/images/negDmg.jpg", 120, 120, false, false);
+
+        if (board.getRightField().getBuff() == FieldBuff.p1Dmg || board.getRightField().getBuff() == FieldBuff.p2Dmg || board.getRightField().getBuff() == FieldBuff.P3Dmg)
+            iBuffRight = new Image("resources/images/posDmg.jpg", 120, 120, false, false);
+        else if (board.getRightField().getBuff() == FieldBuff.p1Health || board.getRightField().getBuff() == FieldBuff.p2Health || board.getRightField().getBuff() == FieldBuff.P3Health)
+            iBuffRight = new Image("resources/images/posHealth.jpg", 120, 120, false, false);
+        else if (board.getRightField().getBuff() == FieldBuff.n1Health)
+            iBuffRight = new Image("resources/images/negHealth.jpg", 120, 120, false, false);
+        else if (board.getRightField().getBuff() == FieldBuff.n1Dmg)
+            iBuffRight = new Image("resources/images/negDmg.jpg", 120, 120, false, false);
 
         pbEnergyBarHero.setProgress(progressNumber(board.getLowerHeroMana(),10));
         lblEnergyHero.setText(String.valueOf(board.getLowerHeroMana()));

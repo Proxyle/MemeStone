@@ -26,7 +26,7 @@ public class sceneCard{
 
     public sceneCard(String name, Long imgUrl, String summary, int healthPoints, int energyPoints, int attackPoints) {
         this.name = name;
-        this.imgUrl = "resources/" + imgUrl + "/.jpg";
+        this.imgUrl = "resources/images/" + imgUrl + ".jpg";
         this.summary = summary;
         this.healthPoints = healthPoints;
         this.energyPoints = energyPoints;
